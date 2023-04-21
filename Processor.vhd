@@ -132,9 +132,11 @@ ARCHITECTURE archi OF Processor IS
 			q_b		 	: in std_logic_vector(31 downto 0);
 			IDimm12I  	: in std_logic_vector(11 downto 0);
 			IDimm12S  	: in std_logic_vector(11 downto 0);
+			RF_Align_out: in std_logic_vector(31 downto 0);
 			-- OUTPUTS
 			DQ				: out std_logic_vector(3 downto 0);
-			RF_Align_in	: out std_logic_vector(31 downto 0)
+			RF_Align_in	: out std_logic_vector(31 downto 0);
+			PROCinputDM : out std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
 
@@ -276,7 +278,7 @@ BEGIN
 											
 	-- data memory
 	PROCaddrDM  <= SIGoutputALU;
-	PROCinputDM <= SIGoutput2RF;
+--	PROCinputDM <= SIGoutput2RF;
 	PROCstore   <= SIGstore;
 	
 
@@ -398,8 +400,10 @@ BEGIN
 		q_b => PROCoutputDM,
 		IDimm12I => SIGimm12I,
 		IDimm12S => SIGimm12S,
+		RF_Align_out => SIGoutput2RF,
 		RF_Align_in => SIG_RF_Align_in,
-		DQ => SIGPROCdq
+		DQ => SIGPROCdq,
+		PROCinputDM => PROCinputDM
 	);
 
 	-- END
