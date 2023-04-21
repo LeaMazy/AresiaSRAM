@@ -86,3 +86,4 @@ incremental_db/compiled_partitions/AresiaSRAM.root_partition.map.hbdb.hdb
 incremental_db/compiled_partitions/AresiaSRAM.root_partition.map.hdb
 incremental_db/compiled_partitions/AresiaSRAM.root_partition.map.kpt
 db/AresiaSRAM.(0).cnf.hdb
+simulation/modelsim/msim_transcript
