@@ -9,7 +9,6 @@ db/AresiaSRAM.quiproj.67952.rdr.flock
 *.qdb
 *.qpg
 *.qdb
-simulation/modelsim/rtl_work/_info
 /db
 *.kpt
 *.qmsg
