@@ -1,0 +1,797 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/leama/Aresia/AresiaSRAM/simulation/modelsim
+Ealignment
+Z1 w1682060746
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/leama/Aresia/AresiaSRAM/Alignment.vhd
+Z6 FC:/Users/leama/Aresia/AresiaSRAM/Alignment.vhd
+l0
+L11
+VBFB0aY_EHPmXO8eHAVCBY1
+!s100 aZg2QdM0d@Se<ZLM_Ac471
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1682060781
+!i10b 1
+Z9 !s108 1682060781.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/Alignment.vhd|
+Z11 !s107 C:/Users/leama/Aresia/AresiaSRAM/Alignment.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarchi
+R2
+R3
+R4
+DEx4 work 9 alignment 0 22 BFB0aY_EHPmXO8eHAVCBY1
+l33
+L24
+VCho8g=TEZSJTjcSk1Afn92
+!s100 m>LkVZhj355JCOZlLoWdU1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+Z14 w1655159778
+R2
+R3
+R4
+R0
+Z15 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Alu.vhd
+Z16 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Alu.vhd
+l0
+L11
+VibNmdJ0an6VzACZPKb7`Y3
+!s100 Q?0l^f8O][^W;2ejiJDWd0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Alu.vhd|
+Z18 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Alu.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 ibNmdJ0an6VzACZPKb7`Y3
+l45
+L29
+V`:9cGWA>0U9J81a?=8KYA1
+!s100 [PG7_:jBK5h4AD^P9T_2K3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eclock1m
+R14
+R3
+R4
+R0
+Z19 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/clock1M.vhd
+Z20 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/clock1M.vhd
+l0
+L42
+VDXIOhH16mNccdXPWnZAeM2
+!s100 Ye>Gf_Qd@K01j4jmmKFHc0
+R7
+31
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/clock1M.vhd|
+Z22 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/clock1M.vhd|
+!i113 1
+R12
+R13
+Asyn
+R3
+R4
+DEx4 work 7 clock1m 0 22 DXIOhH16mNccdXPWnZAeM2
+l131
+L53
+V][:D@0_IC`<l2H3DW>b<U3
+!s100 JcVYeKLlB85Cm0Zc5VeGF0
+R7
+31
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+vclock1M_altpll
+Z23 !s110 1682060780
+!i10b 1
+!s100 FcYN=c]A526FHFPAWJkcW1
+I90GkO7MPXHQeiIzVhA?Qb0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681303489
+8C:/Users/leama/Aresia/AresiaSRAM/db/clock1m_altpll.v
+FC:/Users/leama/Aresia/AresiaSRAM/db/clock1m_altpll.v
+L0 30
+OV;L;10.5b;63
+r1
+!s85 0
+31
+Z24 !s108 1682060780.000000
+!s107 C:/Users/leama/Aresia/AresiaSRAM/db/clock1m_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/leama/Aresia/AresiaSRAM/db|C:/Users/leama/Aresia/AresiaSRAM/db/clock1m_altpll.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/leama/Aresia/AresiaSRAM/db
+tCvgOpt 0
+nclock1@m_altpll
+Ecounter
+R14
+R2
+R3
+R4
+R0
+Z25 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Counter.vhd
+Z26 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Counter.vhd
+l0
+L11
+VM;AFf6icB8Ahi@ZRmbVHo0
+!s100 GA?fDVaAIiWmKoBN6Cf?L2
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Counter.vhd|
+Z28 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Counter.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 M;AFf6icB8Ahi@ZRmbVHo0
+l26
+L24
+VR?KO7jE0Tgmj@LzCWa0BH3
+!s100 A4eDhod[`EOY]AmEXL]4A0
+R7
+31
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Edebuger
+Z29 w1658806958
+Z30 DPx4 work 8 simulpkg 0 22 eengz8]R<FfR5XS]SfSd@3
+R2
+R3
+R4
+R0
+Z31 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/DEBUGER.vhd
+Z32 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/DEBUGER.vhd
+l0
+L11
+VFEm]O`58^MLZWMYL=l9M23
+!s100 5=[Szkbcb1nB9aSl=aDCL1
+R7
+31
+Z33 !s110 1682060782
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/DEBUGER.vhd|
+Z35 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/DEBUGER.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R30
+R2
+R3
+R4
+DEx4 work 7 debuger 0 22 FEm]O`58^MLZWMYL=l9M23
+l38
+L27
+VR7UR^i=iCo7gfoO]UTOY[0
+!s100 I7^fchzVhlRR7zW[XL9a22
+R7
+31
+R33
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Edisplays
+Z36 w1655263876
+R2
+R3
+R4
+R0
+Z37 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Displays.vhd
+Z38 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Displays.vhd
+l0
+L12
+Vdz30Gzb05_>9kU<5g_MR>0
+!s100 o2@Lm]JjER>ET7>aoizQN0
+R7
+31
+R8
+!i10b 1
+R24
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Displays.vhd|
+Z40 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Displays.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 8 displays 0 22 dz30Gzb05_>9kU<5g_MR>0
+l34
+L28
+Ve5cHNfE_6o^7H6J^ZPHg=1
+!s100 1S]1Mz`k_IameA_kVOW8S1
+R7
+31
+R8
+!i10b 1
+R24
+R39
+R40
+!i113 1
+R12
+R13
+Einstructiondecoder
+Z41 w1658803176
+R2
+R3
+R4
+R0
+Z42 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/InstructionDecoder.vhd
+Z43 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/InstructionDecoder.vhd
+l0
+L15
+VY;4;bkG2fjRbgCmb;d01A1
+!s100 iX?2C6L;SI`G4d<K5<EPo2
+R7
+31
+R23
+!i10b 1
+R24
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/InstructionDecoder.vhd|
+Z45 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/InstructionDecoder.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 18 instructiondecoder 0 22 Y;4;bkG2fjRbgCmb;d01A1
+l56
+L48
+VjeZg<5OU1h4XfCEEXi1La3
+!s100 ;L1l0L:]Eoa[mhlZiSGUf3
+R7
+31
+R23
+!i10b 1
+R24
+R44
+R45
+!i113 1
+R12
+R13
+Eprocessor
+Z46 w1682060658
+R2
+R3
+R4
+R0
+Z47 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Processor.vhd
+Z48 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Processor.vhd
+l0
+L11
+VmaLa365dMS2B2oNHd4Aej3
+!s100 N_o_<2@@M@Ech[<^8gMel3
+R7
+31
+R23
+!i10b 1
+R24
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Processor.vhd|
+Z50 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Processor.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 9 processor 0 22 maLa365dMS2B2oNHd4Aej3
+l204
+L31
+V7ioP>=?5Z6U7ZY00e][zW1
+!s100 6[6K^EGB^3_?cVlH6[e031
+R7
+31
+R23
+!i10b 1
+R24
+R49
+R50
+!i113 1
+R12
+R13
+Eprogramcounter
+Z51 w1658896068
+R2
+R3
+R4
+R0
+Z52 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/ProgramCounter.vhd
+Z53 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/ProgramCounter.vhd
+l0
+L11
+V;L@JBBcdS9P=Njgla@Mzn0
+!s100 Rnc[fMZgMo@7`e[F>0@Fe3
+R7
+31
+R23
+!i10b 1
+R24
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/ProgramCounter.vhd|
+Z55 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/ProgramCounter.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R2
+R3
+R4
+DEx4 work 14 programcounter 0 22 ;L@JBBcdS9P=Njgla@Mzn0
+l55
+L39
+Ve9><I>QbiLihFKh^<0QS11
+!s100 AeRWUCRBDhlOoL6VV>=OF3
+R7
+31
+R23
+!i10b 1
+R24
+R54
+R55
+!i113 1
+R12
+R13
+Eram8_0
+Z56 w1681973771
+Z57 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+R3
+R4
+R0
+Z58 8C:/Users/leama/Aresia/AresiaSRAM/RAM8_0.vhd
+Z59 FC:/Users/leama/Aresia/AresiaSRAM/RAM8_0.vhd
+l0
+L42
+V7;@eg^7oIi>;ccbSbIQ773
+!s100 U`7LnL:gnhk2NGHkl1gZ=1
+R7
+31
+R8
+!i10b 1
+R9
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/RAM8_0.vhd|
+Z61 !s107 C:/Users/leama/Aresia/AresiaSRAM/RAM8_0.vhd|
+!i113 1
+R12
+R13
+Asyn
+R57
+R3
+R4
+DEx4 work 6 ram8_0 0 22 7;@eg^7oIi>;ccbSbIQ773
+l64
+L59
+V<hJW59Q:4NVE[AoiI6NlU3
+!s100 GGzoR[EG7cM`k4T8_^75o0
+R7
+31
+R8
+!i10b 1
+R9
+R60
+R61
+!i113 1
+R12
+R13
+Eram8_1
+Z62 w1681973770
+R57
+R3
+R4
+R0
+Z63 8C:/Users/leama/Aresia/AresiaSRAM/RAM8_1.vhd
+Z64 FC:/Users/leama/Aresia/AresiaSRAM/RAM8_1.vhd
+l0
+L42
+VJ15QT28QFAmG`:8Zm`GeB2
+!s100 lJfQ_]]NRGgTl<@2Pm6Jo3
+R7
+31
+R8
+!i10b 1
+R9
+Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/RAM8_1.vhd|
+Z66 !s107 C:/Users/leama/Aresia/AresiaSRAM/RAM8_1.vhd|
+!i113 1
+R12
+R13
+Asyn
+R57
+R3
+R4
+DEx4 work 6 ram8_1 0 22 J15QT28QFAmG`:8Zm`GeB2
+l64
+L59
+VCVRa[iD88eTmgQ6I50gT:1
+!s100 zae^48Jj>73cgSY=@HM<U3
+R7
+31
+R8
+!i10b 1
+R9
+R65
+R66
+!i113 1
+R12
+R13
+Eram8_2
+Z67 w1681995282
+R57
+R3
+R4
+R0
+Z68 8C:/Users/leama/Aresia/AresiaSRAM/RAM8_2.vhd
+Z69 FC:/Users/leama/Aresia/AresiaSRAM/RAM8_2.vhd
+l0
+L42
+VO7<Mh5;Ch]b6ihjKKA;gX0
+!s100 H0dJ7gcckno?k^Tef:80z1
+R7
+31
+R8
+!i10b 1
+R9
+Z70 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/RAM8_2.vhd|
+Z71 !s107 C:/Users/leama/Aresia/AresiaSRAM/RAM8_2.vhd|
+!i113 1
+R12
+R13
+Asyn
+R57
+R3
+R4
+DEx4 work 6 ram8_2 0 22 O7<Mh5;Ch]b6ihjKKA;gX0
+l64
+L59
+VQzBaWYl>^Q6jGNB^]n:6e3
+!s100 GKLUhSD>`=9`_d`?Ljzf;1
+R7
+31
+R8
+!i10b 1
+R9
+R70
+R71
+!i113 1
+R12
+R13
+Eram8_3
+Z72 w1681995281
+R57
+R3
+R4
+R0
+Z73 8C:/Users/leama/Aresia/AresiaSRAM/RAM8_3.vhd
+Z74 FC:/Users/leama/Aresia/AresiaSRAM/RAM8_3.vhd
+l0
+L42
+V>:B?_4cW<<jU=o2FO<[5J3
+!s100 ocP?^>?0jA1Jde:]NDnQE1
+R7
+31
+R8
+!i10b 1
+R9
+Z75 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/RAM8_3.vhd|
+Z76 !s107 C:/Users/leama/Aresia/AresiaSRAM/RAM8_3.vhd|
+!i113 1
+R12
+R13
+Asyn
+R57
+R3
+R4
+DEx4 work 6 ram8_3 0 22 >:B?_4cW<<jU=o2FO<[5J3
+l64
+L59
+V4NOLi[JAbjS6:@T]@o<9W1
+!s100 Y;`=3]0JW2KMh@U81TOob3
+R7
+31
+R8
+!i10b 1
+R9
+R75
+R76
+!i113 1
+R12
+R13
+Eram8x4
+Z77 w1682060745
+R3
+R4
+R0
+Z78 8C:/Users/leama/Aresia/AresiaSRAM/RAM8x4.vhd
+Z79 FC:/Users/leama/Aresia/AresiaSRAM/RAM8x4.vhd
+l0
+L4
+VkC^c;dNWRmZ8G[i9ME?]T2
+!s100 UnU>@jL3=NY[CmlEJHG1Q1
+R7
+31
+R8
+!i10b 1
+R9
+Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/RAM8x4.vhd|
+Z81 !s107 C:/Users/leama/Aresia/AresiaSRAM/RAM8x4.vhd|
+!i113 1
+R12
+R13
+Asyn
+R3
+R4
+DEx4 work 6 ram8x4 0 22 kC^c;dNWRmZ8G[i9ME?]T2
+l83
+L21
+VdO]l`5S7me:22mKch]mAO2
+!s100 `QcTOo5:8bd`Al9;K[>Sj2
+R7
+31
+R8
+!i10b 1
+R9
+R80
+R81
+!i113 1
+R12
+R13
+Eregisterfile
+Z82 w1655957328
+R30
+R2
+R3
+R4
+R0
+Z83 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/RegisterFile.vhd
+Z84 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/RegisterFile.vhd
+l0
+L12
+V97Ii3naiLA8PL6WU^7Y7I1
+!s100 9XFaBIE?UCY0A:FjoBJkI3
+R7
+31
+R8
+!i10b 1
+R9
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/RegisterFile.vhd|
+Z86 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/RegisterFile.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R30
+R2
+R3
+R4
+DEx4 work 12 registerfile 0 22 97Ii3naiLA8PL6WU^7Y7I1
+l34
+L29
+V6?7M_c_iKcF;eR^^7h_o=3
+!s100 TAA9XU2jYPG1[=9<]GCOY2
+R7
+31
+R8
+!i10b 1
+R9
+R85
+R86
+!i113 1
+R12
+R13
+Esegmentdecoder
+Z87 w1657001988
+R2
+R3
+R4
+R0
+Z88 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/SegmentDecoder.vhd
+Z89 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/SegmentDecoder.vhd
+l0
+L5
+V`IlP<baPbKgjzXLHS9O?^3
+!s100 mj:e?YB7b8=SEYf1R<2fl3
+R7
+31
+R23
+!i10b 1
+R24
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/SegmentDecoder.vhd|
+Z91 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/SegmentDecoder.vhd|
+!i113 1
+R12
+R13
+Avhdl
+R2
+R3
+R4
+DEx4 work 14 segmentdecoder 0 22 `IlP<baPbKgjzXLHS9O?^3
+l12
+L11
+VREEN@8g4mVRH35O6kQQcR2
+!s100 MEZPhoBP=E8BM:19LO_ne1
+R7
+31
+R23
+!i10b 1
+R24
+R90
+R91
+!i113 1
+R12
+R13
+Psimulpkg
+R2
+R3
+R4
+w1681288884
+R0
+8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/simul_var_pkg.vhd
+FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/simul_var_pkg.vhd
+l0
+L5
+Veengz8]R<FfR5XS]SfSd@3
+!s100 F0FHZ1<I2OWZA^@F?>V<l1
+R7
+31
+R23
+!i10b 1
+R24
+!s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/simul_var_pkg.vhd|
+!s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/simul_var_pkg.vhd|
+!i113 1
+R12
+R13
+Etestbench
+Z92 w1681291473
+R30
+R2
+R3
+R4
+R0
+Z93 8C:/Users/leama/Aresia/AresiaSRAM/../PROC-ECE_SYNC SRAM/VHDL files/TestBench.vhd
+Z94 FC:/Users/leama/Aresia/AresiaSRAM/../PROC-ECE_SYNC SRAM/VHDL files/TestBench.vhd
+l0
+L11
+VLSEOCCTD;?<BNJ_nc@Eef0
+!s100 Hai^^_IL`o2BLkjT[n2e=0
+R7
+31
+R33
+!i10b 1
+Z95 !s108 1682060782.000000
+Z96 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/AresiaSRAM/../PROC-ECE_SYNC SRAM/VHDL files/TestBench.vhd|
+Z97 !s107 C:/Users/leama/Aresia/AresiaSRAM/../PROC-ECE_SYNC SRAM/VHDL files/TestBench.vhd|
+!i113 1
+R12
+R13
+Avhdl
+R30
+R2
+R3
+R4
+DEx4 work 9 testbench 0 22 LSEOCCTD;?<BNJ_nc@Eef0
+l46
+L14
+VG?<GBBNZY5@aAng45;YJ@0
+!s100 fejS3_lNSXL_[iOgl9<kN3
+R7
+31
+R33
+!i10b 1
+R95
+R96
+R97
+!i113 1
+R12
+R13
+Etop
+Z98 w1681985426
+R30
+R2
+R3
+R4
+R0
+Z99 8C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Top.vhd
+Z100 FC:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Top.vhd
+l0
+L12
+VLNg]EceHoRG4]Y54zF1j]1
+!s100 J:mM9L25A[df1YgKDaGzT0
+R7
+31
+R8
+!i10b 1
+R9
+Z101 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Top.vhd|
+Z102 !s107 C:/Users/leama/Aresia/PROC-ECE_SYNC SRAM/VHDL files/Top.vhd|
+!i113 1
+R12
+R13
+Aarchi
+R30
+R2
+R3
+R4
+DEx4 work 3 top 0 22 LNg]EceHoRG4]Y54zF1j]1
+l159
+L28
+V8o2[;hBL9V]h7^<F4K6D^2
+!s100 OcVVE<Lz`hcg7EBgMCV]10
+R7
+31
+R8
+!i10b 1
+R9
+R101
+R102
+!i113 1
+R12
+R13
