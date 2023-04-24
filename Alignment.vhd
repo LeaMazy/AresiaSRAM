@@ -10,15 +10,15 @@ use ieee.numeric_std.all;
 -- ENTITY
 entity Alignment is
 	port (
-		IDfunct3 	: in std_logic_vector(2 downto 0);
-		q_b  			: in std_logic_vector(31 downto 0);
-		IDimm12I 	: in std_logic_vector(11 downto 0);
-		IDimm12S 	: in std_logic_vector(11 downto 0);
-		RF_Align_out: in std_logic_vector(31 downto 0);
+		IDfunct3 	: in std_logic_vector(2 downto 0);  --data type (byte, half or word)
+		q_b  			: in std_logic_vector(31 downto 0); --datamem output for load
+		IDimm12I 	: in std_logic_vector(11 downto 0); --offset for load 
+		IDimm12S 	: in std_logic_vector(11 downto 0); --offset for store
+		RF_Align_out: in std_logic_vector(31 downto 0); --regfile output for store
 		
-		DQ 			: out std_logic_vector(3 downto 0);
-		RF_Align_in	: out std_logic_vector(31 downto 0);
-		PROCinputDM : out std_logic_vector(31 downto 0)
+		DQ 			: out std_logic_vector(3 downto 0);  --write enable for each ram (3 to 0)
+		RF_Align_in	: out std_logic_vector(31 downto 0); --regfile input for load (shifted)
+		PROCinputDM : out std_logic_vector(31 downto 0)  --datamem input for store (shifted)
 	);
 end entity;
 
@@ -49,37 +49,31 @@ begin
 			else ('0');	
 			
 	DQ <= (dq_3 & dq_2 & dq_1 & dq_0);
-	
-	PROCinputDM <= std_logic_vector(shift_left(unsigned(RF_Align_out),0)) 
-						when (IDfunct3= "010") 
 				-- SHU
-				 else std_logic_vector(shift_left(unsigned(RF_Align_out),16)) 						
-						when (IDfunct3 = "001" and ((IDimm12S(0)='1') or (IDimm12S(1)='1'))) -- SHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
-				 else std_logic_vector(shift_left(unsigned(RF_Align_out),0)) 
+	PROCinputDM <= std_logic_vector(shift_left(unsigned(RF_Align_out),16)) 						
+						when (IDfunct3 = "001" and (IDimm12S(1)='1')) -- SHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
+				 else RF_Align_out 
 						when (IDfunct3 = "001" and (IDimm12S(0)='0')) -- SHU (Imm%4)
 					-- SBU
-				 else std_logic_vector(shift_left(unsigned(RF_Align_out),0)) 
+				 else RF_Align_out
 						when (IDfunct3 = "000" and (IDimm12S(1 downto 0)="00")) -- SBU (Imm%4=0)
 				 else std_logic_vector(shift_left(unsigned(RF_Align_out),(to_integer(unsigned(IDimm12S(1 downto 0))))*8)) 
 						when (IDfunct3 = "000" and ((IDimm12S(1 downto 0)/="00"))) -- SBU (Imm%4!=0)
-					-- Else
+					-- Else (SW or no shift)
 				 else (RF_Align_out);
 			
 	-- Load		
-				-- LW
-	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),0)) 
-					when (IDfunct3= "010") 
 				-- LHU
-			else std_logic_vector(shift_right(unsigned(q_b),16)) 						
-					when (IDfunct3 = "101" and ((IDimm12I(0)='1') or (IDimm12I(1)='1'))) -- LHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
-			else std_logic_vector(shift_right(unsigned(q_b),0)) 
+	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),16)) 						
+					when (IDfunct3 = "101" and (IDimm12I(1)='1')) -- LHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
+			 else q_b 
 					when (IDfunct3 = "101" and (IDimm12I(0)='0')) -- LHU (Imm%4)
 				-- LBU
-			else std_logic_vector(shift_right(unsigned(q_b),0)) 
+			 else q_b
 					when (IDfunct3 = "100" and (IDimm12I(1 downto 0)="00")) -- LBU (Imm%4=0)
-			else std_logic_vector(shift_right(unsigned(q_b),(to_integer(unsigned(IDimm12I(1 downto 0))))*8)) 
+			 else std_logic_vector(shift_right(unsigned(q_b),(to_integer(unsigned(IDimm12I(1 downto 0))))*8)) 
 					when (IDfunct3 = "100" and ((IDimm12I(1 downto 0)/="00"))) -- LBU (Imm%4!=0)
-				-- Else
+				-- Else (LW or no shift)
 			else (q_b);
 	Mask <= "00000000000000001111111111111111" when (IDfunct3 = "101")
 				else "00000000000000000000000011111111" when (IDfunct3 = "100")
