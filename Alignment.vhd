@@ -34,18 +34,18 @@ architecture archi of Alignment is
 
 begin
 	-- Store
-	storetype <= ("00" & IDimm12S(1 downto 0)) WHEN (IDfunct3 = "000" )	-- StoreByte (RAM3)
-			else ("010" & IDimm12S(0)) WHEN (IDfunct3 = "001")	-- StoreHalf (RAM2 & RAM3)
-			else ('1' & IDimm12S(2 downto 0)) WHEN (IDfunct3 = "010") -- StoreWord (RAMs)
-			else ("0111"); -- (Ne prend jamais valeur 011X)
+	storetype <= ("00" & IDimm12S(1 downto 0)) WHEN (IDfunct3 = "000" )	-- StoreByte (RAMs)
+			else ("01" & IDimm12S(1 downto 0)) WHEN (IDfunct3 = "001")	-- StoreHalf (RAM3&2 ou RAM1&0)
+			else ('1' & IDimm12S(2 downto 0)) WHEN (IDfunct3 = "010") -- StoreWord (RAM0)
+			else ("0111"); -- (Ne prend jamais valeur 0111)
 			
 	dq_0 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 0)="100" or storetype(3 downto 0)="0000"))
 			else ('0');
 	dq_1 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 0)="100" or storetype(3 downto 0)="0001"))
 			else ('0');	
-	dq_2 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 0)="101" or storetype(3 downto 0)="0010"))
+	dq_2 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 1)="11" or storetype(3 downto 0)="0010"))
 			else ('0');
-	dq_3 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 0)="101" or storetype(3 downto 0)="0011"))
+	dq_3 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 1)="11" or storetype(3 downto 0)="0011"))
 			else ('0');	
 			
 	DQ <= (dq_3 & dq_2 & dq_1 & dq_0);
