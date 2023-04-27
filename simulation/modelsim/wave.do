@@ -5,6 +5,33 @@ add wave -noupdate -radix hexadecimal /testbench/ck
 add wave -noupdate -radix hexadecimal /testbench/counter
 add wave -noupdate -radix hexadecimal /testbench/progcounter
 add wave -noupdate -radix hexadecimal /testbench/instr
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTcounter
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigPC
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigPCnext
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/MuxPC
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux1Sel
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux2Sel
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCjal
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCjalr
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffset
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigOffSum
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigOffSub
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffsetsign
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCbranch
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PChold
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffsetsign
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux1Out
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux2Out
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PClock
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCLoad
+add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCnext
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTwrite
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTreset
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTinput
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/regCpt
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/combCpt
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTclock
+add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTreset
 add wave -noupdate -radix hexadecimal /testbench/dataAddr
 add wave -noupdate -radix hexadecimal /testbench/load
 add wave -noupdate -radix hexadecimal /testbench/store
@@ -17,30 +44,6 @@ add wave -noupdate -radix hexadecimal /testbench/reg0E
 add wave -noupdate -radix hexadecimal /testbench/reg0F
 add wave -noupdate -radix hexadecimal /testbench/iTop/Memory/q_b
 add wave -noupdate /testbench/iTop/Memory/dq
-add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_0
-add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_1
-add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_2
-add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_3
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/data_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/data_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/data_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/data_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/data_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/data_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/data_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/data_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/address_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/address_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/address_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/address_a
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/address_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/address_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/address_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/address_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/q_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/q_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/q_b
-add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/q_b
 add wave -noupdate -group Alignment -radix binary /testbench/iTop/instPROC/instALIGNMENT/IDimm12S
 add wave -noupdate -group Alignment -radix hexadecimal /testbench/iTop/instPROC/instALIGNMENT/IDimm12I
 add wave -noupdate -group Alignment -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(31) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(30) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(29) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(28) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(27) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(26) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(25) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(24) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(23) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(22) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(21) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(20) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(19) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(18) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(17) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(16) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(15) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(14) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(13) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(12) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(11) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(10) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(9) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(8) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(7) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(6) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(5) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(4) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(3) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(2) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(1) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(0) -radix hexadecimal}} -subitemconfig {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(31) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(30) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(29) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(28) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(27) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(26) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(25) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(24) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(23) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(22) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(21) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(20) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(19) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(18) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(17) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(16) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(15) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(14) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(13) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(12) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(11) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(10) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(9) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(8) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(7) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(6) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(5) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(4) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(3) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(2) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(1) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(0) {-height 15 -radix hexadecimal}} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in
@@ -79,7 +82,7 @@ add wave -noupdate -group Register -radix hexadecimal /testbench/reg1F
 add wave -noupdate -radix hexadecimal /testbench/SigTOPdisplay1
 add wave -noupdate -radix hexadecimal /testbench/SigTOPdisplay2
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {11494983 ps} 0}
+WaveRestoreCursors {{Cursor 1} {3632508 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -95,4 +98,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {13385240 ps} {20077872 ps}
+WaveRestoreZoom {11253244 ps} {17176016 ps}

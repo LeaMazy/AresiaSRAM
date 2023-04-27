@@ -39,6 +39,7 @@ ARCHITECTURE archi OF Top IS
 			PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			-- OUTPUTS
 			PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+			PROCpc    		 : OUT  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCstore       : OUT STD_LOGIC;
 			PROCload        : OUT STD_LOGIC;
 			PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -56,7 +57,7 @@ ARCHITECTURE archi OF Top IS
 			CPTwrite   : IN  STD_LOGIC;
 			CPTaddr    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			CPTinput   : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-
+			instrinput : in std_logic_vector(31 downto 0);
 			-- OUTPUTS
 			CPTcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 		);
@@ -85,8 +86,24 @@ ARCHITECTURE archi OF Top IS
 			locked : OUT STD_LOGIC
 		);
 	END COMPONENT;
-
-	COMPONENT RAM8x4 IS
+--
+--	COMPONENT RAM8x4 IS
+--		PORT (
+--			address_a : IN  STD_LOGIC_VECTOR (11 DOWNTO 0);
+--			address_b : IN  STD_LOGIC_VECTOR (11 DOWNTO 0);
+--			clock     : IN  STD_LOGIC := '1';
+--			data_a    : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
+--			data_b    : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
+--			enable    : IN  STD_LOGIC := '1';
+--			wren_a    : IN  STD_LOGIC := '0';
+--			wren_b    : IN  STD_LOGIC := '0';
+--			dq    	 : IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
+--			q_a       : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+--			q_b       : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+--		);
+--	END COMPONENT;
+	
+	COMPONENT RAM_2PORT IS
 		PORT (
 			address_a : IN  STD_LOGIC_VECTOR (11 DOWNTO 0);
 			address_b : IN  STD_LOGIC_VECTOR (11 DOWNTO 0);
@@ -122,7 +139,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGcounter                                    : STD_LOGIC_VECTOR (31 DOWNTO 0); --0x80000000
 	SIGNAL SIGPLLclock                                   : STD_LOGIC;
 	SIGNAL SIGPLLclockinverted                           : STD_LOGIC;
-	SIGNAL SIGclock                                      : STD_LOGIC; --either from pll or simulation
+	SIGNAL SIGclock												  : STD_LOGIC;    
 	--SIGNAL SIGclockInverted : STD_LOGIC; --either from pll or simulation
 	SIGNAL SIGsimulOn                                    : STD_LOGIC; --either from pll or simulation
 	SIGNAL TOPreset                                      : STD_LOGIC;
@@ -140,6 +157,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCoutputDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROChold 					: STD_LOGIC;
 	SIGNAL SIGPROCprogcounter			: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL SIGPROCpc 						: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROCstore, SIGPROCload : STD_LOGIC;
 	SIGNAL SIGPROCfunct3 				: STD_LOGIC_VECTOR(2 DOWNTO 0);
 	SIGNAL SIGPROCaddrDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -159,7 +177,7 @@ ARCHITECTURE archi OF Top IS
 BEGIN
 
 	TOPreset <= '1' WHEN reset = '1' ELSE
-				   reset WHEN rising_edge(SIGclock);
+				   reset WHEN rising_edge(SIGclock) ;
 	-- BEGIN
 	-- ALL
 	-- TEST BENCH ONLY ---
@@ -172,7 +190,7 @@ BEGIN
 	PKG_inputDM       <= SIGPROCinputDM;
 	PKG_outputInstr	<= SIGPROCinstruction;
 	PKG_outputDM      <= SIGPROCoutputDM;
-	PKG_progcounter   <= SIGPROCprogcounter;
+	PKG_progcounter   <= SIGPROCpc;
 	PKG_counter       <= SIGcounter;
 	SIGsimulOn			<= PKG_simulON;
 	-----------------------
@@ -206,7 +224,7 @@ BEGIN
 		SwitchSel   => switchSEL,
 		SwitchSel2  => switchSEL2,
 		--reset => 
-		PCregister  => SIGPROCprogcounter(15 DOWNTO 0),
+		PCregister  => SIGPROCpc(15 DOWNTO 0),
 		Instruction => SIGPROCinstruction,
 		--OUTPUTS
 		TOPdisplay2 => debugDisplay2,
@@ -222,6 +240,7 @@ BEGIN
 		PROCoutputDM    => SIGPROCoutputDM,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
+		PROCpc			 => SIGPROCpc,
 		PROCstore       => SIGPROCstore,
 		PROCload        => SIGPROCload,
 		PROCfunct3      => SIGPROCfunct3,
@@ -237,7 +256,8 @@ BEGIN
 		CPTwrite   => SIGPROCstore,
 		CPTaddr    => SIGPROCaddrDM,
 		CPTinput   => SIGPROCoutputDM,
-		CPTcounter => SIGcounter
+		CPTcounter => SIGcounter,
+		instrinput => SIGPROCinstruction
 	);
 
 	instDISP : Displays
@@ -264,7 +284,23 @@ BEGIN
 
 	
 	
-	Memory : RAM8x4
+--	Memory : RAM8x4
+--	PORT MAP(
+--		address_a => SIGPROCprogcounter(13 downto 2), --  Addr instruction (divided by 4 because we use 32 bits memory)
+--		address_b => SIGPROCaddrDM(13 downto 2),       --  Addr memory (divided by 4 because we use 32 bits memory)
+--		clock     => SIGclock,
+--		data_a    => (OTHERS => '0'), -- Instruction in
+--		data_b    => SIGPROCinputDM,  -- Data in
+--		enable    => '1',
+--		wren_a    => '0',                -- Write Instruction Select
+--		wren_b    => MuxPROCstore,       -- Write Data Select
+--		dq			 => SIGPROCdq,
+--		q_a       => SIGPROCinstruction, -- DataOut Instruction
+--		q_b       => SIGPROCoutputDM		-- DataOut Data
+--	);
+--	-- END
+	
+	Memory : RAM_2PORT
 	PORT MAP(
 		address_a => SIGPROCprogcounter(13 downto 2), --  Addr instruction (divided by 4 because we use 32 bits memory)
 		address_b => SIGPROCaddrDM(13 downto 2),       --  Addr memory (divided by 4 because we use 32 bits memory)

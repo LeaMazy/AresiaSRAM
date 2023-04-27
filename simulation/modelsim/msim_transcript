@@ -13,28 +13,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:44 on Apr 26,2023
+# Start time: 15:59:22 on Apr 27,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db" C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 16:37:44 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:22 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:44 on Apr 26,2023
+# Start time: 15:59:22 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 16:37:44 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:22 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:44 on Apr 26,2023
+# Start time: 15:59:22 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,70 +42,23 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:01
+# End time: 15:59:22 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd}
+# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM_2PORT.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RAM8x4
-# -- Compiling architecture SYN of RAM8x4
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd 
+# Start time: 15:59:22 on Apr 27,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM_2PORT.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
-# -- Compiling entity RAM8_3
-# -- Compiling architecture SYN of ram8_3
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity RAM8_2
-# -- Compiling architecture SYN of ram8_2
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity RAM8_1
-# -- Compiling architecture SYN of ram8_1
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity RAM8_0
-# -- Compiling architecture SYN of ram8_0
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# -- Compiling entity RAM_2PORT
+# -- Compiling architecture SYN of ram_2port
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +66,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +78,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +90,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +102,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:45 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,22 +114,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 16:37:45 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:23 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:23 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -184,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -209,11 +162,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -222,11 +175,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -235,12 +188,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -249,12 +202,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 16:37:46 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 15:59:24 on Apr 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 16:37:46 on Apr 26,2023
+# Start time: 15:59:24 on Apr 27,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -281,15 +234,11 @@
 # Loading altera_mf.mf_cycloneiii_pll(vital_pll)
 # Loading altera_mf.mf_cda_mn_cntr(behave)
 # Loading altera_mf.mf_cda_scale_cntr(behave)
-# Loading work.ram8x4(syn)
 # Loading altera_mf.altera_mf_components
-# Loading work.ram8_0(syn)
+# Loading work.ram_2port(syn)
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altsyncram(translated)
-# Loading work.ram8_1(syn)
-# Loading work.ram8_2(syn)
-# Loading work.ram8_3(syn)
-# ** Warning: Design size of 19972 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 19114 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
@@ -304,6 +253,33 @@
 # add wave -noupdate -radix hexadecimal /testbench/counter
 # add wave -noupdate -radix hexadecimal /testbench/progcounter
 # add wave -noupdate -radix hexadecimal /testbench/instr
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTcounter
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigPC
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigPCnext
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/MuxPC
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux1Sel
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux2Sel
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCjal
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCjalr
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffset
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigOffSum
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigOffSub
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffsetsign
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCbranch
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PChold
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCoffsetsign
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux1Out
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/SigMux2Out
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PClock
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCLoad
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instPROC/instPC/PCnext
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTwrite
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTreset
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTinput
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/regCpt
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/combCpt
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTclock
+# add wave -noupdate -radix hexadecimal /testbench/iTop/instCPT/CPTreset
 # add wave -noupdate -radix hexadecimal /testbench/dataAddr
 # add wave -noupdate -radix hexadecimal /testbench/load
 # add wave -noupdate -radix hexadecimal /testbench/store
@@ -316,38 +292,6 @@
 # add wave -noupdate -radix hexadecimal /testbench/reg0F
 # add wave -noupdate -radix hexadecimal /testbench/iTop/Memory/q_b
 # add wave -noupdate /testbench/iTop/Memory/dq
-# add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_0
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/Memory/wrenb_0'.
-# Executing ONERROR command at macro ./wave.do line 20
-# add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_1
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/Memory/wrenb_1'.
-# Executing ONERROR command at macro ./wave.do line 21
-# add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_2
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/Memory/wrenb_2'.
-# Executing ONERROR command at macro ./wave.do line 22
-# add wave -noupdate -group WEnable /testbench/iTop/Memory/wrenb_3
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/Memory/wrenb_3'.
-# Executing ONERROR command at macro ./wave.do line 23
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/data_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/data_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/data_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/data_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/data_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/data_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/data_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/data_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/address_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/address_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/address_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/address_a
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/address_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/address_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/address_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/address_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM0/q_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM1/q_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM2/q_b
-# add wave -noupdate -group RAM_0_1_2_3 -radix hexadecimal /testbench/iTop/Memory/instRAM3/q_b
 # add wave -noupdate -group Alignment -radix binary /testbench/iTop/instPROC/instALIGNMENT/IDimm12S
 # add wave -noupdate -group Alignment -radix hexadecimal /testbench/iTop/instPROC/instALIGNMENT/IDimm12I
 # add wave -noupdate -group Alignment -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(31) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(30) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(29) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(28) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(27) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(26) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(25) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(24) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(23) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(22) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(21) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(20) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(19) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(18) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(17) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(16) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(15) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(14) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(13) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(12) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(11) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(10) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(9) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(8) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(7) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(6) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(5) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(4) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(3) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(2) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(1) -radix hexadecimal} {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(0) -radix hexadecimal}} -subitemconfig {/testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(31) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(30) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(29) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(28) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(27) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(26) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(25) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(24) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(23) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(22) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(21) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(20) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(19) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(18) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(17) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(16) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(15) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(14) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(13) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(12) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(11) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(10) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(9) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(8) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(7) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(6) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(5) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(4) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(3) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(2) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(1) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in(0) {-height 15 -radix hexadecimal}} /testbench/iTop/instPROC/instALIGNMENT/RF_Align_in
@@ -386,7 +330,7 @@
 # add wave -noupdate -radix hexadecimal /testbench/SigTOPdisplay1
 # add wave -noupdate -radix hexadecimal /testbench/SigTOPdisplay2
 # TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {11494983 ps} 0}
+# WaveRestoreCursors {{Cursor 1} {3632508 ps} 0}
 # quietly wave cursor active 1
 # configure wave -namecolwidth 150
 # configure wave -valuecolwidth 100
@@ -402,16 +346,10 @@
 # configure wave -timeline 0
 # configure wave -timelineunits ps
 # update
-# WaveRestoreZoom {13385240 ps} {20077872 ps}
+# WaveRestoreZoom {11253244 ps} {17176016 ps}
 # run 20 ms
 # ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM3/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM2/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM1/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM0/altsyncram_component
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/altsyncram_component
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE

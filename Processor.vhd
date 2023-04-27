@@ -18,6 +18,7 @@ ENTITY Processor IS
 		PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- OUTPUTS
 		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+		PROCpc 			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCstore       : OUT STD_LOGIC;
 		PROCload        : OUT STD_LOGIC;
 		PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -52,6 +53,7 @@ ARCHITECTURE archi OF Processor IS
 			PCalusupU     : IN    STD_LOGIC;
 			PClock        : IN    STD_LOGIC;
 			PCLoad        : IN    STD_LOGIC;
+			instLUI : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 			-- OUTPUTS
 			PCnext : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		   PC 	 : out STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -206,6 +208,7 @@ BEGIN
 
 	-- ALL
 	-- program counter
+	PROCpc <= SIGprogcounter;
 	PROCprogcounter <= SIGprogcounterfetch;
 
 	SIGoffsetsignPC <= SIGimm21J(20);
@@ -333,7 +336,8 @@ BEGIN
 		PCLoad        => Sigload,
 		PClock        => SigLock,
 		PCnext		  => SIGprogcounterfetch,
-		PC 			  => SIGprogcounter
+		PC 			  => SIGprogcounter,
+		instLUI		  => PROCinstruction
 	);
 
 	instID : InstructionDecoder

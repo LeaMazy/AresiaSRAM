@@ -8,11 +8,7 @@ vmap work rtl_work
 vlog -vlog01compat -work work +incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd}
-vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd}
-vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd}
-vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd}
-vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd}
-vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd}
+vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM_2PORT.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd}
