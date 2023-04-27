@@ -17,7 +17,8 @@ ENTITY Processor IS
 		PROCinstruction : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- OUTPUTS
-		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- next PC for fetch
+		PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- current PC
 		PROCstore       : OUT STD_LOGIC;
 		PROCload        : OUT STD_LOGIC;
 		PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -208,7 +209,9 @@ BEGIN
 
 	-- ALL
 	-- program counter
-	PROCprogcounter <= SIGprogcounterfetch;
+	
+	PROCPC <= SIGprogcounter; -- real PC
+	PROCprogcounter <= SIGprogcounterfetch; -- next PC (for fetch)
 
 	SIGoffsetsignPC <= SIGimm21J(20);
 

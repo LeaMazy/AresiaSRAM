@@ -39,6 +39,7 @@ ARCHITECTURE archi OF Top IS
 			PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			-- OUTPUTS
 			PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+			PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCstore       : OUT STD_LOGIC;
 			PROCload        : OUT STD_LOGIC;
 			PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -140,6 +141,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCoutputDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROChold 					: STD_LOGIC;
 	SIGNAL SIGPROCprogcounter			: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL SIGPROCPC						: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROCstore, SIGPROCload : STD_LOGIC;
 	SIGNAL SIGPROCfunct3 				: STD_LOGIC_VECTOR(2 DOWNTO 0);
 	SIGNAL SIGPROCaddrDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -172,7 +174,7 @@ BEGIN
 	PKG_inputDM       <= SIGPROCinputDM;
 	PKG_outputInstr	<= SIGPROCinstruction;
 	PKG_outputDM      <= SIGPROCoutputDM;
-	PKG_progcounter   <= SIGPROCprogcounter;
+	PKG_progcounter   <= SIGPROCPC;
 	PKG_counter       <= SIGcounter;
 	SIGsimulOn			<= PKG_simulON;
 	-----------------------
@@ -206,7 +208,7 @@ BEGIN
 		SwitchSel   => switchSEL,
 		SwitchSel2  => switchSEL2,
 		--reset => 
-		PCregister  => SIGPROCprogcounter(15 DOWNTO 0),
+		PCregister  => SIGPROCPC(15 DOWNTO 0),
 		Instruction => SIGPROCinstruction,
 		--OUTPUTS
 		TOPdisplay2 => debugDisplay2,
@@ -222,6 +224,7 @@ BEGIN
 		PROCoutputDM    => SIGPROCoutputDM,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
+		PROCPC 			 => SIGPROCPC,
 		PROCstore       => SIGPROCstore,
 		PROCload        => SIGPROCload,
 		PROCfunct3      => SIGPROCfunct3,
