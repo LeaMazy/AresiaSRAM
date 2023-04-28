@@ -554,3 +554,5 @@
 #    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(31)
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
+# End time: 17:14:35 on Apr 27,2023, Elapsed time: 1:15:11
+# Errors: 0, Warnings: 104
