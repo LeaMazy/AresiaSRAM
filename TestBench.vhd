@@ -16,6 +16,7 @@ architecture VHDL of TestBench is
     port (
 		-- INPUTS
 		enableDebug, switchSEL, switchSEL2   : IN    STD_LOGIC; -- input for debuger
+		switchBoot									 : IN 	STD_LOGIC; -- input for bootloader
 		TOPclock                             : IN    STD_LOGIC; --must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;                                    --SW0
@@ -28,6 +29,7 @@ architecture VHDL of TestBench is
 	end component;
 
 	signal reset, ck : std_logic;
+	signal sigBoot : std_logic;
 	signal counter, progcounter, instr : std_logic_vector(31 downto 0);
     
 	signal dataAddr: std_logic_vector(31 downto 0);
@@ -56,6 +58,7 @@ architecture VHDL of TestBench is
 		enableDebug 	 => '0',
 		switchSEL		 => '0',
 		switchSEL2      => '0',
+		switchBoot 		 => sigBoot,
 		buttonClock		 => '0'
 		
 	);
@@ -106,7 +109,7 @@ architecture VHDL of TestBench is
     reg1F       <= PKG_reg1F;
 	 
 
-	clocktestbench: process
+		clocktestbench: process
 		begin
 		-- init  simulation
 			ck <= '1';
@@ -121,6 +124,17 @@ architecture VHDL of TestBench is
 			reset <= '1';
 			wait for 2 ns;
 			reset <= '0';
+			wait;
+		end process;
+		
+		bootTestbench: process
+		begin
+		-- init  simulation
+			sigBoot <= '0';
+			wait for 2000 ns;
+			sigBoot <= '1';
+			wait for 5 ns;
+			sigBoot <= '0';
 			wait;
 		end process;
 END vhdl;

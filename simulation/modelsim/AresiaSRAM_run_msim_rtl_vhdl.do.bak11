@@ -21,6 +21,7 @@ vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd}
+vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd}
 vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd}

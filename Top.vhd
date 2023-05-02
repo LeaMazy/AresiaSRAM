@@ -121,6 +121,7 @@ ARCHITECTURE archi OF Top IS
 	component Bootloader is
 	port (
 		--INPUTS
+		clk 			: in std_logic;
 		CS 			: in std_logic; 							--chip select
 		addrInstBoot: in std_logic_vector(11 downto 0); --addr of boot instruction
 		--OUTPUT
@@ -300,6 +301,7 @@ BEGIN
 	
 	instBoot : Bootloader
 	port map(
+		clk 			 => SIGclock,
 		CS 			 => switchBoot, 							--chip select
 		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
 		instBoot		 => SIGinstBoot--output boot instruction 

@@ -102,7 +102,7 @@ BEGIN
 					
 	PC <= SigPC;
 	
-	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when PCreset='1' else
+	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1' or switchBoot='1')else
 				   MuxPC when rising_edge(PCclock);
 	
 	PCnext    <= SIGPCnext;
