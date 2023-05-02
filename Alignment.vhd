@@ -32,13 +32,16 @@ architecture archi of Alignment is
 	signal dq_1 : std_logic;
 	signal dq_2 : std_logic;
 	signal dq_3 : std_logic;
-	signal shift : integer;
+	signal shiftL : integer;
+	signal shiftS : std_logic_vector(2 downto 0);
 
 begin
 	-- Store
-	storetype <= ("00" & IDimm12S(1 downto 0)) WHEN (IDfunct3 = "000" )	-- StoreByte (RAMs)
-			else ("01" & IDimm12S(1 downto 0)) WHEN (IDfunct3 = "001")	-- StoreHalf (RAM3&2 ou RAM1&0)
-			else ('1' & IDimm12S(2 downto 0)) WHEN (IDfunct3 = "010") -- StoreWord (RAM0)
+	shiftS <= (IDimm12S(2 downto 0)) when PROCaddrDM(1 downto 0)="00" else
+				('0' & PROCaddrDM(1 downto 0)); --ICI CONTINUE ICICIIIIIIIIIIIIII
+	storetype <= ("00" & shiftS(1 downto 0)) WHEN (IDfunct3 = "000" )	-- StoreByte (RAMs)
+			else ("01" & shiftS(1 downto 0)) WHEN (IDfunct3 = "001")	-- StoreHalf (RAM3&2 ou RAM1&0)
+			else ('1' & shiftS(2 downto 0)) WHEN (IDfunct3 = "010") -- StoreWord (RAM0)
 			else ("0111"); -- (Ne prend jamais valeur 0111)
 			
 	dq_0 <= '1' WHEN ((storetype(3) ='1' or storetype(2 downto 0)="100" or storetype(3 downto 0)="0000"))
@@ -53,21 +56,21 @@ begin
 	DQ <= (dq_3 & dq_2 & dq_1 & dq_0);
 				-- SHU
 	PROCinputDM <= std_logic_vector(shift_left(unsigned(RF_Align_out),16)) 						
-						when (IDfunct3 = "001" and (IDimm12S(1)='1')) -- SHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
+						when (IDfunct3 = "001" and (shiftS(1)='1')) -- SHU (Imm%2!=0 || (Imm%2=0 & Imm%4!=0))
 				 else RF_Align_out 
-						when (IDfunct3 = "001" and (IDimm12S(1 downto 0)="00")) -- SHU (Imm%4)
+						when (IDfunct3 = "001" and (shiftS(1 downto 0)="00")) -- SHU (Imm%4)
 					-- SBU
 				 else RF_Align_out
-						when (IDfunct3 = "000" and (IDimm12S(1 downto 0)="00")) -- SBU (Imm%4=0)
-				 else std_logic_vector(shift_left(unsigned(RF_Align_out),(to_integer(unsigned(IDimm12S(1 downto 0))))*8)) 
-						when (IDfunct3 = "000" and ((IDimm12S(1 downto 0)/="00"))) -- SBU (Imm%4!=0)
+						when (IDfunct3 = "000" and (shiftS(1 downto 0)="00")) -- SBU (Imm%4=0)
+				 else std_logic_vector(shift_left(unsigned(RF_Align_out),(to_integer(unsigned(shiftS(1 downto 0))))*8)) 
+						when (IDfunct3 = "000" and ((shiftS(1 downto 0)/="00"))) -- SBU (Imm%4!=0)
 					-- Else (SW or no shift)
 				 else (RF_Align_out);
 			
 	-- Load		
 				-- LHU
 				
-	shift <= (to_integer(unsigned(IDimm12I(1 downto 0)))) when PROCaddrDM(1 downto 0)="00" else
+	shiftL <= (to_integer(unsigned(IDimm12I(1 downto 0)))) when PROCaddrDM(1 downto 0)="00" else
 				(to_integer(unsigned(PROCaddrDM(1 downto 0)))); --ICI CONTINUE ICICIIIIIIIIIIIIII
 	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),16) ) 						
 					when (IDfunct3 = "101" and ((IDimm12I(1)='1') 
@@ -77,7 +80,7 @@ begin
 				-- LBU
 			 else q_b
 					when (IDfunct3 = "100" and (IDimm12I(1 downto 0)="00") and PROCaddrDM(1 downto 0)="00") -- LBU (Imm%4=0)
-			 else std_logic_vector(shift_right(unsigned(q_b),shift*8)) 
+			 else std_logic_vector(shift_right(unsigned(q_b),shiftL*8)) 
 					when (IDfunct3 = "100" and ((IDimm12I(1 downto 0)/="00")
 												  or ((IDimm12I(1 downto 0)="00") and PROCaddrDM(1 downto 0)/="00"))) -- LBU (Imm%4!=0)
 				-- Else (LW or no shift)
