@@ -15,6 +15,7 @@ entity Alignment is
 		IDimm12I 	: in std_logic_vector(11 downto 0); --offset for load 
 		IDimm12S 	: in std_logic_vector(11 downto 0); --offset for store
 		RF_Align_out: in std_logic_vector(31 downto 0); --regfile output for store
+		PROCaddrDM  : in std_logic_vector(31 downto 0); --datamem addr
 		
 		DQ 			: out std_logic_vector(3 downto 0);  --write enable for each ram (3 to 0)
 		RF_Align_in	: out std_logic_vector(31 downto 0); --regfile input for load (shifted)
@@ -31,6 +32,7 @@ architecture archi of Alignment is
 	signal dq_1 : std_logic;
 	signal dq_2 : std_logic;
 	signal dq_3 : std_logic;
+	signal shift : integer;
 
 begin
 	-- Store
@@ -64,15 +66,20 @@ begin
 			
 	-- Load		
 				-- LHU
-	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),16)) 						
-					when (IDfunct3 = "101" and (IDimm12I(1)='1')) -- LHU (Imm%2=0 & Imm%4!=0)
+				
+	shift <= (to_integer(unsigned(IDimm12I(1 downto 0)))) when PROCaddrDM(1 downto 0)="00" else
+				(to_integer(unsigned(PROCaddrDM(1 downto 0)))); --ICI CONTINUE ICICIIIIIIIIIIIIII
+	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),16) ) 						
+					when (IDfunct3 = "101" and ((IDimm12I(1)='1') 
+													or	((IDimm12I(1)='0') and PROCaddrDM(1 downto 0)/="00"))) -- LHU (Imm%2=0 & Imm%4!=0)
 			 else q_b 
-					when (IDfunct3 = "101" and (IDimm12I(1 downto 0)="00")) -- LHU (Imm%4)
+					when (IDfunct3 = "101" and (IDimm12I(1 downto 0)="00") and PROCaddrDM(1 downto 0)="00") -- LHU (Imm%4)
 				-- LBU
 			 else q_b
-					when (IDfunct3 = "100" and (IDimm12I(1 downto 0)="00")) -- LBU (Imm%4=0)
-			 else std_logic_vector(shift_right(unsigned(q_b),(to_integer(unsigned(IDimm12I(1 downto 0))))*8)) 
-					when (IDfunct3 = "100" and ((IDimm12I(1 downto 0)/="00"))) -- LBU (Imm%4!=0)
+					when (IDfunct3 = "100" and (IDimm12I(1 downto 0)="00") and PROCaddrDM(1 downto 0)="00") -- LBU (Imm%4=0)
+			 else std_logic_vector(shift_right(unsigned(q_b),shift*8)) 
+					when (IDfunct3 = "100" and ((IDimm12I(1 downto 0)/="00")
+												  or ((IDimm12I(1 downto 0)="00") and PROCaddrDM(1 downto 0)/="00"))) -- LBU (Imm%4!=0)
 				-- Else (LW or no shift)
 			else (q_b);
 	Mask <= "00000000000000001111111111111111" when (IDfunct3 = "101")
