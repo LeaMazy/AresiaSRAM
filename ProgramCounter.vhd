@@ -28,7 +28,6 @@ ENTITY ProgramCounter IS
 		PCalusupU     : IN    STD_LOGIC;
 		PClock :in std_logic;
 		PCLoad : IN STD_LOGIC;
-		instLUI : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- OUTPUTS
 		--PCnext : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PCnext : out STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -83,8 +82,7 @@ BEGIN
 	-- mux 1
 	SigMux1Sel <= (SigBranchCond AND PCbranch) OR PCjal OR PCjalr; --mux3
 	
-   SigMux1Out <= x"00000000" WHEN PCload='1' ELSE
-					  x"00000004" WHEN SigMux1Sel = '0'ELSE 
+   SigMux1Out <= x"00000004" WHEN SigMux1Sel = '0'ELSE 
 				     PCoffset ; -- set lsb to 0
 					  
 	SigOffSum <= --STD_LOGIC_VECTOR(unsigned(SigPC) + unsigned(SigMux1Out)) when SigMux1Sel='0' else
@@ -95,18 +93,17 @@ BEGIN
 	
 	SigMux2Sel <= SigMux1Sel AND PCoffsetsign;
 	
-	SigMux2Out <= (PCoffset AND x"fffffffe") WHEN PCjalr = '1' ELSE 
+	SigMux2Out <= (PCoffset AND x"fffffffe") WHEN PCjalr = '1' ELSE
 					  SigOffSum WHEN (SigMux2Sel = '0' AND PCjalr = '0') OR PCjal = '1' OR PCbranch = '1' ELSE
 				     SigOffSub;
 					  
-	SIGPCnext <= SigMux2Out when PChold='0' 
-					else SigPC;
+	SIGPCnext <= SigMux2Out when PChold='0' else
+					 SigPC;
 					
 	PC <= SigPC;
 	
-	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when PCreset='1' else
-				   -- (others =>'0') when PCreset='1' else
-					MuxPC when (rising_edge(PCclock));
+	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1' or switchBoot='1')else
+				   MuxPC when rising_edge(PCclock);
 	
 	PCnext    <= SIGPCnext;
 	

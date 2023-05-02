@@ -73,7 +73,7 @@ BEGIN
 		clock_enable_output_a => "BYPASS",
 		clock_enable_output_b => "BYPASS",
 		indata_reg_b => "CLOCK0",
-		init_file => "RAMhex24.hex",
+		init_file => "RAMhex00.hex",
 		intended_device_family => "MAX 10",
 		lpm_type => "altsyncram",
 		numwords_a => 4096,

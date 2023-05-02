@@ -17,8 +17,8 @@ ENTITY Processor IS
 		PROCinstruction : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- OUTPUTS
-		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCpc 			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- next PC for fetch
+		PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- current PC
 		PROCstore       : OUT STD_LOGIC;
 		PROCload        : OUT STD_LOGIC;
 		PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -53,7 +53,6 @@ ARCHITECTURE archi OF Processor IS
 			PCalusupU     : IN    STD_LOGIC;
 			PClock        : IN    STD_LOGIC;
 			PCLoad        : IN    STD_LOGIC;
-			instLUI : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 			-- OUTPUTS
 			PCnext : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		   PC 	 : out STD_LOGIC_VECTOR(31 DOWNTO 0)
@@ -134,9 +133,12 @@ ARCHITECTURE archi OF Processor IS
 			q_b		 	: in std_logic_vector(31 downto 0);
 			IDimm12I  	: in std_logic_vector(11 downto 0);
 			IDimm12S  	: in std_logic_vector(11 downto 0);
+			RF_Align_out: in std_logic_vector(31 downto 0);
+			PROCaddrDM  : in std_logic_vector(31 downto 0); 
 			-- OUTPUTS
 			DQ				: out std_logic_vector(3 downto 0);
-			RF_Align_in	: out std_logic_vector(31 downto 0)
+			RF_Align_in	: out std_logic_vector(31 downto 0);
+			PROCinputDM : out std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
 
@@ -208,8 +210,9 @@ BEGIN
 
 	-- ALL
 	-- program counter
-	PROCpc <= SIGprogcounter;
-	PROCprogcounter <= SIGprogcounterfetch;
+	
+	PROCPC <= SIGprogcounter; -- real PC
+	PROCprogcounter <= SIGprogcounterfetch; -- next PC (for fetch)
 
 	SIGoffsetsignPC <= SIGimm21J(20);
 
@@ -279,7 +282,7 @@ BEGIN
 											
 	-- data memory
 	PROCaddrDM  <= SIGoutputALU;
-	PROCinputDM <= SIGoutput2RF;
+--	PROCinputDM <= SIGoutput2RF;
 	PROCstore   <= SIGstore;
 	
 
@@ -336,8 +339,7 @@ BEGIN
 		PCLoad        => Sigload,
 		PClock        => SigLock,
 		PCnext		  => SIGprogcounterfetch,
-		PC 			  => SIGprogcounter,
-		instLUI		  => PROCinstruction
+		PC 			  => SIGprogcounter
 	);
 
 	instID : InstructionDecoder
@@ -402,8 +404,11 @@ BEGIN
 		q_b => PROCoutputDM,
 		IDimm12I => SIGimm12I,
 		IDimm12S => SIGimm12S,
+		RF_Align_out => SIGoutput2RF,
+		PROCaddrDM => SIGoutputALU,
+		DQ => SIGPROCdq,
 		RF_Align_in => SIG_RF_Align_in,
-		DQ => SIGPROCdq
+		PROCinputDM => PROCinputDM
 	);
 
 	-- END
