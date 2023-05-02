@@ -1,5 +1,5 @@
--- Projet de stage ING4 : RISC-V
--- ECE Paris / ARESIA
+-- Projet de fin d'études : RISC-V
+-- ECE Paris / SECAPEM
 -- ALIGNMENT VHDL
 
 -- LIBRARIES
@@ -8,7 +8,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 -- ENTITY
-entity Alignment is
+entity Bootloader is
 	port (
 		IDfunct3 	: in std_logic_vector(2 downto 0);  --data type (byte, half or word)
 		q_b  			: in std_logic_vector(31 downto 0); --datamem output for load
@@ -24,7 +24,7 @@ entity Alignment is
 end entity;
 
 -- ARCHITECTURE
-architecture archi of Alignment is
+architecture archi of Bootloader is
 	signal Mask    :    std_logic_vector(31 downto 0);
 	signal RF_Align : std_logic_vector(31 downto 0);
 	signal storetype 		: std_logic_vector(3 downto 0);

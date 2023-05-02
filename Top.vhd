@@ -13,6 +13,7 @@ ENTITY Top IS
 	PORT (
 		-- INPUTS
 		enableDebug, switchSEL, switchSEL2   : IN    STD_LOGIC; -- input for debuger
+		switchBoot									 : IN 	STD_LOGIC; -- input for bootloader
 		TOPclock                             : IN    STD_LOGIC; --must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;                                    --SW0
@@ -116,6 +117,17 @@ ARCHITECTURE archi OF Top IS
 			TOPdisplay1           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '1')  --0x80000004
 		);
 	END COMPONENT;
+	
+	component Bootloader is
+	port (
+		--INPUTS
+		CS 			: in std_logic; 							--chip select
+		addrInstBoot: in std_logic_vector(11 downto 0); --addr of boot instruction
+		--OUTPUT
+		instBoot		: out std_logic_vector(31 downto 0)--output boot instruction 
+	);
+	end component;
+
 
 	
 	-- SIGNALS
@@ -158,6 +170,8 @@ ARCHITECTURE archi OF Top IS
 	--
 	
 	SIGNAL SIGbootfinish	 : std_logic;
+	SIGNAL SIGinstBoot	 : std_logic_vector(31 downto 0);
+	SIGNAL SIGinstMux 	 : std_logic_vector(31 downto 0);
 BEGIN
 
 	TOPreset <= '1' WHEN reset = '1' ELSE
@@ -172,13 +186,16 @@ BEGIN
 	PKG_funct3        <= SIGPROCfunct3;
 	PKG_addrDM        <= SIGPROCaddrDM;
 	PKG_inputDM       <= SIGPROCinputDM;
-	PKG_outputInstr	<= SIGPROCinstruction;
+	PKG_outputInstr	<= SIGinstMux;
 	PKG_outputDM      <= SIGPROCoutputDM;
 	PKG_progcounter   <= SIGPROCPC;
 	PKG_counter       <= SIGcounter;
 	SIGsimulOn			<= PKG_simulON;
 	-----------------------
 	
+	-- Multiplexor for instruction between Boot and Sram
+	SIGinstMux <= SIGinstBoot when switchBoot = '1' else
+					  SIGPROCinstruction;
 	
 	-- Sram specific signal
 	-- avoid writing in memory when the proc wants to write on its outputs
@@ -209,7 +226,7 @@ BEGIN
 		SwitchSel2  => switchSEL2,
 		--reset => 
 		PCregister  => SIGPROCPC(15 DOWNTO 0),
-		Instruction => SIGPROCinstruction,
+		Instruction => SIGinstMux,
 		--OUTPUTS
 		TOPdisplay2 => debugDisplay2,
 		TOPdisplay1 => debugDisplay1
@@ -220,7 +237,7 @@ BEGIN
 		Hold            => '0',
 		PROCclock       => SIGclock,
 		PROCreset       => TOPreset,
-		PROCinstruction => SIGPROCinstruction,
+		PROCinstruction => SIGinstMux,
 		PROCoutputDM    => SIGPROCoutputDM,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
@@ -279,6 +296,13 @@ BEGIN
 		dq			 => SIGPROCdq,
 		q_a       => SIGPROCinstruction, -- DataOut Instruction
 		q_b       => SIGPROCoutputDM		-- DataOut Data
+	);
+	
+	instBoot : Bootloader
+	port map(
+		CS 			 => switchBoot, 							--chip select
+		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
+		instBoot		 => SIGinstBoot--output boot instruction 
 	);
 	-- END
 END archi;

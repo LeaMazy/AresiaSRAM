@@ -252,12 +252,12 @@ uint32_t getCode7Seg(uint8_t c)
 
 void main(void)
 {
-    volatile uint8_t * str = "PROCES";
+    volatile uint8_t * str = "1234";
     volatile int *AD_DISPLAY1 = (int *)0x80000004;
     volatile int *AD_DISPLAY2 = (int *)0x80000008;
     
-    volatile uint32_t len = 6;
-    volatile uint8_t hexVal[6];
+    volatile uint32_t len = 4;
+    volatile uint8_t hexVal[4];
     
 
     for (uint8_t i = 0 ; i < len ; i++)
