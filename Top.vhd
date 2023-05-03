@@ -38,6 +38,7 @@ ARCHITECTURE archi OF Top IS
 			PROCreset       : IN  STD_LOGIC;
 			PROCinstruction : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+			PROCswitchBoot  : IN  STD_LOGIC;
 			-- OUTPUTS
 			PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -181,7 +182,7 @@ BEGIN
 	-- ALL
 	-- TEST BENCH ONLY ---
 
-	PKG_instruction   <= SIGPROCinstruction;
+	PKG_instruction   <= SIGinstMux;
 	PKG_store         <= SIGPROCstore;
 	PKG_load          <= SIGPROCload;
 	PKG_funct3        <= SIGPROCfunct3;
@@ -240,6 +241,7 @@ BEGIN
 		PROCreset       => TOPreset,
 		PROCinstruction => SIGinstMux,
 		PROCoutputDM    => SIGPROCoutputDM,
+		PROCswitchBoot  => switchBoot,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
 		PROCPC 			 => SIGPROCPC,
@@ -302,9 +304,9 @@ BEGIN
 	instBoot : Bootloader
 	port map(
 		clk 			 => SIGclock,
-		CS 			 => switchBoot, 							--chip select
+		CS 			 => switchBoot, 							 --chip select
 		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
-		instBoot		 => SIGinstBoot--output boot instruction 
+		instBoot		 => SIGinstBoot							 --output boot instruction 
 	);
 	-- END
 END archi;
