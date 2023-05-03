@@ -15,7 +15,7 @@ entity Bootloader is
 		CS 			: in std_logic; 							--chip select
 		addrInstBoot: in std_logic_vector(11 downto 0); --addr of boot instruction
 		--OUTPUT
-		instBoot: out std_logic_vector(31 downto 0)    --output boot instruction 
+		instBoot: out std_logic_vector(31 downto 0)    --output boot instruction
 	);
 end entity;
 

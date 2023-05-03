@@ -306,7 +306,7 @@ BEGIN
 		clk 			 => SIGclock,
 		CS 			 => switchBoot, 							 --chip select
 		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
-		instBoot		 => SIGinstBoot							 --output boot instruction 
+		instBoot		 => SIGinstBoot							 --output boot instruction
 	);
 	-- END
 END archi;

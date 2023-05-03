@@ -15,7 +15,7 @@ entity Counter is
 		CPTwrite :  in std_logic;
 		CPTaddr  : in std_logic_vector(31 downto 0);
 		CPTinput : in std_logic_vector(31 downto 0);
-		instrinput : in std_logic_vector(31 downto 0);
+		-- instrinput : in std_logic_vector(31 downto 0);
 
 		CPTcounter	: out std_logic_vector(31 downto 0)
 	);

@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/ECE/Aresia/TestProcGit/AresiaSRAM/simulation/modelsim
+Z0 dC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simulation/modelsim
 Ealignment
-Z1 w1683038068
+Z1 w1683098442
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd
-Z6 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd
+Z5 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd
+Z6 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd
 l0
 L11
 V8[UOhT2mg2^OBFo;TnIQM3
 !s100 D0QUnOETBi1j@A6B^jWT[0
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1683115580
+Z8 !s110 1683120247
 !i10b 1
-Z9 !s108 1683115580.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd|
-Z11 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd|
+Z9 !s108 1683120247.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd|
+Z11 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -50,13 +50,13 @@ R11
 R12
 R13
 Ealu
-Z14 w1682066805
+Z14 w1682064889
 R2
 R3
 R4
 R0
-Z15 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd
-Z16 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd
+Z15 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd
+Z16 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd
 l0
 L11
 VibNmdJ0an6VzACZPKb7`Y3
@@ -66,8 +66,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd|
-Z18 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd|
+Z18 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd|
 !i113 1
 R12
 R13
@@ -91,13 +91,13 @@ R18
 R12
 R13
 Ebootloader
-Z19 w1683115113
+Z19 w1683120091
 R2
 R3
 R4
 R0
-Z20 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd
-Z21 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd
+Z20 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd
+Z21 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd
 l0
 L11
 VjA_G3IjAF8f2gTNZY<8[O0
@@ -107,8 +107,8 @@ R7
 R8
 !i10b 1
 R9
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd|
-Z23 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd|
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd|
+Z23 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd|
 !i113 1
 R12
 R13
@@ -136,8 +136,8 @@ R14
 R3
 R4
 R0
-Z24 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd
-Z25 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd
+Z24 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd
+Z25 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd
 l0
 L42
 VDXIOhH16mNccdXPWnZAeM2
@@ -147,8 +147,8 @@ R7
 R8
 !i10b 1
 R9
-Z26 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd|
-Z27 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd|
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd|
+Z27 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd|
 !i113 1
 R12
 R13
@@ -171,47 +171,47 @@ R27
 R12
 R13
 vclock1M_altpll
-Z28 !s110 1683115579
+Z28 !s110 1683120245
 !i10b 1
 !s100 FcYN=c]A526FHFPAWJkcW1
-Ia0MlRjG?cC4ckmfH@`j]Q0
+I1_JgM^EGHi^R1S6WoPHSk2
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1682062056
-8C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v
-FC:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v
+w1682064927
+8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v
+FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v
 L0 30
 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z29 !s108 1683115579.000000
-!s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db|C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v|
+Z29 !s108 1683120245.000000
+!s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v|
 !i113 1
 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db
+!s92 -vlog01compat -work work +incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db
 tCvgOpt 0
 nclock1@m_altpll
 Ecounter
-Z30 w1683035910
+Z30 w1683116838
 R2
 R3
 R4
 R0
-Z31 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd
-Z32 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd
+Z31 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd
+Z32 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd
 l0
 L11
-VM;AFf6icB8Ahi@ZRmbVHo0
-!s100 GA?fDVaAIiWmKoBN6Cf?L2
+V[LEL8V5?fFm91@NiW[Q[W1
+!s100 e3iOcPDKCaLYb?ikl@UmM3
 R7
 31
 R8
 !i10b 1
 R9
-Z33 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd|
-Z34 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd|
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd|
+Z34 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd|
 !i113 1
 R12
 R13
@@ -219,11 +219,11 @@ Aarchi
 R2
 R3
 R4
-DEx4 work 7 counter 0 22 M;AFf6icB8Ahi@ZRmbVHo0
-l26
-L24
-VR?KO7jE0Tgmj@LzCWa0BH3
-!s100 A4eDhod[`EOY]AmEXL]4A0
+DEx4 work 7 counter 0 22 [LEL8V5?fFm91@NiW[Q[W1
+l27
+L25
+VeHAA8YjeTMBk]2FM^]=Kf2
+!s100 [;:hEo7`bB9CSY8T0?Z:W2
 R7
 31
 R8
@@ -241,19 +241,19 @@ R2
 R3
 R4
 R0
-Z36 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd
-Z37 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd
+Z36 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd
+Z37 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd
 l0
 L11
 VFEm]O`58^MLZWMYL=l9M23
 !s100 5=[Szkbcb1nB9aSl=aDCL1
 R7
 31
-Z38 !s110 1683115581
+Z38 !s110 1683120248
 !i10b 1
-Z39 !s108 1683115581.000000
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd|
-Z41 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd|
+Z39 !s108 1683120248.000000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd|
+Z41 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd|
 !i113 1
 R12
 R13
@@ -278,24 +278,24 @@ R41
 R12
 R13
 Edisplays
-Z42 w1683035281
+Z42 w1683035047
 R2
 R3
 R4
 R0
-Z43 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd
-Z44 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd
+Z43 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd
+Z44 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd
 l0
 L12
 Vdz30Gzb05_>9kU<5g_MR>0
 !s100 o2@Lm]JjER>ET7>aoizQN0
 R7
 31
-R8
+Z45 !s110 1683120246
 !i10b 1
-R9
-Z45 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd|
-Z46 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd|
+Z46 !s108 1683120246.000000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd|
+Z48 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd|
 !i113 1
 R12
 R13
@@ -310,11 +310,11 @@ VBn9bzz]n5z]1`I[eLnYAJ2
 !s100 2?9B5cQkIiPAO@H8][SH80
 R7
 31
-R8
-!i10b 1
-R9
 R45
+!i10b 1
 R46
+R47
+R48
 !i113 1
 R12
 R13
@@ -324,19 +324,19 @@ R2
 R3
 R4
 R0
-Z47 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd
-Z48 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd
+Z49 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd
+Z50 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd
 l0
 L15
 VY;4;bkG2fjRbgCmb;d01A1
 !s100 iX?2C6L;SI`G4d<K5<EPo2
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z49 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd|
-Z50 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd|
+R46
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd|
+Z52 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd|
 !i113 1
 R12
 R13
@@ -351,33 +351,33 @@ VjeZg<5OU1h4XfCEEXi1La3
 !s100 ;L1l0L:]Eoa[mhlZiSGUf3
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R49
-R50
+R46
+R51
+R52
 !i113 1
 R12
 R13
 Eprocessor
-Z51 w1683038073
+Z53 w1683116594
 R2
 R3
 R4
 R0
-Z52 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd
-Z53 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd
+Z54 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd
+Z55 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd
 l0
 L11
 V;n0BiWeXioMV:=9IP5[kb0
 !s100 E1OlXCN_]NnH9MTI>[FHD3
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z54 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd|
-Z55 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd|
+R46
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd|
+Z57 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd|
 !i113 1
 R12
 R13
@@ -392,33 +392,33 @@ V^c8m>4UjeH5o[<g0P]UzA2
 !s100 MGmo2G<Zea11?7n=]9dU51
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R54
-R55
+R46
+R56
+R57
 !i113 1
 R12
 R13
 Eprogramcounter
-Z56 w1683039890
+Z58 w1683120196
 R2
 R3
 R4
 R0
-Z57 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd
-Z58 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd
+Z59 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd
+Z60 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd
 l0
 L11
 VXVR?HFOAg_n6XTI^zeg952
 !s100 [<XCJ7RG5Il47f[e8`JDY0
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z59 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd|
-Z60 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd|
+R46
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd|
+Z62 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd|
 !i113 1
 R12
 R13
@@ -433,38 +433,38 @@ VW1[<gJaObem3BZQCCO_2:3
 !s100 he9ZBg?IAD5N^C[MHlFNi1
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R59
-R60
+R46
+R61
+R62
 !i113 1
 R12
 R13
 Eram8_0
 R42
-Z61 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z63 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
 R3
 R4
 R0
-Z62 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd
-Z63 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd
+Z64 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd
+Z65 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd
 l0
 L42
 V7;@eg^7oIi>;ccbSbIQ773
 !s100 U`7LnL:gnhk2NGHkl1gZ=1
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z64 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd|
-Z65 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd|
+R46
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd|
+Z67 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd|
 !i113 1
 R12
 R13
 Asyn
-R61
+R63
 R3
 R4
 DEx4 work 6 ram8_0 0 22 7;@eg^7oIi>;ccbSbIQ773
@@ -474,38 +474,38 @@ VaX:bmA:dj4@;1N0Qnn=Y_0
 !s100 9OIP<F`PV;8eVb;MS`69m2
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R64
-R65
+R46
+R66
+R67
 !i113 1
 R12
 R13
 Eram8_1
 R42
-R61
+R63
 R3
 R4
 R0
-Z66 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd
-Z67 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd
+Z68 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd
+Z69 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd
 l0
 L42
 VJ15QT28QFAmG`:8Zm`GeB2
 !s100 lJfQ_]]NRGgTl<@2Pm6Jo3
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z68 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd|
-Z69 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd|
+R46
+Z70 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd|
+Z71 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd|
 !i113 1
 R12
 R13
 Asyn
-R61
+R63
 R3
 R4
 DEx4 work 6 ram8_1 0 22 J15QT28QFAmG`:8Zm`GeB2
@@ -515,38 +515,38 @@ V6ja8Ye`?aWUdVediGRWdB2
 !s100 o_ge_ebiB48l9^iLlR1S02
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R68
-R69
+R46
+R70
+R71
 !i113 1
 R12
 R13
 Eram8_2
 R42
-R61
+R63
 R3
 R4
 R0
-Z70 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd
-Z71 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd
+Z72 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd
+Z73 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd
 l0
 L42
 VO7<Mh5;Ch]b6ihjKKA;gX0
 !s100 H0dJ7gcckno?k^Tef:80z1
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z72 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd|
-Z73 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd|
+R46
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd|
+Z75 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd|
 !i113 1
 R12
 R13
 Asyn
-R61
+R63
 R3
 R4
 DEx4 work 6 ram8_2 0 22 O7<Mh5;Ch]b6ihjKKA;gX0
@@ -556,38 +556,38 @@ V3bz>6B3h>REbmULUZWSPN0
 !s100 henY>]mE^0M8eo5XjOgDe3
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R72
-R73
+R46
+R74
+R75
 !i113 1
 R12
 R13
 Eram8_3
 R42
-R61
+R63
 R3
 R4
 R0
-Z74 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd
-Z75 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd
+Z76 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd
+Z77 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd
 l0
 L42
 V>:B?_4cW<<jU=o2FO<[5J3
 !s100 ocP?^>?0jA1Jde:]NDnQE1
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z76 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd|
-Z77 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd|
+R46
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd|
+Z79 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd|
 !i113 1
 R12
 R13
 Asyn
-R61
+R63
 R3
 R4
 DEx4 work 6 ram8_3 0 22 >:B?_4cW<<jU=o2FO<[5J3
@@ -597,11 +597,11 @@ VTZ5Pf_P4ENUhiCZ2XUjo`0
 !s100 N1MeOL@4LW]dO4nSH8Gi11
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R76
-R77
+R46
+R78
+R79
 !i113 1
 R12
 R13
@@ -610,19 +610,19 @@ R42
 R3
 R4
 R0
-Z78 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd
-Z79 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd
+Z80 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd
+Z81 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd
 l0
 L4
 VkC^c;dNWRmZ8G[i9ME?]T2
 !s100 UnU>@jL3=NY[CmlEJHG1Q1
 R7
 31
-R8
+R45
 !i10b 1
-R9
-Z80 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd|
-Z81 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd|
+R46
+Z82 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd|
+Z83 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd|
 !i113 1
 R12
 R13
@@ -636,11 +636,11 @@ VG38DC<EGYLQ9jTZj1f^;i3
 !s100 l[`U2TZehz@>`Vd7c=c<E2
 R7
 31
-R8
+R45
 !i10b 1
-R9
-R80
-R81
+R46
+R82
+R83
 !i113 1
 R12
 R13
@@ -651,8 +651,8 @@ R2
 R3
 R4
 R0
-Z82 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd
-Z83 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd
+Z84 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd
+Z85 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd
 l0
 L12
 V97Ii3naiLA8PL6WU^7Y7I1
@@ -661,9 +661,9 @@ R7
 31
 R38
 !i10b 1
-R39
-Z84 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd|
-Z85 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd|
+R9
+Z86 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd|
+Z87 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd|
 !i113 1
 R12
 R13
@@ -681,9 +681,9 @@ R7
 31
 R38
 !i10b 1
-R39
-R84
-R85
+R9
+R86
+R87
 !i113 1
 R12
 R13
@@ -693,19 +693,19 @@ R2
 R3
 R4
 R0
-Z86 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd
-Z87 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd
+Z88 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd
+Z89 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd
 l0
 L5
 V`IlP<baPbKgjzXLHS9O?^3
 !s100 mj:e?YB7b8=SEYf1R<2fl3
 R7
 31
-R8
+R45
 !i10b 1
-R29
-Z88 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd|
-Z89 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd|
+R46
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd|
+Z91 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd|
 !i113 1
 R12
 R13
@@ -720,11 +720,11 @@ VREEN@8g4mVRH35O6kQQcR2
 !s100 MEZPhoBP=E8BM:19LO_ne1
 R7
 31
-R8
+R45
 !i10b 1
-R29
-R88
-R89
+R46
+R90
+R91
 !i113 1
 R12
 R13
@@ -734,8 +734,8 @@ R3
 R4
 R14
 R0
-8C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd
-FC:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd
+8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd
+FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd
 l0
 L5
 Veengz8]R<FfR5XS]SfSd@3
@@ -745,20 +745,20 @@ R7
 R28
 !i10b 1
 R29
-!s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd|
-!s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd|
+!s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd|
+!s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd|
 !i113 1
 R12
 R13
 Etestbench
-Z90 w1683115540
+R53
 R35
 R2
 R3
 R4
 R0
-Z91 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd
-Z92 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd
+Z92 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd
+Z93 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd
 l0
 L11
 VLSEOCCTD;?<BNJ_nc@Eef0
@@ -768,8 +768,8 @@ R7
 R38
 !i10b 1
 R39
-Z93 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd|
-Z94 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd|
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd|
+Z95 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd|
 !i113 1
 R12
 R13
@@ -788,31 +788,31 @@ R7
 R38
 !i10b 1
 R39
-R93
 R94
+R95
 !i113 1
 R12
 R13
 Etop
-Z95 w1683114434
+Z96 w1683120166
 R35
 R2
 R3
 R4
 R0
-Z96 8C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd
-Z97 FC:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd
+Z97 8C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd
+Z98 FC:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd
 l0
 L12
 V?K6WXL:@e4iMF8>9Q50^10
 !s100 73GWeNgKl<d9QPKegT7QC3
 R7
 31
-R38
+R8
 !i10b 1
 R9
-Z98 !s90 -reportprogress|300|-93|-work|work|C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd|
-Z99 !s107 C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd|
+Z99 !s90 -reportprogress|300|-93|-work|work|C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd|
+Z100 !s107 C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd|
 !i113 1
 R12
 R13
@@ -828,11 +828,11 @@ VN5M9[aWmGFD]EJa[i;[3^1
 !s100 ?eG2e7]<AcZ=RH[T3ERSB0
 R7
 31
-R38
+R8
 !i10b 1
 R9
-R98
 R99
+R100
 !i113 1
 R12
 R13
