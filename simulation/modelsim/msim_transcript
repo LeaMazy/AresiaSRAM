@@ -13,28 +13,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db {C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:19 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db" C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 14:06:19 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:19 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 14:06:19 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:19 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,22 +42,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:01
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RAM8x4
 # -- Compiling architecture SYN of RAM8x4
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_3
 # -- Compiling architecture SYN of ram8_3
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_2
 # -- Compiling architecture SYN of ram8_2
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_1
 # -- Compiling architecture SYN of ram8_1
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_0
 # -- Compiling architecture SYN of ram8_0
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:03 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:03 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,22 +161,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -184,11 +184,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +196,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -208,11 +208,27 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Bootloader
 # -- Compiling architecture archi of Bootloader
-# End time: 14:06:20 on May 03,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(223): (vcom-1275) Arguments of overloaded "and" operator are not the same length (32 vs. 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(223): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 32 is not equal to right length 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(227): (vcom-1275) Arguments of overloaded "and" operator are not the same length (32 vs. 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(227): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 32 is not equal to right length 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(227): (vcom-1275) Arguments of overloaded "and" operator are not the same length (32 vs. 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(227): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 32 is not equal to right length 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(231): (vcom-1275) Arguments of overloaded "and" operator are not the same length (32 vs. 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(231): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 32 is not equal to right length 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(231): (vcom-1275) Arguments of overloaded "and" operator are not the same length (32 vs. 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(231): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 32 is not equal to right length 8).
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(205): (vcom-1272) Length of expected is 32; length of actual is 14.
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(206): (vcom-1272) Length of expected is 32; length of actual is 14.
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(209): (vcom-1272) Length of expected is 32; length of actual is 14.
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(210): (vcom-1272) Length of expected is 32; length of actual is 14.
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(211): (vcom-1272) Length of expected is 32; length of actual is 14.
+# ** Warning: C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd(212): (vcom-1272) Length of expected is 32; length of actual is 14.
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 16
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:20 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +237,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 14:06:21 on May 03,2023, Elapsed time: 0:00:01
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:21 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -234,11 +250,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 14:06:21 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:21 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -247,12 +263,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 14:06:21 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:06:21 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -261,12 +277,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 14:06:21 on May 03,2023, Elapsed time: 0:00:00
+# End time: 15:02:04 on May 04,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 14:06:21 on May 03,2023
+# Start time: 15:02:04 on May 04,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -302,7 +318,7 @@
 # Loading work.ram8_2(syn)
 # Loading work.ram8_3(syn)
 # Loading work.bootloader(archi)
-# ** Warning: Design size of 20103 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 20203 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
@@ -315,9 +331,11 @@
 # add wave -noupdate /testbench/iTop/instBoot/clk
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 80024
-#           Attempting to use alternate WLF file "./wlftc5x677".
+#           Attempting to use alternate WLF file "./wlft0zzwbt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftc5x677
+#           Using alternate file: ./wlft0zzwbt
+# ** Error: (vish-4014) No objects found matching '/testbench/iTop/instBoot/clk'.
+# Executing ONERROR command at macro ./wave.do line 3
 # add wave -noupdate -radix hexadecimal /testbench/reset
 # add wave -noupdate /testbench/iTop/switchBoot
 # add wave -noupdate -radix decimal /testbench/counter
@@ -332,8 +350,12 @@
 # add wave -noupdate -radix hexadecimal -childformat {{/testbench/outputInstr(31) -radix hexadecimal} {/testbench/outputInstr(30) -radix hexadecimal} {/testbench/outputInstr(29) -radix hexadecimal} {/testbench/outputInstr(28) -radix hexadecimal} {/testbench/outputInstr(27) -radix hexadecimal} {/testbench/outputInstr(26) -radix hexadecimal} {/testbench/outputInstr(25) -radix hexadecimal} {/testbench/outputInstr(24) -radix hexadecimal} {/testbench/outputInstr(23) -radix hexadecimal} {/testbench/outputInstr(22) -radix hexadecimal} {/testbench/outputInstr(21) -radix hexadecimal} {/testbench/outputInstr(20) -radix hexadecimal} {/testbench/outputInstr(19) -radix hexadecimal} {/testbench/outputInstr(18) -radix hexadecimal} {/testbench/outputInstr(17) -radix hexadecimal} {/testbench/outputInstr(16) -radix hexadecimal} {/testbench/outputInstr(15) -radix hexadecimal} {/testbench/outputInstr(14) -radix hexadecimal} {/testbench/outputInstr(13) -radix hexadecimal} {/testbench/outputInstr(12) -radix hexadecimal} {/testbench/outputInstr(11) -radix hexadecimal} {/testbench/outputInstr(10) -radix hexadecimal} {/testbench/outputInstr(9) -radix hexadecimal} {/testbench/outputInstr(8) -radix hexadecimal} {/testbench/outputInstr(7) -radix hexadecimal} {/testbench/outputInstr(6) -radix hexadecimal} {/testbench/outputInstr(5) -radix hexadecimal} {/testbench/outputInstr(4) -radix hexadecimal} {/testbench/outputInstr(3) -radix hexadecimal} {/testbench/outputInstr(2) -radix hexadecimal} {/testbench/outputInstr(1) -radix hexadecimal} {/testbench/outputInstr(0) -radix hexadecimal}} -subitemconfig {/testbench/outputInstr(31) {-height 15 -radix hexadecimal} /testbench/outputInstr(30) {-height 15 -radix hexadecimal} /testbench/outputInstr(29) {-height 15 -radix hexadecimal} /testbench/outputInstr(28) {-height 15 -radix hexadecimal} /testbench/outputInstr(27) {-height 15 -radix hexadecimal} /testbench/outputInstr(26) {-height 15 -radix hexadecimal} /testbench/outputInstr(25) {-height 15 -radix hexadecimal} /testbench/outputInstr(24) {-height 15 -radix hexadecimal} /testbench/outputInstr(23) {-height 15 -radix hexadecimal} /testbench/outputInstr(22) {-height 15 -radix hexadecimal} /testbench/outputInstr(21) {-height 15 -radix hexadecimal} /testbench/outputInstr(20) {-height 15 -radix hexadecimal} /testbench/outputInstr(19) {-height 15 -radix hexadecimal} /testbench/outputInstr(18) {-height 15 -radix hexadecimal} /testbench/outputInstr(17) {-height 15 -radix hexadecimal} /testbench/outputInstr(16) {-height 15 -radix hexadecimal} /testbench/outputInstr(15) {-height 15 -radix hexadecimal} /testbench/outputInstr(14) {-height 15 -radix hexadecimal} /testbench/outputInstr(13) {-height 15 -radix hexadecimal} /testbench/outputInstr(12) {-height 15 -radix hexadecimal} /testbench/outputInstr(11) {-height 15 -radix hexadecimal} /testbench/outputInstr(10) {-height 15 -radix hexadecimal} /testbench/outputInstr(9) {-height 15 -radix hexadecimal} /testbench/outputInstr(8) {-height 15 -radix hexadecimal} /testbench/outputInstr(7) {-height 15 -radix hexadecimal} /testbench/outputInstr(6) {-height 15 -radix hexadecimal} /testbench/outputInstr(5) {-height 15 -radix hexadecimal} /testbench/outputInstr(4) {-height 15 -radix hexadecimal} /testbench/outputInstr(3) {-height 15 -radix hexadecimal} /testbench/outputInstr(2) {-height 15 -radix hexadecimal} /testbench/outputInstr(1) {-height 15 -radix hexadecimal} /testbench/outputInstr(0) {-height 15 -radix hexadecimal}} /testbench/outputInstr
 # add wave -noupdate -expand -group Boot -radix hexadecimal /testbench/iTop/instBoot/CS
 # add wave -noupdate -expand -group Boot -radix hexadecimal /testbench/iTop/instBoot/addrInstBoot
+# ** Error: (vish-4014) No objects found matching '/testbench/iTop/instBoot/addrInstBoot'.
+# Executing ONERROR command at macro ./wave.do line 17
 # add wave -noupdate -expand -group Boot -radix hexadecimal -childformat {{/testbench/iTop/instBoot/rom_block(0) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(1) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(2) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(3) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(4) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(5) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(6) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(7) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(8) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(9) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(10) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(11) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(12) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(13) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(14) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(15) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(16) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(17) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(18) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(19) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(20) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(21) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(22) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(23) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(24) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(25) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(26) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(27) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(28) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(29) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(30) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(31) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(32) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(33) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(34) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(35) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(36) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(37) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(38) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(39) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(40) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(41) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(42) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(43) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(44) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(45) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(46) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(47) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(48) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(49) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(50) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(51) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(52) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(53) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(54) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(55) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(56) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(57) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(58) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(59) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(60) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(61) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(62) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(63) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(64) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(65) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(66) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(67) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(68) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(69) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(70) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(71) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(72) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(73) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(74) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(75) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(76) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(77) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(78) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(79) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(80) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(81) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(82) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(83) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(84) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(85) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(86) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(87) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(88) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(89) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(90) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(91) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(92) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(93) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(94) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(95) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(96) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(97) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(98) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(99) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(100) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(101) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(102) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(103) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(104) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(105) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(106) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(107) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(108) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(109) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(110) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(111) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(112) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(113) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(114) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(115) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(116) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(117) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(118) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(119) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(120) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(121) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(122) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(123) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(124) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(125) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(126) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(127) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(128) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(129) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(130) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(131) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(132) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(133) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(134) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(135) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(136) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(137) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(138) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(139) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(140) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(141) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(142) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(143) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(144) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(145) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(146) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(147) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(148) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(149) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(150) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(151) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(152) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(153) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(154) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(155) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(156) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(157) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(158) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(159) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(160) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(161) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(162) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(163) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(164) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(165) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(166) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(167) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(168) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(169) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(170) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(171) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(172) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(173) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(174) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(175) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(176) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(177) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(178) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(179) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(180) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(181) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(182) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(183) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(184) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(185) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(186) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(187) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(188) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(189) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(190) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(191) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(192) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(193) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(194) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(195) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(196) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(197) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(198) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(199) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(200) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(201) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(202) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(203) -radix hexadecimal} {/testbench/iTop/instBoot/rom_block(204) -radix hexadecimal}} -subitemconfig {/testbench/iTop/instBoot/rom_block(0) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(1) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(2) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(3) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(4) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(5) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(6) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(7) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(8) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(9) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(10) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(11) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(12) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(13) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(14) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(15) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(16) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(17) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(18) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(19) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(20) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(21) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(22) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(23) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(24) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(25) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(26) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(27) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(28) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(29) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(30) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(31) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(32) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(33) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(34) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(35) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(36) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(37) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(38) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(39) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(40) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(41) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(42) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(43) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(44) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(45) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(46) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(47) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(48) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(49) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(50) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(51) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(52) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(53) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(54) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(55) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(56) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(57) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(58) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(59) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(60) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(61) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(62) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(63) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(64) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(65) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(66) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(67) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(68) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(69) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(70) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(71) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(72) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(73) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(74) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(75) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(76) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(77) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(78) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(79) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(80) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(81) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(82) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(83) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(84) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(85) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(86) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(87) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(88) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(89) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(90) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(91) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(92) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(93) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(94) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(95) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(96) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(97) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(98) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(99) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(100) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(101) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(102) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(103) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(104) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(105) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(106) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(107) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(108) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(109) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(110) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(111) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(112) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(113) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(114) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(115) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(116) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(117) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(118) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(119) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(120) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(121) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(122) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(123) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(124) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(125) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(126) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(127) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(128) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(129) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(130) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(131) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(132) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(133) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(134) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(135) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(136) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(137) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(138) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(139) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(140) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(141) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(142) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(143) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(144) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(145) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(146) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(147) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(148) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(149) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(150) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(151) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(152) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(153) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(154) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(155) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(156) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(157) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(158) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(159) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(160) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(161) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(162) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(163) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(164) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(165) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(166) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(167) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(168) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(169) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(170) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(171) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(172) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(173) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(174) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(175) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(176) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(177) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(178) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(179) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(180) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(181) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(182) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(183) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(184) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(185) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(186) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(187) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(188) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(189) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(190) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(191) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(192) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(193) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(194) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(195) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(196) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(197) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(198) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(199) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(200) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(201) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(202) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(203) {-height 15 -radix hexadecimal} /testbench/iTop/instBoot/rom_block(204) {-height 15 -radix hexadecimal}} /testbench/iTop/instBoot/rom_block
 # add wave -noupdate -expand -group Boot -radix hexadecimal /testbench/iTop/instBoot/instBoot
+# ** Error: (vish-4014) No objects found matching '/testbench/iTop/instBoot/instBoot'.
+# Executing ONERROR command at macro ./wave.do line 19
 # add wave -noupdate -expand -group Boot /testbench/iTop/instBoot/sigad
 # add wave -noupdate -expand -group Boot /testbench/iTop/instBoot/sigpc
 # add wave -noupdate -expand -group TopBoot -radix hexadecimal /testbench/iTop/SIGinstMux
@@ -717,9 +739,9 @@
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 4  Instance: /testbench/iTop/instPROC/instALIGNMENT
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
+#    Time: 0 ps  Iteration: 5  Instance: /testbench/iTop/instBoot
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
+#    Time: 0 ps  Iteration: 5  Instance: /testbench/iTop/instBoot
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -788,3 +810,331 @@
 #    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(30)
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(31)
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 5 us.
+add wave -position insertpoint  \
+sim:/testbench/iTop/instBoot/BootClock \
+sim:/testbench/iTop/instBoot/CS \
+sim:/testbench/iTop/instBoot/BootReset \
+sim:/testbench/iTop/instBoot/BootStore \
+sim:/testbench/iTop/instBoot/BootLoad \
+sim:/testbench/iTop/instBoot/BootAddr \
+sim:/testbench/iTop/instBoot/BootIn \
+sim:/testbench/iTop/instBoot/BootFunct3 \
+sim:/testbench/iTop/instBoot/BootOut \
+sim:/testbench/iTop/instBoot/rom_block \
+sim:/testbench/iTop/instBoot/SigBootAddr00 \
+sim:/testbench/iTop/instBoot/SigBootAddr08 \
+sim:/testbench/iTop/instBoot/SigBootAddr16 \
+sim:/testbench/iTop/instBoot/SigBootAddr24 \
+sim:/testbench/iTop/instBoot/SigBootOut00 \
+sim:/testbench/iTop/instBoot/SigBootOut08 \
+sim:/testbench/iTop/instBoot/SigBootOut16 \
+sim:/testbench/iTop/instBoot/SigBootOut24 \
+sim:/testbench/iTop/instBoot/sigad \
+sim:/testbench/iTop/instBoot/sigpc
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/ECE/Aresia/TestProcGit/AresiaSRAM/simulation/modelsim/wave.do
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /testbench/iTop/debugDisplay2(31 downto 16).
+run -all
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM3/altsyncram_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM2/altsyncram_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM1/altsyncram_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM0/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALIGNMENT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instRF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/iTop/instPROC/instALIGNMENT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/iTop/instPROC/instRF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /testbench/iTop/instPROC/instALIGNMENT
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 5  Instance: /testbench/iTop/instBoot
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 5  Instance: /testbench/iTop/instBoot
+# ** Note: MAX 10 PLL locked to incoming clock
+#    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 12  Instance: /testbench/iTop/instPROC/instALIGNMENT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Instance: /testbench/iTop/instPROC/instRF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 13  Region: /testbench/iTop/instPROC/instRF/gen(31)
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 5 us.
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/ECE/Aresia/TestProcGit/AresiaSRAM/simulation/modelsim/wave.do
+# End time: 15:15:00 on May 04,2023, Elapsed time: 0:12:56
+# Errors: 11, Warnings: 299

@@ -122,11 +122,16 @@ ARCHITECTURE archi OF Top IS
 	component Bootloader is
 	port (
 		--INPUTS
-		clk 			: in std_logic;
-		CS 			: in std_logic; 							--chip select
-		addrInstBoot: in std_logic_vector(11 downto 0); --addr of boot instruction
+		BootClock 			: in std_logic;
+		CS 					: in std_logic; 							--chip select
+		BootReset			: in std_logic;
+		BootStore			: in std_logic;
+		BootLoad				: in std_logic;
+		BootAddr				: in std_logic_vector(11 downto 0); --addr of boot instruction
+		BootIn				: in std_logic_vector(31 downto 0);
+		BootFunct3			: in std_logic_vector(2 downto 0);
 		--OUTPUT
-		instBoot		: out std_logic_vector(31 downto 0)--output boot instruction 
+		BootOut				: out std_logic_vector(31 downto 0) --output boot instruction 
 	);
 	end component;
 
@@ -303,10 +308,26 @@ BEGIN
 	
 	instBoot : Bootloader
 	port map(
-		clk 			 => SIGclock,
-		CS 			 => switchBoot, 							 --chip select
-		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
-		instBoot		 => SIGinstBoot							 --output boot instruction 
+--		clk 			 => SIGclock,
+--		CS 			 => switchBoot, 							 --chip select
+--		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
+--		DMreset		: in std_logic;
+--		DMstore		: in std_logic;
+--		DMload		: in std_logic;
+--		DMin			: in std_logic_vector(31 downto 0);
+--		DMfunct3		: in std_logic_vector(2 downto 0);
+--		instBoot		 => SIGinstBoot							 --output boot instruction 
+		--INPUTS
+		BootClock 	=> SIGclock,
+		CS 			=> switchBoot, 							
+		BootReset	=> TOPreset,
+		BootStore	=> SIGPROCstore,
+		BootLoad		=> SIGPROCload,
+		BootAddr		=> SIGPROCprogcounter(13 downto 2), 
+		BootIn		=> SIGPROCinputDM,
+		BootFunct3	=> SIGPROCfunct3,
+		--OUTPUT
+		BootOut		=> SIGinstBoot
 	);
 	-- END
 END archi;
