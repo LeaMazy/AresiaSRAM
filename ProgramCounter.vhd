@@ -11,24 +11,26 @@ USE ieee.numeric_std.ALL;
 ENTITY ProgramCounter IS
 	PORT (
 		-- INPUTS
-		PChold		  : IN    STD_LOGIC;
-		PCclock       : IN    STD_LOGIC;
-		PCreset       : IN    STD_LOGIC;
-		PCoffset      : IN    STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PCoffsetsign  : IN    STD_LOGIC;
-		PCjal         : IN    STD_LOGIC;
-		PCjalr        : IN    STD_LOGIC;
-		PCbranch      : IN    STD_LOGIC;
-		PCfunct3      : IN    STD_LOGIC_VECTOR(2 DOWNTO 0);
-		PCauipc       : IN    STD_LOGIC;
-		PCalueq       : IN    STD_LOGIC;
-		PCaluinf      : IN    STD_LOGIC;
-		PCalusup      : IN    STD_LOGIC;
-		PCaluinfU     : IN    STD_LOGIC;
-		PCalusupU     : IN    STD_LOGIC;
-		PClock :in std_logic;
-		PCLoad : IN STD_LOGIC;
-		switchBoot 	  : IN 	 STD_LOGIC;
+		PChold		 	 : IN    STD_LOGIC;
+		PCclock     	 : IN    STD_LOGIC;
+		PCreset      	 : IN    STD_LOGIC;
+		PCoffset     	 : IN    STD_LOGIC_VECTOR(31 DOWNTO 0);
+		PCoffsetsign 	 : IN    STD_LOGIC;
+		PCjal         	 : IN    STD_LOGIC;
+		PCjalr        	 : IN    STD_LOGIC;
+		PCbranch        : IN    STD_LOGIC;
+		PCfunct3     	 : IN    STD_LOGIC_VECTOR(2 DOWNTO 0);
+		PCauipc         : IN    STD_LOGIC;
+		PCalueq       	 : IN    STD_LOGIC;
+		PCaluinf     	 : IN    STD_LOGIC;
+		PCalusup      	 : IN    STD_LOGIC;
+		PCaluinfU       : IN    STD_LOGIC;
+		PCalusupU    	 : IN    STD_LOGIC;
+		PClock 			 :in std_logic;
+		PCLoad 			 : IN STD_LOGIC;
+		switchBoot 	  	 : IN 	 STD_LOGIC;
+		-- switchBootnext 	  	 : IN 	 STD_LOGIC;
+
 		-- OUTPUTS
 		--PCnext : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PCnext : out STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -51,13 +53,21 @@ ARCHITECTURE archi OF ProgramCounter IS
 
 --	SIGNAL MuxPCfetch, PC : std_LOGIC_VECTOR(31 downto 0);
 	SIGNAL SigPC, SigPCnext, MuxPC : std_LOGIC_VECTOR(31 downto 0);
-
+	SIGNAL SigswitchBootnext 	  	 : STD_LOGIC := '0';
+	SIGNAL MuxSwitch 	  	 : STD_LOGIC := '0';
 
 BEGIN
-		
+	process (PCclock)
+	begin
+		if rising_edge (PCclock)
+		then SigswitchBootnext <= switchBoot;
+		end if;
+	end process;
 	-----------------------------------------------------------------
 	-------------------------- PC REG -------------------------------
 	-----------------------------------------------------------------
+	-- MuxSwitch <= switchBoot When rising_edge(PCclock) else SigswitchBootnext;
+	-- SigswitchBootnext <= MuxSwitch When rising_edge(PCclock) else SigswitchBootnext;
 	MuxPC <= SigPC when PChold='1' else
 				SIGPCnext;
 --	PC 	<= x"FFFFFFFC" when PCreset='1' else
@@ -103,7 +113,9 @@ BEGIN
 					
 	PC <= SigPC;
 	
-	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1')else
+	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1' or SigswitchBootnext=not(switchBoot)) else
+					-- std_logic_vector(to_signed(-4, SigPC'length)) when (rising_edge(switchBoot)) else
+					-- std_logic_vector(to_signed(-4, SigPC'length)) when (falling_edge(switchBoot)) else
 				   MuxPC when rising_edge(PCclock);
 	
 	PCnext    <= SIGPCnext;

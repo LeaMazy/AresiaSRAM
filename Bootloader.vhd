@@ -21,6 +21,7 @@ entity Bootloader is
 		BootFunct3			: in std_logic_vector(2 downto 0);
 		--OUTPUT
 		BootOut				: out std_logic_vector(31 downto 0) --output boot instruction 
+		instBoot: out std_logic_vector(31 downto 0)    --output boot instruction
 	);
 end entity;
 
@@ -156,6 +157,8 @@ architecture archi of Bootloader is
 		x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000",
 		x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000",
 		x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" , x"00000000" 
+		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000087b7" , x"80001737" , x"3c078793" , x"fef72c23",
+		x"c08807b7" , x"fff78793" , x"fef72a23" , x"0000006f" , x"00000000"
 	);
 --	signal sigad : integer;
 --	signal sigpc : std_logic_vector(11 downto 0);

@@ -39,6 +39,7 @@ ARCHITECTURE archi OF Top IS
 			PROCinstruction : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCswitchBoot  : IN  STD_LOGIC;
+			-- PROCswitchBootnext  : IN  STD_LOGIC;
 			-- OUTPUTS
 			PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -175,7 +176,7 @@ ARCHITECTURE archi OF Top IS
 	
 	SIGNAL SIGPROCdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	--
-	
+	SIGNAL SIGswitchBootnext : std_logic;
 	SIGNAL SIGbootfinish	 : std_logic;
 	SIGNAL SIGinstBoot	 : std_logic_vector(31 downto 0);
 	SIGNAL SIGinstMux 	 : std_logic_vector(31 downto 0);
@@ -247,6 +248,7 @@ BEGIN
 		PROCinstruction => SIGinstMux,
 		PROCoutputDM    => SIGPROCoutputDM,
 		PROCswitchBoot  => switchBoot,
+		-- PROCswitchBootnext  => SIGswitchBootnext,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
 		PROCPC 			 => SIGPROCPC,
@@ -328,6 +330,10 @@ BEGIN
 		BootFunct3	=> SIGPROCfunct3,
 		--OUTPUT
 		BootOut		=> SIGinstBoot
+		clk 			 => SIGclock,
+		CS 			 => switchBoot, 							 --chip select
+		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
+		instBoot		 => SIGinstBoot							 --output boot instruction
 	);
 	-- END
 END archi;

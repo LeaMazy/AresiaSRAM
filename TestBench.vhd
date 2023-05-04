@@ -130,9 +130,15 @@ architecture VHDL of TestBench is
 		bootTestbench: process
 		begin
 		-- init  simulation
+   		sigBoot <= '0';
+			wait for 2100 ns;
 			sigBoot <= '1';
---			wait for 4000 ns;
---			sigBoot <= '0';
+			wait for 12100 ns;
+   		sigBoot <= '0';
+			--wait for 5100 ns;
+			--sigBoot <= '1';
+			--wait for 12100 ns;
+   		--sigBoot <= '0';
 			wait;
 		end process;
 END vhdl;
