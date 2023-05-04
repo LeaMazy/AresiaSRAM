@@ -23,19 +23,8 @@ end entity;
 architecture archi of Bootloader is
 	TYPE ROM IS ARRAY(0 TO 12) OF std_logic_vector(0 to 31);
 	SIGNAL rom_block : ROM :=(
-		x"00001137" , 
-		x"00c000ef" , 
-		x"00100073" , 
-		x"0000006f" , 
-		x"000087b7" , 
-		x"80000737" , 
-		x"3c078793" , 
-		x"00f72423",
-		x"c08807b7" , 
-		x"fff78793" , 
-		x"00f72223" , 
-		x"0000006f" , 
-		x"00000000"
+		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000087b7" , x"80001737" , x"3c078793" , x"fef72c23",
+		x"c08807b7" , x"fff78793" , x"fef72a23" , x"0000006f" , x"00000000"
 	);
 	signal sigad : integer;
 	signal sigpc : std_logic_vector(11 downto 0);
