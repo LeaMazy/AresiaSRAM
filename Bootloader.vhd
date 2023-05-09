@@ -1,4 +1,4 @@
--- Projet de stage ING4 : RISC-V
+ -- Projet de stage ING4 : RISC-V
 -- ECE Paris / ARESIA
 -- BOOTLOADER VHDL
 
