@@ -1,4 +1,4 @@
- -- Projet de stage ING4 : RISC-V
+-- Projet de stage ING4 : RISC-V
 -- ECE Paris / ARESIA
 -- BOOTLOADER VHDL
 
@@ -11,17 +11,11 @@ use ieee.numeric_std.all;
 entity Bootloader is
 	port (
 		--INPUTS
-		BootClock 			: in std_logic;
+		clk 					: in std_logic;
 		CS 					: in std_logic; 							--chip select
-		BootReset			: in std_logic;
-		BootStore			: in std_logic;
-		BootLoad				: in std_logic;
-		BootAddr				: in std_logic_vector(11 downto 0); --addr of boot instruction
-		BootIn				: in std_logic_vector(31 downto 0);
-		BootFunct3			: in std_logic_vector(2 downto 0);
+		addrInstBoot		: in std_logic_vector(11 downto 0); --addr of boot instruction
 		--OUTPUT
-		BootOut				: out std_logic_vector(31 downto 0) --output boot instruction 
-		instBoot: out std_logic_vector(31 downto 0)    --output boot instruction
+		instBoot				: out std_logic_vector(31 downto 0)    --output boot instruction
 	);
 end entity;
 
@@ -29,8 +23,8 @@ end entity;
 architecture archi of Bootloader is
 	TYPE ROM IS ARRAY(0 TO 11) OF std_logic_vector(0 to 31);
 	SIGNAL rom_block : ROM :=(
-		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"c08807b7" , x"80001737" , x"fff78793" , x"fef72a23",
-		x"000087b7" , x"3c078793" , x"fef72c23" , x"0000006f"
+		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000087b7" , x"80000737" , x"3c078793" , x"00f72423",
+		x"c08807b7" , x"fff78793" , x"00f72223" , x"0000006f"
 	);
 --	signal sigad : integer;
 --	signal sigpc : std_logic_vector(11 downto 0);

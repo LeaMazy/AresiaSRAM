@@ -20,14 +20,14 @@ architecture VHDL of TestBench is
 		TOPclock                             : IN    STD_LOGIC; --must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;
-		rx												 : IN 	STD_LOGIC;
+--		rx												 : IN 	STD_LOGIC;
 		--SW0
 
 		-- OUTPUTS
 		TOPdisplay1                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000004
 		TOPdisplay2                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000008
-		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);			  		 --0x8000000c
-		tx												 : OUT 	STD_LOGIC
+		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0)			  		 --0x8000000c
+--		tx												 : OUT 	STD_LOGIC
 	);
 	end component;
 
@@ -59,14 +59,14 @@ architecture VHDL of TestBench is
 		reset        	 => reset,
 		TOPdisplay1     => SigTOPdisplay1,
 		TOPdisplay2     => SigTOPdisplay2,
-		rx					 => '0',
+--		rx					 => '0',
 		
 		enableDebug 	 => '0',
 		switchSEL		 => '0',
 		switchSEL2      => '0',
 		switchBoot 		 => sigBoot,
-		buttonClock		 => '0',
-		tx					 => sigtx
+		buttonClock		 => '0'
+--		tx					 => sigtx
 		
 		
 	);
@@ -139,7 +139,7 @@ architecture VHDL of TestBench is
 		begin
 		-- init  simulation
    		sigBoot <= '0';
-			wait for 2100 ns;
+			wait for 32100 ns;
 			sigBoot <= '1';
 			wait for 12100 ns;
    		sigBoot <= '0';

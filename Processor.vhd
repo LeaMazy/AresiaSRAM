@@ -26,8 +26,8 @@ ENTITY Processor IS
 		PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 		PROCaddrDM      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCinputDM     : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCdq     		 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+		PROCdq     		 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+--		PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END ENTITY;
 
@@ -285,7 +285,7 @@ BEGIN
 											(OTHERS => '1') WHEN (SIGimmSel = '1' OR SIGloadP2 = '1' OR SIGstore = '1' OR SIGjalr = '1') AND SIGimm12I(11) = '1' ELSE
 											SIGoutput2RF(31 DOWNTO 12);
 
-	PROCtx <= SIGoutput2RF;			-- Tx pour UART
+--	PROCtx <= SIGoutput2RF;			-- Tx pour UART
 	
 	-- data memory
 	PROCaddrDM  <= SIGoutputALU;
