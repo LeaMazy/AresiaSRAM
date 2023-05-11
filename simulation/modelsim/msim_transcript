@@ -13,28 +13,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:52 on May 05,2023
+# Start time: 16:50:36 on May 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db" C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 08:33:52 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:36 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:36 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:36 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:36 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,22 +42,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:36 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RAM8x4
 # -- Compiling architecture SYN of RAM8x4
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_3
 # -- Compiling architecture SYN of ram8_3
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_2
 # -- Compiling architecture SYN of ram8_2
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_1
 # -- Compiling architecture SYN of ram8_1
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_0
 # -- Compiling architecture SYN of ram8_0
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 08:33:53 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:53 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:01
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,22 +161,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:37 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -184,11 +184,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:37 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +196,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -208,11 +208,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Bootloader
 # -- Compiling architecture archi of Bootloader
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UART.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:50:38 on May 10,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UART.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity uart
+# -- Compiling architecture logic of uart
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UARTComm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:50:38 on May 10,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UARTComm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity uartComm
+# -- Compiling architecture vhdl of uartComm
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +243,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -234,11 +256,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -247,12 +269,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:54 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -261,12 +283,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 08:33:54 on May 05,2023, Elapsed time: 0:00:00
+# End time: 16:50:38 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 08:33:55 on May 05,2023
+# Start time: 16:50:38 on May 10,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -302,7 +324,9 @@
 # Loading work.ram8_2(syn)
 # Loading work.ram8_3(syn)
 # Loading work.bootloader(archi)
-# ** Warning: Design size of 20129 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading work.uartcomm(vhdl)
+# Loading work.uart(logic)
+# ** Warning: Design size of 20532 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
@@ -315,9 +339,9 @@
 # add wave -noupdate /testbench/iTop/instBoot/clk
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 123368
-#           Attempting to use alternate WLF file "./wlft6zbdwb".
+#           Attempting to use alternate WLF file "./wlftr4q4tm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6zbdwb
+#           Using alternate file: ./wlftr4q4tm
 # add wave -noupdate /testbench/iTop/instPROC/instPC/PCclock
 # add wave -noupdate -radix hexadecimal /testbench/reset
 # add wave -noupdate /testbench/iTop/switchBoot
@@ -727,5 +751,3 @@
 #    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
-# End time: 08:54:11 on May 09,2023, Elapsed time: 96:20:16
-# Errors: 0, Warnings: 118

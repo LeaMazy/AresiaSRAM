@@ -21,17 +21,17 @@ end entity;
 
 -- ARCHITECTURE
 architecture archi of Bootloader is
-	TYPE ROM IS ARRAY(0 TO 12) OF std_logic_vector(0 to 31);
+	TYPE ROM IS ARRAY(0 TO 11) OF std_logic_vector(0 to 31);
 	SIGNAL rom_block : ROM :=(
-		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000087b7" , x"80001737" , x"3c078793" , x"fef72c23",
-		x"c08807b7" , x"fff78793" , x"fef72a23" , x"0000006f" , x"00000000"
+		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"c08807b7" , x"80001737" , x"fff78793" , x"fef72a23",
+		x"000087b7" , x"3c078793" , x"fef72c23" , x"0000006f"
 	);
 	signal sigad : integer;
 	signal sigpc : std_logic_vector(11 downto 0);
 	begin
 		sigpc <= addrInstBoot(11 downto 0);
 		instBoot <= rom_block(sigad) when rising_edge(clk);
-		sigad <= 12 when ((unsigned(sigpc) > 11)) else to_integer(unsigned(sigpc));
+		sigad <= 11 when ((unsigned(sigpc) > 11)) else to_integer(unsigned(sigpc));
 	--	instBoot <= rom_block(to_integer(unsigned(addrInstBoot))) when (rising_edge(clk));
 	
 end archi;
