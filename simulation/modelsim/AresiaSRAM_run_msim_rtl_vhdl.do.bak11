@@ -22,6 +22,8 @@ vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd}
+vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UART.vhd}
+vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UARTComm.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd}
 vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd}
