@@ -316,7 +316,7 @@ BEGIN
 		DISPreset    => TOPreset,
 		DISPaddr     => SIGPROCaddrDM,
 		DISPinput    => SIGPROCinputDM,
-		DISPWrite    => SIGPROCstore,
+		DISPWrite    => MuxPROCstore,
 		--OUTPUTS
 		DISPleds     => procLed,
 		DISPdisplay1 => procDisplay1,
