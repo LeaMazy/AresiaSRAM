@@ -139,7 +139,7 @@ architecture VHDL of TestBench is
 		begin
 		-- init  simulation
    		sigBoot <= '0';
-			wait for 32100 ns;
+			wait for 2100 ns;
 			sigBoot <= '1';
 			wait for 12100 ns;
    		sigBoot <= '0';

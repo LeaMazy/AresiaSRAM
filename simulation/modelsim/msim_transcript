@@ -13,28 +13,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db {C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db" C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,22 +42,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RAM8x4
 # -- Compiling architecture SYN of RAM8x4
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_3
 # -- Compiling architecture SYN of ram8_3
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_2
 # -- Compiling architecture SYN of ram8_2
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_1
 # -- Compiling architecture SYN of ram8_1
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_0
 # -- Compiling architecture SYN of ram8_0
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,22 +161,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 16:18:18 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:46 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:18 on May 11,2023
+# Start time: 17:03:46 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -184,11 +184,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:01
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +196,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -208,11 +208,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Bootloader
 # -- Compiling architecture archi of Bootloader
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +221,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -234,11 +234,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -247,12 +247,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -261,12 +261,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 16:18:19 on May 11,2023, Elapsed time: 0:00:00
+# End time: 17:03:47 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 16:18:19 on May 11,2023
+# Start time: 17:03:47 on May 11,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -302,7 +302,7 @@
 # Loading work.ram8_2(syn)
 # Loading work.ram8_3(syn)
 # Loading work.bootloader(archi)
-# ** Warning: Design size of 20208 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 20219 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
@@ -315,9 +315,9 @@
 # add wave -noupdate -radix hexadecimal /testbench/reset
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 80024
-#           Attempting to use alternate WLF file "./wlftvjx971".
+#           Attempting to use alternate WLF file "./wlftyi1can".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftvjx971
+#           Using alternate file: ./wlftyi1can
 # add wave -noupdate /testbench/iTop/switchBoot
 # add wave -noupdate -radix decimal /testbench/counter
 # add wave -noupdate -radix hexadecimal /testbench/progcounter
@@ -473,6 +473,8 @@
 # add wave -noupdate -group RegisterFile -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instRF/RFreg(0) -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instRF/RFreg(0)(31) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(30) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(29) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(28) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(27) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(26) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(25) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(24) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(23) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(22) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(21) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(20) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(19) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(18) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(17) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(16) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(15) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(14) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(13) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(12) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(11) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(10) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(9) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(8) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(7) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(6) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(5) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(4) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(3) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(2) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(1) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(0) -radix hexadecimal}}} {/testbench/iTop/instPROC/instRF/RFreg(1) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(2) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(3) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(4) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(5) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(6) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(7) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(8) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(9) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(10) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(11) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(12) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(13) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(14) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(15) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(16) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(17) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(18) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(19) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(20) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(21) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(22) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(23) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(24) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(25) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(26) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(27) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(28) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(29) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(30) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(31) -radix hexadecimal}} -subitemconfig {/testbench/iTop/instPROC/instRF/RFreg(0) {-height 15 -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instRF/RFreg(0)(31) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(30) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(29) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(28) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(27) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(26) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(25) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(24) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(23) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(22) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(21) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(20) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(19) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(18) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(17) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(16) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(15) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(14) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(13) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(12) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(11) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(10) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(9) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(8) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(7) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(6) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(5) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(4) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(3) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(2) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(1) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFreg(0)(0) -radix hexadecimal}} -expand} /testbench/iTop/instPROC/instRF/RFreg(0)(31) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(30) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(29) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(28) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(27) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(26) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(25) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(24) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(23) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(22) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(21) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(20) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(19) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(18) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(17) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(16) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(15) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(14) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(13) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(12) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(11) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(10) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(9) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(8) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(7) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(6) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(5) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(4) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(3) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(2) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(1) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(0)(0) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(1) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(2) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(3) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(4) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(5) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(6) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(7) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(8) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(9) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(10) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(11) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(12) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(13) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(14) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(15) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(16) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(17) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(18) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(19) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(20) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(21) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(22) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(23) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(24) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(25) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(26) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(27) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(28) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(29) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(30) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFreg(31) {-height 15 -radix hexadecimal}} /testbench/iTop/instPROC/instRF/RFreg
 # add wave -noupdate -group RegisterFile -radix hexadecimal -childformat {{/testbench/iTop/instPROC/instRF/RFMux(0) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(1) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(2) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(3) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(4) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(5) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(6) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(7) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(8) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(9) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(10) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(11) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(12) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(13) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(14) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(15) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(16) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(17) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(18) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(19) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(20) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(21) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(22) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(23) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(24) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(25) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(26) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(27) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(28) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(29) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(30) -radix hexadecimal} {/testbench/iTop/instPROC/instRF/RFMux(31) -radix hexadecimal}} -expand -subitemconfig {/testbench/iTop/instPROC/instRF/RFMux(0) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(1) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(2) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(3) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(4) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(5) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(6) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(7) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(8) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(9) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(10) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(11) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(12) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(13) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(14) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(15) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(16) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(17) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(18) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(19) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(20) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(21) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(22) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(23) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(24) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(25) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(26) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(27) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(28) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(29) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(30) {-height 15 -radix hexadecimal} /testbench/iTop/instPROC/instRF/RFMux(31) {-height 15 -radix hexadecimal}} /testbench/iTop/instPROC/instRF/RFMux
 # add wave -noupdate /testbench/iTop/SIGsramCS
+# ** Error: (vish-4014) No objects found matching '/testbench/iTop/SIGsramCS'.
+# Executing ONERROR command at macro ./wave.do line 158
 # add wave -noupdate /testbench/iTop/SIGuartCS
 # add wave -noupdate /testbench/iTop/SIGdispCS
 # TreeUpdate [SetDefaultTree]
@@ -725,6 +727,5 @@
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
 run -continue
-run -continue
-# End time: 16:19:26 on May 11,2023, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 118
+# End time: 17:20:52 on May 11,2023, Elapsed time: 0:17:05
+# Errors: 3, Warnings: 118

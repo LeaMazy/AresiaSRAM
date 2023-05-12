@@ -187,9 +187,10 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGDataOut_32b 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	
 	--Store/Load SRAM
-	SIGNAL SIGsramCS	 	 	 : std_logic;
+	SIGNAL SIGMEMcs	 	 	 : std_logic;
 	SIGNAL MuxPROCstore  : STD_LOGIC;
 	SIGNAL SIGPROCdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL SIGMEMdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	--BootLoader
 	SIGNAL SIGswitchBootnext : std_logic;
 	SIGNAL SIGbootfinish	 	 : std_logic;
@@ -231,7 +232,7 @@ BEGIN
 	-----------------------
 	
 	-- Chip Select for sram, displayer and uart
-	SIGsramCS <= '0' when (SIGPROCaddrDM(31)='1' and (SIGPROCload='1' or SIGPROCstore='1')) else
+	SIGmemCS <= '0' when (SIGPROCaddrDM(31)='1' and (SIGPROCload='1' or SIGPROCstore='1')) else
 					 '1'; --when (SIGPROCload='0') or (SIGPROCstore='0');
 	SIGdispCS <= '1' when (SIGPROCload='1' or SIGPROCstore='1') and (SIGPROCaddrDM(31)='1' and SIGPROCaddrDM(30)='0') else '0';
 	SIGuartCS <= '1' when (SIGPROCload='1' or SIGPROCstore='1') and (SIGPROCaddrDM(31)='1' and SIGPROCaddrDM(30)='1') else '0';
@@ -244,6 +245,7 @@ BEGIN
 	-- avoid writing in memory when the proc wants to write on its outputs
 	MuxPROCstore <= '0' WHEN SIGPROCaddrDM(31)='1' ELSE
 						 SIGPROCstore;
+	SIGMEMdq <= (others => '0') WHEN SIGMEMcs='0' else SIGPROCdq;
 	--
 
 	SIGclock    <= TOPclock WHEN SIGsimulOn = '1' ELSE
@@ -347,10 +349,10 @@ BEGIN
 		clock     => SIGclock,
 		data_a    => (OTHERS => '0'), 	-- Instruction in
 		data_b    => SIGPROCinputDM,  	-- Data in
-		enable    => SIGsramCS,				-- ChipSelect for SRAM
+		enable    => '1',						-- ChipSelect for SRAM
 		wren_a    => '0',                -- Write Instruction Select
 		wren_b    => MuxPROCstore,       -- Write Data Select
-		dq			 => SIGPROCdq,
+		dq			 => SIGMEMdq,
 		q_a       => SIGPROCinstruction, -- DataOut Instruction
 		q_b       => SIGPROCoutputDM		-- DataOut Data
 	);
