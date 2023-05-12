@@ -198,8 +198,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGinstMux 	 	 : std_logic_vector(31 downto 0);
 	--UART
 	SIGNAL SIGuartCS	 	 	 : std_logic;
-	SIGNAL SIGSelectDataOut  : std_logic;
-	SIGNAL SIGSelectDataOut2 : std_logic;
+	SIGNAL SIGSelectDataOut  : std_logic_vector(2 downto 0);
 	SIGNAL SIGUARTOut			 : std_logic_vector(31 downto 0);
 	SIGNAL SIGMuxDataOut		 : std_logic_vector(31 downto 0);
 	SIGNAL SIGPROCtx 			 : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -266,10 +265,14 @@ BEGIN
 --		then SIGSelectDataOut2 <= SIGSelectDataOut;
 --		end if;
 --	end process;
---
---
---	SIGMuxDataOut <=  SIGUARTOut when (SIGSelectDataOut2='1' or SIGSelectDataOut='1') else 
---							SIGPROCoutputDM;
+
+	
+	SIGSelectDataOut <= SIGmemCS & SIGdispCS & SIGuartCS when rising_edge(SIGclock);
+	SIGMuxDataOut <=  SIGPROCoutputDM when (SIGSelectDataOut="100") else
+							procDisplay1    when (SIGSelectDataOut="010" and SIGPROCaddrDM(3)='0' and SIGPROCaddrDM(2)='1') else --0x80000004
+							procDisplay2    when (SIGSelectDataOut="010" and SIGPROCaddrDM(3)='1' and SIGPROCaddrDM(2)='0') else --0x80000008
+							SIGUARTOut 		 when (SIGSelectDataOut="001") else 
+							(others => '0');
 	-- INSTANCES
 
 	debug : debUGER
@@ -292,8 +295,8 @@ BEGIN
 		PROCclock       => SIGclock,
 		PROCreset       => TOPreset,
 		PROCinstruction => SIGinstMux,
---		PROCoutputDM    => SIGMuxDataOut,
-		PROCoutputDM    => SIGPROCoutputDM,
+		PROCoutputDM    => SIGMuxDataOut,
+--		PROCoutputDM    => SIGPROCoutputDM,
 		PROCswitchBoot  => switchBoot,
 		-- PROCswitchBootnext  => SIGswitchBootnext,
 		-- OUTPUTS
