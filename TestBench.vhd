@@ -134,6 +134,8 @@ architecture VHDL of TestBench is
 			reset <= '0';
 			wait for 10100 ns;
 			reset <= '1';
+			wait for 410 ns;
+			reset <= '0';
 			wait;
 		end process;
 		
@@ -151,7 +153,7 @@ architecture VHDL of TestBench is
 --   		sigBoot <= '0';
 --			wait for 50000 ns;
 			sigBoot <= '1';
-			wait for 12100 ns;
+			wait for 7100 ns;
    		sigBoot <= '0';
 			wait;
 		end process;

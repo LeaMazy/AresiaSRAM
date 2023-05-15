@@ -136,19 +136,19 @@ ARCHITECTURE archi OF Top IS
 	);
 	end component;
 	
---	component uartComm IS
---	PORT(
---		clk		:	IN	STD_LOGIC;
---		reset_n	:	IN	STD_LOGIC;				--ascynchronous reset
---		data_in  :  IN STD_LOGIC_VECTOR(31 DOWNTO 0);
---		-- reading  :  IN STD_LOGIC;
---		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
---		cs 		:	IN STD_LOGIC;
---	   rx			:	IN STD_LOGIC;	
---		data_out :  OUT 	STD_LOGIC_VECTOR(31 DOWNTO 0);
---		tx			:	OUT	STD_LOGIC
---	);
---END component;
+   component uartComm IS
+	PORT(
+		clk		:	IN	STD_LOGIC;
+		reset_n	:	IN	STD_LOGIC;				--ascynchronous reset
+		data_in  :  IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		-- reading  :  IN STD_LOGIC;
+		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		cs 		:	IN STD_LOGIC;
+	   rx			:	IN STD_LOGIC;	
+		data_out :  OUT 	STD_LOGIC_VECTOR(31 DOWNTO 0);
+		tx			:	OUT	STD_LOGIC
+	);
+	END component;
 
 
 	--------STATE MACHINES	
@@ -328,7 +328,7 @@ BEGIN
 		DISPreset    => TOPreset,
 		DISPaddr     => SIGPROCaddrDM,
 		DISPinput    => SIGPROCinputDM,
-		DISPWrite    => MuxPROCstore,
+		DISPWrite    => SIGPROCstore,
 		--OUTPUTS
 		DISPleds     => procLed,
 		DISPdisplay1 => procDisplay1,
@@ -387,16 +387,17 @@ BEGIN
 	BEGIN
 		--init 
 		nextState <= currentState;
-		SIGreset <= '0';
-		SIGboot  <= '0';
+		-- SIGreset <= '0';
+		-- SIGboot  <= '0';
 		
 		--cases
 		case currentState is 
 			when idle =>
+				SIGreset <= '0';
 				if(SIGbootChg='1') then nextState <= R1;
 				end if;
 			when R1 => 
-				--SIGreset <= '1';
+				SIGreset <= '1';
 				nextState <= R2;
 			when R2 => 
 				SIGboot <= switchBoot;
