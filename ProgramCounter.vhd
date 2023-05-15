@@ -28,8 +28,6 @@ ENTITY ProgramCounter IS
 		PCalusupU    	 : IN    STD_LOGIC;
 		PClock 			 :in std_logic;
 		PCLoad 			 : IN STD_LOGIC;
-		switchBoot 	  	 : IN 	 STD_LOGIC;
-		-- switchBootnext 	  	 : IN 	 STD_LOGIC;
 
 		-- OUTPUTS
 		--PCnext : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -57,12 +55,6 @@ ARCHITECTURE archi OF ProgramCounter IS
 	SIGNAL MuxSwitch 	  	 : STD_LOGIC := '0';
 
 BEGIN
-	process (PCclock)
-	begin
-		if rising_edge (PCclock)
-		then SigswitchBootnext <= switchBoot;
-		end if;
-	end process;
 	-----------------------------------------------------------------
 	-------------------------- PC REG -------------------------------
 	-----------------------------------------------------------------
@@ -113,9 +105,7 @@ BEGIN
 					
 	PC <= SigPC;
 	
-	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1' or SigswitchBootnext=not(switchBoot)) else
-					-- std_logic_vector(to_signed(-4, SigPC'length)) when (rising_edge(switchBoot)) else
-					-- std_logic_vector(to_signed(-4, SigPC'length)) when (falling_edge(switchBoot)) else
+	SigPC 	<= std_logic_vector(to_signed(-4, SigPC'length)) when (PCreset='1') else
 				   MuxPC when rising_edge(PCclock);
 	
 	PCnext    <= SIGPCnext;

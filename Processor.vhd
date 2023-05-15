@@ -16,8 +16,6 @@ ENTITY Processor IS
 		PROCreset       		: IN  STD_LOGIC;
 		PROCinstruction 		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCoutputDM    		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCswitchBoot	 		: IN  STD_LOGIC;
-		--PROCswitchBootnext	: IN  STD_LOGIC;
 		-- OUTPUTS
 		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- next PC for fetch
 		PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- current PC
@@ -26,8 +24,8 @@ ENTITY Processor IS
 		PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 		PROCaddrDM      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCinputDM     : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCdq     		 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+		PROCdq     		 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+--		PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END ENTITY;
 
@@ -56,8 +54,6 @@ ARCHITECTURE archi OF Processor IS
 			PCalusupU     : IN    STD_LOGIC;
 			PClock        : IN    STD_LOGIC;
 			PCLoad        : IN    STD_LOGIC;
-			switchBoot 	  : IN 	 STD_LOGIC;
-			-- switchBootnext 	  	 : IN 	 STD_LOGIC;
 
 			-- OUTPUTS
 			PCnext : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -285,7 +281,7 @@ BEGIN
 											(OTHERS => '1') WHEN (SIGimmSel = '1' OR SIGloadP2 = '1' OR SIGstore = '1' OR SIGjalr = '1') AND SIGimm12I(11) = '1' ELSE
 											SIGoutput2RF(31 DOWNTO 12);
 
-	PROCtx <= SIGoutput2RF;			-- Tx pour UART
+--	PROCtx <= SIGoutput2RF;			-- Tx pour UART
 	
 	-- data memory
 	PROCaddrDM  <= SIGoutputALU;
@@ -345,10 +341,8 @@ BEGIN
 		PCalusupU     => SIGsupUALU,
 		PCLoad        => Sigload,
 		PClock        => SigLock,
-		switchBoot	  => PROCswitchBoot,
 		PCnext		  => SIGprogcounterfetch,
 		PC 			  => SIGprogcounter
-		-- switchBootnext => PROCswitchBootnext
 	);
 
 	instID : InstructionDecoder
