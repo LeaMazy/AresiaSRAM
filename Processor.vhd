@@ -16,8 +16,6 @@ ENTITY Processor IS
 		PROCreset       		: IN  STD_LOGIC;
 		PROCinstruction 		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCoutputDM    		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCswitchBoot	 		: IN  STD_LOGIC;
-		--PROCswitchBootnext	: IN  STD_LOGIC;
 		-- OUTPUTS
 		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- next PC for fetch
 		PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- current PC
@@ -56,8 +54,6 @@ ARCHITECTURE archi OF Processor IS
 			PCalusupU     : IN    STD_LOGIC;
 			PClock        : IN    STD_LOGIC;
 			PCLoad        : IN    STD_LOGIC;
-			switchBoot 	  : IN 	 STD_LOGIC;
-			-- switchBootnext 	  	 : IN 	 STD_LOGIC;
 
 			-- OUTPUTS
 			PCnext : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -345,10 +341,8 @@ BEGIN
 		PCalusupU     => SIGsupUALU,
 		PCLoad        => Sigload,
 		PClock        => SigLock,
-		switchBoot	  => PROCswitchBoot,
 		PCnext		  => SIGprogcounterfetch,
 		PC 			  => SIGprogcounter
-		-- switchBootnext => PROCswitchBootnext
 	);
 
 	instID : InstructionDecoder

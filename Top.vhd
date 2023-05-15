@@ -41,8 +41,7 @@ ARCHITECTURE archi OF Top IS
 			PROCreset       : IN  STD_LOGIC;
 			PROCinstruction : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCoutputDM    : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-			PROCswitchBoot  : IN  STD_LOGIC;
-			-- PROCswitchBootnext  : IN  STD_LOGIC;
+			
 			-- OUTPUTS
 			PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -152,8 +151,10 @@ ARCHITECTURE archi OF Top IS
 --END component;
 
 
-	
-	-- SIGNALS
+	--------STATE MACHINES	
+	TYPE BootMemMachine IS (idle, R1, R2, R3);	--state machine to force reset when boot mode is activated/desactivated
+	SIGNAL currentState, nextState : BootMemMachine;
+	--------SIGNALS
 	--SIGNAL SIGoutputDMorREG : STD_LOGIC_VECTOR (31 DOWNTO 0);
 	SIGNAL SIGcounter                                    : STD_LOGIC_VECTOR (31 DOWNTO 0); --0x80000000
 	SIGNAL SIGPLLclock                                   : STD_LOGIC;
@@ -161,7 +162,8 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGclock                                      : STD_LOGIC; --either from pll or simulation
 	--SIGNAL SIGclockInverted : STD_LOGIC; --either from pll or simulation
 	SIGNAL SIGsimulOn                                    : STD_LOGIC; --either from pll or simulation
-	SIGNAL TOPreset                                      : STD_LOGIC;
+	SIGNAL TOPreset                                      : STD_LOGIC; --main reset
+	SIGNAL SIGreset												  : STD_LOGIC; --state machine reset
 	SIGNAL PLLlock                                       : STD_LOGIC;
 
 	--SIGNAL debuger
@@ -169,8 +171,6 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL procDisplay1, procDisplay2, procLed           : STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL RegcsDMProc, MuxcsDMProc                      : STD_LOGIC;
 	
-	
-	--------SIGNALS
 	SIGNAL SIGPROCinstruction 			: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROCoutputDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROChold 					: STD_LOGIC;
@@ -192,8 +192,9 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL SIGMEMdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	--BootLoader
-	SIGNAL SIGswitchBootnext : std_logic;
-	SIGNAL SIGbootfinish	 	 : std_logic;
+	SIGNAL SIGbootLatch1, SIGbootLatch2 : std_logic;
+	SIGNAL SIGbootChg			 : std_logic;
+	SIGNAL SIGboot			 	 : std_logic; --state machine boot
 	SIGNAL SIGinstBoot	 	 : std_logic_vector(31 downto 0);
 	SIGNAL SIGinstMux 	 	 : std_logic_vector(31 downto 0);
 	--UART
@@ -204,7 +205,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCtx 			 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 	--Displayer
 	SIGNAL SIGdispCS	 	 	 : std_logic;
-
+	
 
 
 	
@@ -212,7 +213,7 @@ ARCHITECTURE archi OF Top IS
 BEGIN
 
 	TOPreset <= '1' WHEN reset = '1' ELSE
-				   reset WHEN rising_edge(SIGclock);
+				   SIGreset WHEN rising_edge(SIGclock);
 	-- BEGIN
 	-- ALL
 	-- TEST BENCH ONLY ---
@@ -237,7 +238,7 @@ BEGIN
 	SIGuartCS <= '1' when (SIGPROCload='1' or SIGPROCstore='1') and (SIGPROCaddrDM(31)='1' and SIGPROCaddrDM(30)='1') else '0';
 
 	-- Multiplexor for instruction between Boot and Sram
-	SIGinstMux <= SIGinstBoot when switchBoot = '1' else
+	SIGinstMux <= SIGinstBoot when SIGboot = '1' else
 					  SIGPROCinstruction;
 	
 	-- Sram specific signal
@@ -258,13 +259,6 @@ BEGIN
 		            debugDisplay2;
 
 	TOPLeds <= procLed WHEN enableDebug = '0' ELSE procLed;
-	
---	process (SIGclock)
---	begin
---		if rising_edge (SIGclock)
---		then SIGSelectDataOut2 <= SIGSelectDataOut;
---		end if;
---	end process;
 
 	
 	SIGSelectDataOut <= SIGmemCS & SIGdispCS & SIGuartCS when rising_edge(SIGclock);
@@ -273,6 +267,13 @@ BEGIN
 							procDisplay2    when (SIGSelectDataOut="010" and SIGPROCaddrDM(3)='1' and SIGPROCaddrDM(2)='0') else --0x80000008
 							SIGUARTOut 		 when (SIGSelectDataOut="001") else 
 							(others => '0');
+	
+	SIGbootLatch1 <= switchBoot when rising_edge(SIGclock);
+	SIGbootLatch2 <= SIGbootLatch1 when rising_edge(SIGclock);
+	SIGbootChg 	  <= SIGbootLatch1 xor SIGbootLatch2;
+	
+	
+
 	-- INSTANCES
 
 	debug : debUGER
@@ -297,8 +298,6 @@ BEGIN
 		PROCinstruction => SIGinstMux,
 		PROCoutputDM    => SIGMuxDataOut,
 --		PROCoutputDM    => SIGPROCoutputDM,
-		PROCswitchBoot  => switchBoot,
-		-- PROCswitchBootnext  => SIGswitchBootnext,
 		-- OUTPUTS
 		PROCprogcounter => SIGPROCprogcounter,
 		PROCPC 			 => SIGPROCPC,
@@ -364,7 +363,7 @@ BEGIN
 	port map(
 		--INPUTS
 		clk 			 => SIGclock,
-		CS 			 => switchBoot, 							 --chip select
+		CS 			 => SIGboot, 							 --chip select
 		addrInstBoot => SIGPROCprogcounter(13 downto 2), --addr of boot instruction
 		--OUTPUT
 		instBoot		 => SIGinstBoot							 --output boot instruction
@@ -382,5 +381,37 @@ BEGIN
 --		data_out => SIGUARTOut,
 --		tx			=> tx
 --	);
+
+	-- State machine process
+	iBootMemMachine : PROCESS(SIGclock, reset, switchBoot, SIGbootChg, currentState)
+	BEGIN
+		--init 
+		nextState <= currentState;
+		SIGreset <= '0';
+		SIGboot  <= '0';
+		
+		--cases
+		case currentState is 
+			when idle =>
+				if(SIGbootChg='1') then nextState <= R1;
+				end if;
+			when R1 => 
+				--SIGreset <= '1';
+				nextState <= R2;
+			when R2 => 
+				SIGboot <= switchBoot;
+				nextState <= R3;
+			when R3 => 
+				SIGreset <= '0';
+				nextState <= idle;
+		end case;
+	END PROCESS;
+		
+	iProcessSynchro : PROCESS(reset, SIGclock)
+	BEGIN 
+		if (reset = '1') then currentState <= idle;
+		elsif (rising_edge(SIGclock)) then currentState <= nextState;
+		end if;
+	END PROCESS;
 END archi;
 -- END FILE

@@ -132,18 +132,24 @@ architecture VHDL of TestBench is
 			reset <= '1';
 			wait for 2 ns;
 			reset <= '0';
+			wait for 10100 ns;
+			reset <= '1';
 			wait;
 		end process;
 		
 		bootTestbench: process
 		begin
 		-- init  simulation
-   		sigBoot <= '0';
-			wait for 2100 ns;
-			sigBoot <= '1';
-			wait for 12100 ns;
-   		sigBoot <= '0';
-			wait for 2100 ns;
+--   		sigBoot <= '0';
+--			wait for 2100 ns;
+--			sigBoot <= '1';
+--			wait for 4100 ns;
+--   		sigBoot <= '0';
+--			wait for 2100 ns;
+--			sigBoot <= '1';
+--			wait for 12100 ns;
+--   		sigBoot <= '0';
+--			wait for 50000 ns;
 			sigBoot <= '1';
 			wait for 12100 ns;
    		sigBoot <= '0';
