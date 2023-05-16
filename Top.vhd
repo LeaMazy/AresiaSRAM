@@ -17,14 +17,14 @@ ENTITY Top IS
 		TOPclock                             : IN    STD_LOGIC; --must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;
---		rx												 : IN 	STD_LOGIC;
+		rx												 : IN 	STD_LOGIC;
 		--SW0
 
 		-- OUTPUTS
 		TOPdisplay1                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000004
 		TOPdisplay2                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000008
-		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0)					 --0x8000000c
---		tx												 : OUT 	STD_LOGIC
+		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);					 --0x8000000c
+		tx												 : OUT 	STD_LOGIC
 	);
 END ENTITY;
 
@@ -50,8 +50,8 @@ ARCHITECTURE archi OF Top IS
 			PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 			PROCaddrDM      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCinputDM     : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
---			PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+			PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 		);
 	END COMPONENT;
 
@@ -145,6 +145,8 @@ ARCHITECTURE archi OF Top IS
 		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 		cs 		:	IN STD_LOGIC;
 	   rx			:	IN STD_LOGIC;	
+		uartload	:	IN STD_LOGIC;	
+		uartstore:	IN STD_LOGIC;	
 		data_out :  OUT 	STD_LOGIC_VECTOR(31 DOWNTO 0);
 		tx			:	OUT	STD_LOGIC
 	);
@@ -306,8 +308,8 @@ BEGIN
 		PROCfunct3      => SIGPROCfunct3,
 		PROCaddrDM      => SIGPROCaddrDM,
 		PROCinputDM     => SIGPROCinputDM,
-		PROCdq 			 => SIGPROCdq
---		PROCtx			 => SIGPROCtx
+		PROCdq 			 => SIGPROCdq,
+		PROCtx			 => SIGPROCtx
 	);
 
 	instCPT : Counter
@@ -369,18 +371,20 @@ BEGIN
 		instBoot		 => SIGinstBoot							 --output boot instruction
 	);
 	
---	instUART : UARTComm
---	port map(
---		clk		=> SIGclock,
---		reset_n	=> TOPreset,
---		data_in  => SIGPROCtx,
---		-- reading  => 
---		addOutMP	=> SIGPROCaddrDM,
---		cs 		=> SIGuartCS,
---	   rx			=>	rx,
---		data_out => SIGUARTOut,
---		tx			=> tx
---	);
+	instUART : UARTComm
+	port map(
+		clk		=> SIGclock,
+		reset_n	=> TOPreset,
+		data_in  => SIGPROCtx,
+		uartload	=> SIGPROCload,
+		uartstore => SIGPROCstore,
+		-- reading  => 
+		addOutMP	=> SIGPROCaddrDM,
+		cs 		=> SIGuartCS,
+	   rx			=>	rx,
+		data_out => SIGUARTOut,
+		tx			=> tx
+	);
 
 	-- State machine process
 	iBootMemMachine : PROCESS(SIGclock, reset, switchBoot, SIGbootChg, currentState)

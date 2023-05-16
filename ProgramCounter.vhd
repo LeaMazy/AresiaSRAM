@@ -51,8 +51,8 @@ ARCHITECTURE archi OF ProgramCounter IS
 
 --	SIGNAL MuxPCfetch, PC : std_LOGIC_VECTOR(31 downto 0);
 	SIGNAL SigPC, SigPCnext, MuxPC : std_LOGIC_VECTOR(31 downto 0);
-	SIGNAL SigswitchBootnext 	  	 : STD_LOGIC := '0';
-	SIGNAL MuxSwitch 	  	 : STD_LOGIC := '0';
+--	SIGNAL SigswitchBootnext 	  	 : STD_LOGIC := '0';
+--	SIGNAL MuxSwitch 	  	 : STD_LOGIC := '0';
 
 BEGIN
 	-----------------------------------------------------------------
@@ -91,8 +91,8 @@ BEGIN
 	SigOffSum <= --STD_LOGIC_VECTOR(unsigned(SigPC) + unsigned(SigMux1Out)) when SigMux1Sel='0' else
 					 STD_LOGIC_VECTOR(signed(SigPC) + signed(SigMux1Out));
 					 
-	SigOffSub <= STD_LOGIC_VECTOR(signed(SigPC) - signed(SigMux1Out)) when SigMux1Sel='0' else
-					 STD_LOGIC_VECTOR(signed(SIGPCnext) - signed(SigMux1Out));
+	SigOffSub <= STD_LOGIC_VECTOR(signed(SigPC) - signed(SigMux1Out)); -- when SigMux1Sel='0' else
+					 --STD_LOGIC_VECTOR(signed(SIGPCnext) - signed(SigMux1Out));
 	
 	SigMux2Sel <= SigMux1Sel AND PCoffsetsign;
 	

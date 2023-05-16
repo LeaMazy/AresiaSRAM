@@ -169,8 +169,28 @@ add wave -noupdate /testbench/iTop/instDISP/DISPwrite
 add wave -noupdate /testbench/iTop/instDISP/DISPcs
 add wave -noupdate /testbench/iTop/instDISP/DISPaddr
 add wave -noupdate /testbench/iTop/SIGPROCstore
+add wave -noupdate /testbench/iTop/instUART/instUART/reset_n
+add wave -noupdate /testbench/iTop/rx
+add wave -noupdate /testbench/sigrx
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_read
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_full
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_error
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_data
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_state
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_parity
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx_buffer
+add wave -noupdate -expand -group rx /testbench/iTop/instUART/instUART/rx
+add wave -noupdate /testbench/sigtx
+add wave -noupdate /testbench/iTop/tx
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_busy
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_state
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_parity
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_buffer
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_data
+add wave -noupdate -expand -group tx /testbench/iTop/instUART/instUART/tx_ena
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {192000000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {8166148 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 201
 configure wave -valuecolwidth 126
@@ -186,4 +206,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {191475712 ps} {192524288 ps}
+WaveRestoreZoom {0 ps} {8388608 ps}

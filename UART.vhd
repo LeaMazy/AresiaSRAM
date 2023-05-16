@@ -5,19 +5,19 @@ ENTITY uart IS
 	GENERIC(
 		clk_freq		:	INTEGER		:= 10_000_000;		--frequency of system clock in Hertz
 		baud_rate	:	INTEGER		:= 115_200;		--data link baud rate in bits/second
-		d_width		:	INTEGER		:= 32; 			--data bus width
+		d_width		:	INTEGER		:= 8; 			--data bus width
 		parity		:	INTEGER		:= 0;			--0 for no parity, 1 for parity
 		parity_eo	:	STD_LOGIC	:='0');		--'0' for even, '1' for odd parity
 	PORT(
 		clk		:	IN	STD_LOGIC;				--system clock
 		reset_n	:	IN	STD_LOGIC;				--ascynchronous reset
 		tx_ena	:	IN	STD_LOGIC;				--initiate transmission
-		tx_data	:	IN	STD_LOGIC_VECTOR(31 DOWNTO 0);  --data to transmit
+		tx_data	:	IN	STD_LOGIC_VECTOR(7 DOWNTO 0);  --data to transmit
 		rx			:	IN	STD_LOGIC;				--receive pin
 		rx_read	:	IN	STD_LOGIC;				--receive pin
 		rx_full	:	OUT	STD_LOGIC;				--data reception in progress
 		rx_error	:	OUT	STD_LOGIC;				--start, parity, or stop bit error detected
-		rx_data	:	OUT	STD_LOGIC_VECTOR(31 DOWNTO 0);	--data received
+		rx_data	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);	--data received
 		tx_busy	:	OUT	STD_LOGIC;  				--transmission in progress
 		tx			:	OUT	STD_LOGIC);				--transmit pin
 END uart;

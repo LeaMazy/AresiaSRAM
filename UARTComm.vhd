@@ -10,7 +10,9 @@ ENTITY uartComm IS
 		-- reading  :  IN STD_LOGIC;
 		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 		cs 		:	IN STD_LOGIC;
-	   rx			:	IN STD_LOGIC;	
+	   rx			:	IN STD_LOGIC;
+		uartload	:	IN STD_LOGIC;	
+		uartstore:	IN STD_LOGIC;		
 
 		data_out :  OUT 	STD_LOGIC_VECTOR(31 DOWNTO 0);
 		tx			:	OUT	STD_LOGIC
@@ -23,12 +25,12 @@ ARCHITECTURE vhdl OF uartComm IS
 		clk		:	IN	 	STD_LOGIC;				--system clock
 		reset_n	:	IN	 	STD_LOGIC;				--ascynchronous reset
 		tx_ena	:	IN		STD_LOGIC;				--initiate transmission
-		tx_data	:	IN		STD_LOGIC_VECTOR(31 DOWNTO 0);  --data to transmit
+		tx_data	:	IN		STD_LOGIC_VECTOR(7 DOWNTO 0);  --data to transmit
 		rx			:	IN		STD_LOGIC;				--receive pin
 		rx_read	:	IN		STD_LOGIC;				--receive pin
 		rx_full	:	OUT	STD_LOGIC;				--data reception in progress
 		rx_error :	OUT	STD_LOGIC;				--start, parity, or stop bit error detected
-		rx_data	:	OUT	STD_LOGIC_VECTOR(31 DOWNTO 0);	--data received
+		rx_data	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);	--data received
 		tx_busy	:	OUT	STD_LOGIC;  				--transmission in progress
 		tx			:	OUT	STD_LOGIC);				--transmit pin
 	END COMPONENT;
@@ -39,33 +41,36 @@ ARCHITECTURE vhdl OF uartComm IS
 	SIGNAL SIGRX_FULL		 : std_logic;
 	SIGNAL SIGRX_ERROR	 : std_logic;
 	SIGNAL SIGTX_BUSY		 : std_logic;
-	SIGNAL SIGRX_DATA 	 : std_logic_vector(31 downto 0);
-	SIGNAL SIGUART_STATUS : std_logic_vector(31 downto 0);
-	SIGNAL SIGMUXOUT		 : std_logic_vector(31 downto 0);
-	SIGNAL SIGRXi		 	 : std_logic;
+	SIGNAL SIGRX_DATA 	 : std_logic_vector(7 downto 0);
+	SIGNAL SIGUART_STATUS : std_logic_vector(7 downto 0);
+	SIGNAL SIGMUXOUT		 : std_logic_vector(7 downto 0);
+	SIGNAL SIGLATCH_OUT	 : std_logic_vector(7 downto 0);
 	
 BEGIN
-	SIGSEL_STATUS <= '1' when (cs='1' and addOutMP(3)='0' and addOutMP(2)='0') else '0';
-	SIGSEL_RX <= '1' when (cs='1' and addOutMP(3)='0' and addOutMP(2)='1') else '0';
-	SIGSEL_TX <= '1' when (cs='1' and addOutMP(3)='1' and addOutMP(2)='1') else '0';
-	SIGUART_STATUS <= ("00000000000000000000000000000" & SIGRX_FULL & SIGRX_ERROR & SIGTX_BUSY);
+	SIGSEL_STATUS <= '1' when (cs='1' and addOutMP(2)='0' and uartload='1' and uartstore='0') else '0';
+	SIGSEL_RX <= '1' when (cs='1' and addOutMP(2)='1' and uartload='1' and uartstore='0') else '0';
+	SIGSEL_TX <= '1' when (cs='1' and addOutMP(2)='1' and uartload='0' and uartstore='1') else '0';
+	SIGUART_STATUS <= ("00000" & SIGRX_FULL & SIGRX_ERROR & SIGTX_BUSY);
 	SIGMUXOUT <= SIGUART_STATUS when (SIGSEL_STATUS='1') else 
-				   (SIGRX_DATA);
+				   (SIGRX_DATA) when (SIGSEL_RX='1') else
+					(others => '0');
 	
 	process (clk)
 	begin
 		if rising_edge (clk)
-		then data_out <= SIGMUXOUT;
+		then SIGLATCH_OUT <= SIGMUXOUT;
 		end if;
 	end process;
+	
+	data_out <= "000000000000000000000000" & SIGLATCH_OUT;
 	
 	instUART : uart
 	PORT MAP(
 		clk	   => clk,
 		reset_n	=> reset_n,
 		tx_ena	=> SIGSEL_TX,
-		tx_data	=> data_in,
-		rx			=> SIGRXi,
+		tx_data	=> data_in(7 downto 0),
+		rx			=> rx,
 		rx_read	=> SIGSEL_RX,
 		rx_full	=> SIGRX_FULL,
 		rx_error => SIGRX_ERROR,
