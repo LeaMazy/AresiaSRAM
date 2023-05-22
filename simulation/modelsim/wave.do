@@ -13,7 +13,6 @@ add wave -noupdate -radix hexadecimal /testbench/dataLength
 add wave -noupdate -radix hexadecimal /testbench/inputData
 add wave -noupdate -radix hexadecimal /testbench/outputData
 add wave -noupdate -radix hexadecimal -childformat {{/testbench/outputInstr(31) -radix hexadecimal} {/testbench/outputInstr(30) -radix hexadecimal} {/testbench/outputInstr(29) -radix hexadecimal} {/testbench/outputInstr(28) -radix hexadecimal} {/testbench/outputInstr(27) -radix hexadecimal} {/testbench/outputInstr(26) -radix hexadecimal} {/testbench/outputInstr(25) -radix hexadecimal} {/testbench/outputInstr(24) -radix hexadecimal} {/testbench/outputInstr(23) -radix hexadecimal} {/testbench/outputInstr(22) -radix hexadecimal} {/testbench/outputInstr(21) -radix hexadecimal} {/testbench/outputInstr(20) -radix hexadecimal} {/testbench/outputInstr(19) -radix hexadecimal} {/testbench/outputInstr(18) -radix hexadecimal} {/testbench/outputInstr(17) -radix hexadecimal} {/testbench/outputInstr(16) -radix hexadecimal} {/testbench/outputInstr(15) -radix hexadecimal} {/testbench/outputInstr(14) -radix hexadecimal} {/testbench/outputInstr(13) -radix hexadecimal} {/testbench/outputInstr(12) -radix hexadecimal} {/testbench/outputInstr(11) -radix hexadecimal} {/testbench/outputInstr(10) -radix hexadecimal} {/testbench/outputInstr(9) -radix hexadecimal} {/testbench/outputInstr(8) -radix hexadecimal} {/testbench/outputInstr(7) -radix hexadecimal} {/testbench/outputInstr(6) -radix hexadecimal} {/testbench/outputInstr(5) -radix hexadecimal} {/testbench/outputInstr(4) -radix hexadecimal} {/testbench/outputInstr(3) -radix hexadecimal} {/testbench/outputInstr(2) -radix hexadecimal} {/testbench/outputInstr(1) -radix hexadecimal} {/testbench/outputInstr(0) -radix hexadecimal}} -subitemconfig {/testbench/outputInstr(31) {-height 15 -radix hexadecimal} /testbench/outputInstr(30) {-height 15 -radix hexadecimal} /testbench/outputInstr(29) {-height 15 -radix hexadecimal} /testbench/outputInstr(28) {-height 15 -radix hexadecimal} /testbench/outputInstr(27) {-height 15 -radix hexadecimal} /testbench/outputInstr(26) {-height 15 -radix hexadecimal} /testbench/outputInstr(25) {-height 15 -radix hexadecimal} /testbench/outputInstr(24) {-height 15 -radix hexadecimal} /testbench/outputInstr(23) {-height 15 -radix hexadecimal} /testbench/outputInstr(22) {-height 15 -radix hexadecimal} /testbench/outputInstr(21) {-height 15 -radix hexadecimal} /testbench/outputInstr(20) {-height 15 -radix hexadecimal} /testbench/outputInstr(19) {-height 15 -radix hexadecimal} /testbench/outputInstr(18) {-height 15 -radix hexadecimal} /testbench/outputInstr(17) {-height 15 -radix hexadecimal} /testbench/outputInstr(16) {-height 15 -radix hexadecimal} /testbench/outputInstr(15) {-height 15 -radix hexadecimal} /testbench/outputInstr(14) {-height 15 -radix hexadecimal} /testbench/outputInstr(13) {-height 15 -radix hexadecimal} /testbench/outputInstr(12) {-height 15 -radix hexadecimal} /testbench/outputInstr(11) {-height 15 -radix hexadecimal} /testbench/outputInstr(10) {-height 15 -radix hexadecimal} /testbench/outputInstr(9) {-height 15 -radix hexadecimal} /testbench/outputInstr(8) {-height 15 -radix hexadecimal} /testbench/outputInstr(7) {-height 15 -radix hexadecimal} /testbench/outputInstr(6) {-height 15 -radix hexadecimal} /testbench/outputInstr(5) {-height 15 -radix hexadecimal} /testbench/outputInstr(4) {-height 15 -radix hexadecimal} /testbench/outputInstr(3) {-height 15 -radix hexadecimal} /testbench/outputInstr(2) {-height 15 -radix hexadecimal} /testbench/outputInstr(1) {-height 15 -radix hexadecimal} /testbench/outputInstr(0) {-height 15 -radix hexadecimal}} /testbench/outputInstr
-add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGLATCH_OUT
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGMUXOUT
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGRX_DATA
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGRX_ERROR
@@ -28,22 +27,29 @@ add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/clk
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/cs
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/data_in
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/data_out
-add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/reset_n
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/rx
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/tx
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartload
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartstore
+add wave -noupdate /testbench/sigrx
+add wave -noupdate /testbench/iTop/rx
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_buffer
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_data
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_error
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_full
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_parity
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_read
+add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_state
 add wave -noupdate -radix hexadecimal /testbench/sigtx
 add wave -noupdate -radix hexadecimal /testbench/iTop/tx
-add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx
-add wave -noupdate -expand -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_buffer
-add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_busy
-add wave -noupdate -expand -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_data
-add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_ena
-add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_parity
-add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_state
-add wave -noupdate -group rx /testbench/iTop/rx
-add wave -noupdate -group rx /testbench/sigrx
+add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx
+add wave -noupdate -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_buffer
+add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_busy
+add wave -noupdate -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_data
+add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_ena
+add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_parity
+add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_state
 add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/CS
 add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/rom_block
 add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr00
@@ -190,7 +196,7 @@ add wave -noupdate -group CS /testbench/iTop/SIGuartCS
 add wave -noupdate -group CS /testbench/iTop/SIGdispCS
 add wave -noupdate -group CS /testbench/iTop/SIGMEMcs
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {11397572 ps} 0}
+WaveRestoreCursors {{Cursor 1} {15000000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 201
 configure wave -valuecolwidth 126
@@ -206,4 +212,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {422272 ps} {20809990 ps}
+WaveRestoreZoom {0 ps} {40775436 ps}

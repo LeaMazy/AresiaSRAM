@@ -59,7 +59,7 @@ architecture VHDL of TestBench is
 		reset        	 => reset,
 		TOPdisplay1     => SigTOPdisplay1,
 		TOPdisplay2     => SigTOPdisplay2,
-		rx					 => '0', --sigrx,
+		rx					 => sigrx,
 		
 		enableDebug 	 => '0',
 		switchSEL		 => '0',
@@ -130,7 +130,7 @@ architecture VHDL of TestBench is
 		begin
 		-- init  simulation
 			reset <= '1';
-			wait for 10200 ns;
+			wait for 1000 ns;
 			reset <= '0';
 --			wait for 10100 ns;
 --			reset <= '1';
@@ -142,8 +142,8 @@ architecture VHDL of TestBench is
 		bootTestbench: process
 		begin
 		--init  simulation
-   		sigBoot <= '1';
-   		wait for 2100 ns;
+--   		sigBoot <= '1';
+--   		wait for 2100 ns;
 --			sigBoot <= '1';
 --			wait for 4100 ns;
 --   		sigBoot <= '0';
@@ -158,15 +158,28 @@ architecture VHDL of TestBench is
 			wait;
 		end process;
 		
---		uarttestbench: process
---		begin
+		uarttestbench: process
+		begin
 		-- init  simulation
---			sigrx <= '1';
---			wait for 1010 ns;
---			sigrx <= '0';
---			wait for 1010 ns;
+			wait for 1000 ns;
+			sigrx <= '1';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
+			sigrx <= '1';
+			wait for 100 ns;
+			sigrx <= '0';
+			wait for 100 ns;
 --			sigrx <= '0';
 --			wait;
---		end process;
+		end process;
 		
 END vhdl;

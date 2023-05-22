@@ -13,28 +13,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db {C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:50 on May 22,2023
+# Start time: 16:02:53 on May 22,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db" C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 12:05:50 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:53 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:50 on May 22,2023
+# Start time: 16:02:53 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 12:05:50 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:53 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:50 on May 22,2023
+# Start time: 16:02:53 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,22 +42,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 12:05:50 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:53 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:50 on May 22,2023
+# Start time: 16:02:53 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RAM8x4
 # -- Compiling architecture SYN of RAM8x4
-# End time: 12:05:50 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:54 on May 22,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:50 on May 22,2023
+# Start time: 16:02:54 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_3
 # -- Compiling architecture SYN of ram8_3
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:01
+# End time: 16:02:54 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:54 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_2
 # -- Compiling architecture SYN of ram8_2
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:54 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:54 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_1
 # -- Compiling architecture SYN of ram8_1
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:54 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:55 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_0
 # -- Compiling architecture SYN of ram8_0
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:55 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:55 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:55 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:55 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:55 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:55 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:55 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:55 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:55 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:56 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,22 +161,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:56 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:56 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:56 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:56 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -184,11 +184,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:56 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:57 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -196,11 +196,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:57 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:57 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -208,33 +208,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Bootloader
 # -- Compiling architecture archi of Bootloader
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:57 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/UART.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:57 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/UART.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity uart
 # -- Compiling architecture logic of uart
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:57 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/UARTComm.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:57 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/UARTComm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity uartComm
 # -- Compiling architecture vhdl of uartComm
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:57 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:51 on May 22,2023
+# Start time: 16:02:57 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -243,11 +243,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 12:05:51 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:57 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:52 on May 22,2023
+# Start time: 16:02:58 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -256,11 +256,11 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 12:05:52 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:58 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:52 on May 22,2023
+# Start time: 16:02:58 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -269,12 +269,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 12:05:52 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:58 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:05:52 on May 22,2023
+# Start time: 16:02:58 on May 22,2023
 # vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -283,12 +283,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 12:05:52 on May 22,2023, Elapsed time: 0:00:00
+# End time: 16:02:58 on May 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 12:05:52 on May 22,2023
+# Start time: 16:02:59 on May 22,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -326,7 +326,7 @@
 # Loading work.bootloader(archi)
 # Loading work.uartcomm(vhdl)
 # Loading work.uart(logic)
-# ** Warning: Design size of 20637 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 20652 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
@@ -339,9 +339,9 @@
 # add wave -noupdate -radix hexadecimal /testbench/reset
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 80024
-#           Attempting to use alternate WLF file "./wlftzcn1iy".
+#           Attempting to use alternate WLF file "./wlft0bc136".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzcn1iy
+#           Using alternate file: ./wlft0bc136
 # add wave -noupdate /testbench/iTop/switchBoot
 # add wave -noupdate -radix decimal /testbench/counter
 # add wave -noupdate -radix hexadecimal /testbench/progcounter
@@ -354,9 +354,6 @@
 # add wave -noupdate -radix hexadecimal /testbench/inputData
 # add wave -noupdate -radix hexadecimal /testbench/outputData
 # add wave -noupdate -radix hexadecimal -childformat {{/testbench/outputInstr(31) -radix hexadecimal} {/testbench/outputInstr(30) -radix hexadecimal} {/testbench/outputInstr(29) -radix hexadecimal} {/testbench/outputInstr(28) -radix hexadecimal} {/testbench/outputInstr(27) -radix hexadecimal} {/testbench/outputInstr(26) -radix hexadecimal} {/testbench/outputInstr(25) -radix hexadecimal} {/testbench/outputInstr(24) -radix hexadecimal} {/testbench/outputInstr(23) -radix hexadecimal} {/testbench/outputInstr(22) -radix hexadecimal} {/testbench/outputInstr(21) -radix hexadecimal} {/testbench/outputInstr(20) -radix hexadecimal} {/testbench/outputInstr(19) -radix hexadecimal} {/testbench/outputInstr(18) -radix hexadecimal} {/testbench/outputInstr(17) -radix hexadecimal} {/testbench/outputInstr(16) -radix hexadecimal} {/testbench/outputInstr(15) -radix hexadecimal} {/testbench/outputInstr(14) -radix hexadecimal} {/testbench/outputInstr(13) -radix hexadecimal} {/testbench/outputInstr(12) -radix hexadecimal} {/testbench/outputInstr(11) -radix hexadecimal} {/testbench/outputInstr(10) -radix hexadecimal} {/testbench/outputInstr(9) -radix hexadecimal} {/testbench/outputInstr(8) -radix hexadecimal} {/testbench/outputInstr(7) -radix hexadecimal} {/testbench/outputInstr(6) -radix hexadecimal} {/testbench/outputInstr(5) -radix hexadecimal} {/testbench/outputInstr(4) -radix hexadecimal} {/testbench/outputInstr(3) -radix hexadecimal} {/testbench/outputInstr(2) -radix hexadecimal} {/testbench/outputInstr(1) -radix hexadecimal} {/testbench/outputInstr(0) -radix hexadecimal}} -subitemconfig {/testbench/outputInstr(31) {-height 15 -radix hexadecimal} /testbench/outputInstr(30) {-height 15 -radix hexadecimal} /testbench/outputInstr(29) {-height 15 -radix hexadecimal} /testbench/outputInstr(28) {-height 15 -radix hexadecimal} /testbench/outputInstr(27) {-height 15 -radix hexadecimal} /testbench/outputInstr(26) {-height 15 -radix hexadecimal} /testbench/outputInstr(25) {-height 15 -radix hexadecimal} /testbench/outputInstr(24) {-height 15 -radix hexadecimal} /testbench/outputInstr(23) {-height 15 -radix hexadecimal} /testbench/outputInstr(22) {-height 15 -radix hexadecimal} /testbench/outputInstr(21) {-height 15 -radix hexadecimal} /testbench/outputInstr(20) {-height 15 -radix hexadecimal} /testbench/outputInstr(19) {-height 15 -radix hexadecimal} /testbench/outputInstr(18) {-height 15 -radix hexadecimal} /testbench/outputInstr(17) {-height 15 -radix hexadecimal} /testbench/outputInstr(16) {-height 15 -radix hexadecimal} /testbench/outputInstr(15) {-height 15 -radix hexadecimal} /testbench/outputInstr(14) {-height 15 -radix hexadecimal} /testbench/outputInstr(13) {-height 15 -radix hexadecimal} /testbench/outputInstr(12) {-height 15 -radix hexadecimal} /testbench/outputInstr(11) {-height 15 -radix hexadecimal} /testbench/outputInstr(10) {-height 15 -radix hexadecimal} /testbench/outputInstr(9) {-height 15 -radix hexadecimal} /testbench/outputInstr(8) {-height 15 -radix hexadecimal} /testbench/outputInstr(7) {-height 15 -radix hexadecimal} /testbench/outputInstr(6) {-height 15 -radix hexadecimal} /testbench/outputInstr(5) {-height 15 -radix hexadecimal} /testbench/outputInstr(4) {-height 15 -radix hexadecimal} /testbench/outputInstr(3) {-height 15 -radix hexadecimal} /testbench/outputInstr(2) {-height 15 -radix hexadecimal} /testbench/outputInstr(1) {-height 15 -radix hexadecimal} /testbench/outputInstr(0) {-height 15 -radix hexadecimal}} /testbench/outputInstr
-# add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGLATCH_OUT
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/instUARTComm/SIGLATCH_OUT'.
-# Executing ONERROR command at macro ./wave.do line 16
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGMUXOUT
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGRX_DATA
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/SIGRX_ERROR
@@ -371,24 +368,29 @@
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/cs
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/data_in
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/data_out
-# add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/reset_n
-# ** Error: (vish-4014) No objects found matching '/testbench/iTop/instUARTComm/reset_n'.
-# Executing ONERROR command at macro ./wave.do line 31
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/rx
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/tx
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartload
 # add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartstore
+# add wave -noupdate /testbench/sigrx
+# add wave -noupdate /testbench/iTop/rx
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_buffer
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_data
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_error
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_full
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_parity
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_read
+# add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_state
 # add wave -noupdate -radix hexadecimal /testbench/sigtx
 # add wave -noupdate -radix hexadecimal /testbench/iTop/tx
-# add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx
-# add wave -noupdate -expand -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_buffer
-# add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_busy
-# add wave -noupdate -expand -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_data
-# add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_ena
-# add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_parity
-# add wave -noupdate -expand -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_state
-# add wave -noupdate -group rx /testbench/iTop/rx
-# add wave -noupdate -group rx /testbench/sigrx
+# add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx
+# add wave -noupdate -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_buffer
+# add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_busy
+# add wave -noupdate -group tx -radix binary /testbench/iTop/instUARTComm/instUART/tx_data
+# add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_ena
+# add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_parity
+# add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_state
 # add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/CS
 # add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/rom_block
 # add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr00
@@ -535,7 +537,7 @@
 # add wave -noupdate -group CS /testbench/iTop/SIGdispCS
 # add wave -noupdate -group CS /testbench/iTop/SIGMEMcs
 # TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {11397572 ps} 0}
+# WaveRestoreCursors {{Cursor 1} {15000000 ps} 0}
 # quietly wave cursor active 1
 # configure wave -namecolwidth 201
 # configure wave -valuecolwidth 126
@@ -551,7 +553,7 @@
 # configure wave -timeline 0
 # configure wave -timelineunits ps
 # update
-# WaveRestoreZoom {422272 ps} {20809990 ps}
+# WaveRestoreZoom {0 ps} {40775436 ps}
 # run 20 ms
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
@@ -779,5 +781,5 @@
 #    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
-# End time: 14:33:51 on May 22,2023, Elapsed time: 2:27:59
-# Errors: 6, Warnings: 116
+# End time: 16:11:34 on May 22,2023, Elapsed time: 0:08:35
+# Errors: 0, Warnings: 116
