@@ -11,231 +11,231 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v}
+# vlog -vlog01compat -work work +incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db {C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db" C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/db/clock1m_altpll.v 
+# Start time: 17:05:14 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/ECE/Aresia/TestProcGit/AresiaSRAM/db" C:/ECE/Aresia/TestProcGit/AresiaSRAM/db/clock1m_altpll.v 
 # -- Compiling module clock1M_altpll
 # 
 # Top level modules:
 # 	clock1M_altpll
-# End time: 11:50:55 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simul_var_pkg.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/simul_var_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package simulPkg
-# End time: 11:50:55 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/SegmentDecoder.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/SegmentDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity SegmentDecoder
 # -- Compiling architecture vhdl of SegmentDecoder
-# End time: 11:50:55 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8x4.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8x4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RAM8x4
 # -- Compiling architecture SYN of RAM8x4
-# End time: 11:50:55 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_3.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_3
 # -- Compiling architecture SYN of ram8_3
-# End time: 11:50:55 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:55 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_2.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_2
 # -- Compiling architecture SYN of ram8_2
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:01
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_1.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_1
 # -- Compiling architecture SYN of ram8_1
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RAM8_0.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RAM8_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity RAM8_0
 # -- Compiling architecture SYN of ram8_0
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/ProgramCounter.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/ProgramCounter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ProgramCounter
 # -- Compiling architecture archi of ProgramCounter
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:14 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Processor.vhd 
+# Start time: 17:05:14 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Processor
 # -- Compiling architecture archi of Processor
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/InstructionDecoder.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/InstructionDecoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity InstructionDecoder
 # -- Compiling architecture archi of InstructionDecoder
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Displays.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Displays.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Displays
 # -- Compiling architecture archi of Displays
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Counter.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Counter
 # -- Compiling architecture archi of Counter
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/clock1M.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/clock1M.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity clock1M
 # -- Compiling architecture SYN of clock1m
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alu.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alu
 # -- Compiling architecture archi of Alu
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Alignment.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Alignment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Alignment
 # -- Compiling architecture archi of Alignment
-# End time: 11:50:56 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:56 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Bootloader.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Bootloader.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Bootloader
 # -- Compiling architecture archi of Bootloader
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:01
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UART.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/UART.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UART.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/UART.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity uart
 # -- Compiling architecture logic of uart
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UARTComm.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/UARTComm.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/UARTComm.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/UARTComm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity uartComm
 # -- Compiling architecture vhdl of uartComm
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/Top.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/Top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -243,12 +243,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity Top
 # -- Compiling architecture archi of Top
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/RegisterFile.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/RegisterFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -256,12 +256,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity RegisterFile
 # -- Compiling architecture archi of RegisterFile
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/DEBUGER.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/DEBUGER.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -269,13 +269,13 @@
 # -- Loading package simulPkg
 # -- Compiling entity debuger
 # -- Compiling architecture archi of debuger
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd}
+# vcom -93 -work work {C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:50:57 on May 16,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/TestBench.vhd 
+# Start time: 17:05:15 on May 17,2023
+# vcom -reportprogress 300 -93 -work work C:/ECE/Aresia/TestProcGit/AresiaSRAM/TestBench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -283,12 +283,12 @@
 # -- Loading package simulPkg
 # -- Compiling entity TestBench
 # -- Compiling architecture VHDL of TestBench
-# End time: 11:50:57 on May 16,2023, Elapsed time: 0:00:00
+# End time: 17:05:15 on May 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  TestBench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" TestBench 
-# Start time: 11:50:57 on May 16,2023
+# Start time: 17:05:15 on May 17,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -326,22 +326,22 @@
 # Loading work.bootloader(archi)
 # Loading work.uartcomm(vhdl)
 # Loading work.uart(logic)
-# ** Warning: Design size of 20634 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 20646 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
 # the VHDL standard as the initial values come from the base signal /testbench/iTop/debugDisplay2(31 downto 16).
 # 
-# do C:/Users/leama/Aresia/Git_AresiaSRAM/AresiaSRAM/simulation/modelsim/my_custom_view.do
+# do C:/ECE/Aresia/TestProcGit/AresiaSRAM/simulation/modelsim/my_custom_view.do
 # do wave.do
 # onerror {resume}
 # quietly WaveActivateNextPane {} 0
 # add wave -noupdate -radix hexadecimal /testbench/reset
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 123368
-#           Attempting to use alternate WLF file "./wlftqvfygc".
+#           File in use by: leama  Hostname: LAPTOP-Q2CN22IB  ProcessID: 80024
+#           Attempting to use alternate WLF file "./wlftk8cw3n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqvfygc
+#           Using alternate file: ./wlftk8cw3n
 # add wave -noupdate /testbench/iTop/switchBoot
 # add wave -noupdate -radix decimal /testbench/counter
 # add wave -noupdate -radix hexadecimal /testbench/progcounter
@@ -642,11 +642,7 @@
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(1)
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instRF
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /testbench/iTop/instPROC/instRF
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(1)
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -779,659 +775,8 @@
 #    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
 # ** Note: MAX 10 PLL locked to incoming clock
 #    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-run
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-help
-# Type help <command> to get information on that command, or try one of the following:
-#   commands  List all available commands and topics.
-#   Debugging Lists debugging commands.
-#   Execution Information on controlling execution of the simulation.
-#   Tcl       Information on Tcl commands.
-#   Tk        Information on Tk commands.
-#   incrTcl   Information on incrTcl commands.
-# 
-help Debugging
-# See these commands for debugging operations: bp bd when examine step run change add delete force view.
-help step
-# The step command steps to the next HDL or C statement. Current values of local HDL variables may be observed at this time using the Locals window.
-# Usage: step [<n>] [-current] [-out] [-over [<n>]] [-this "this==<class_handle>"]
-help Step
-# The step command steps to the next HDL or C statement. Current values of local HDL variables may be observed at this time using the Locals window.
-step
-step
-step 2
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step 30
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step 30
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-step
-restart
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/iTop/debugDisplay2(31 downto 16).
-run -all
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM3/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM2/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM1/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM0/altsyncram_component
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instRF
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /testbench/iTop/instPROC/instRF
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 4  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
-# ** Note: MAX 10 PLL locked to incoming clock
-#    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-step
-step
-step
-step
-step
-step
-step
-step
-step -over
-step -out
-step -current
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-step -current
-# ** Error: (vsim-12081) The specified scope, sim:/testbench/iTop/instPROC/instALU, is not a process or thread.
-# 
-step -current
-# ** Error: (vsim-12081) The specified scope, sim:/testbench/iTop/instPROC/instALU, is not a process or thread.
-# 
-step -over -current
-# ** Error: (vsim-12081) The specified scope, sim:/testbench/iTop/instPROC/instALU, is not a process or thread.
-# 
-run -continue
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
 # Break key hit
-# Break key hit
-restart
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/iTop/debug/TOPdisplay2(31 downto 16), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/iTop/debugDisplay2(31 downto 16).
-# Break key hit
-run -all
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instBoot
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM3/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM2/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM1/altsyncram_component
-# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/Memory/instRAM0/altsyncram_component
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instALU
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/iTop/instPROC/instRF
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /testbench/iTop/instPROC/instRF
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(1)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(2)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(3)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(5)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(6)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(7)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(8)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(9)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(10)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(11)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(12)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(13)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(14)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(15)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(16)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(17)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(18)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(19)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(20)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(21)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(22)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(23)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(24)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(25)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(26)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(27)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(28)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(29)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(30)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Region: /testbench/iTop/instPROC/instRF/gen(31)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 4  Instance: /testbench/iTop/instPROC/instALIGNMENT
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 6  Instance: /testbench/iTop/instBoot
-# ** Note: MAX 10 PLL locked to incoming clock
-#    Time: 60 ns  Iteration: 3  Instance: /testbench/iTop/instPLL/altpll_component/CYCLONEIII_ALTPLL/M5
-# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 20 us.
-# Break key hit
+# Simulation stop requested.
+run -continue
+# End time: 17:17:11 on May 17,2023, Elapsed time: 0:11:56
+# Errors: 0, Warnings: 116
