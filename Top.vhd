@@ -139,7 +139,7 @@ ARCHITECTURE archi OF Top IS
    component uartComm IS
 	PORT(
 		clk		:	IN	STD_LOGIC;
-		reset_n	:	IN	STD_LOGIC;				--ascynchronous reset
+		reset	:	IN	STD_LOGIC;				--ascynchronous reset
 		data_in  :  IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- reading  :  IN STD_LOGIC;
 		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -194,7 +194,7 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL SIGMEMdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	--BootLoader
-	SIGNAL SIGbootLatch1, SIGbootLatch2 : std_logic;
+	SIGNAL SIGbootReg1, SIGbootReg2 : std_logic;
 	SIGNAL SIGbootChg			 : std_logic;
 	SIGNAL SIGboot			 	 : std_logic; --state machine boot
 	SIGNAL SIGinstBoot	 	 : std_logic_vector(31 downto 0);
@@ -270,9 +270,9 @@ BEGIN
 							SIGUARTOut 		 when (SIGSelectDataOut(4 downto 2)="001") else 
 							(others => '0');
 	
-	SIGbootLatch1 <= switchBoot when rising_edge(SIGclock);
-	SIGbootLatch2 <= SIGbootLatch1 when rising_edge(SIGclock);
-	SIGbootChg 	  <= SIGbootLatch1 xor SIGbootLatch2;
+	SIGbootReg1 <= switchBoot when rising_edge(SIGclock);
+	SIGbootReg2 <= SIGbootReg1 when rising_edge(SIGclock);
+	SIGbootChg 	  <= SIGbootReg1 xor SIGbootReg2;
 	
 	
 
@@ -371,14 +371,15 @@ BEGIN
 		instBoot		 => SIGinstBoot							 --output boot instruction
 	);
 	
-	instUART : UARTComm
+	instUARTComm : UARTComm
 	port map(
 		clk		=> SIGclock,
-		reset_n	=> TOPreset,
+		reset	=> TOPreset,
 		data_in  => SIGPROCtx,
+--		data_in  => SIGPROCinputDM,
+		
 		uartload	=> SIGPROCload,
 		uartstore => SIGPROCstore,
-		-- reading  => 
 		addOutMP	=> SIGPROCaddrDM,
 		cs 		=> SIGuartCS,
 	   rx			=>	rx,
@@ -392,7 +393,7 @@ BEGIN
 		--init 
 		nextState <= currentState;
 		SIGreset <= '0';
-		SIGboot  <= '0';
+		SIGboot  <= switchBoot;
 		
 		--cases
 		case currentState is 

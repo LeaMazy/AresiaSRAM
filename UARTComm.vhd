@@ -5,7 +5,7 @@ USE ieee.std_logic_1164.all;
 ENTITY uartComm IS
 	PORT(
 		clk		:	IN	STD_LOGIC;
-		reset_n	:	IN	STD_LOGIC;				--ascynchronous reset
+		reset		:	IN	STD_LOGIC;				--ascynchronous reset
 		data_in  :  IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 		-- reading  :  IN STD_LOGIC;
 		addOutMP	:	IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -35,6 +35,7 @@ ARCHITECTURE vhdl OF uartComm IS
 		tx			:	OUT	STD_LOGIC);				--transmit pin
 	END COMPONENT;
 
+	SIGNAL SIGRESET_N		 : std_logic;
 	SIGNAL SIGSEL_STATUS  : std_logic;
 	SIGNAL SIGSEL_RX		 : std_logic;
 	SIGNAL SIGSEL_TX		 : std_logic;
@@ -44,9 +45,10 @@ ARCHITECTURE vhdl OF uartComm IS
 	SIGNAL SIGRX_DATA 	 : std_logic_vector(7 downto 0);
 	SIGNAL SIGUART_STATUS : std_logic_vector(7 downto 0);
 	SIGNAL SIGMUXOUT		 : std_logic_vector(7 downto 0);
-	SIGNAL SIGLATCH_OUT	 : std_logic_vector(7 downto 0);
+	SIGNAL SIGREG_OUT	 : std_logic_vector(7 downto 0);
 	
 BEGIN
+	SIGRESET_N <= not reset;
 	SIGSEL_STATUS <= '1' when (cs='1' and addOutMP(2)='0' and uartload='1' and uartstore='0') else '0';
 	SIGSEL_RX <= '1' when (cs='1' and addOutMP(2)='1' and uartload='1' and uartstore='0') else '0';
 	SIGSEL_TX <= '1' when (cs='1' and addOutMP(2)='1' and uartload='0' and uartstore='1') else '0';
@@ -55,19 +57,13 @@ BEGIN
 				   (SIGRX_DATA) when (SIGSEL_RX='1') else
 					(others => '0');
 	
-	process (clk)
-	begin
-		if rising_edge (clk)
-		then SIGLATCH_OUT <= SIGMUXOUT;
-		end if;
-	end process;
-	
-	data_out <= "000000000000000000000000" & SIGLATCH_OUT;
+	SIGREG_OUT <= SIGMUXOUT when rising_edge(clk);
+	data_out <= "000000000000000000000000" & SIGREG_OUT;
 	
 	instUART : uart
 	PORT MAP(
 		clk	   => clk,
-		reset_n	=> reset_n,
+		reset_n	=> SIGRESET_N,
 		tx_ena	=> SIGSEL_TX,
 		tx_data	=> data_in(7 downto 0),
 		rx			=> rx,

@@ -160,11 +160,11 @@ architecture VHDL of TestBench is
 		
 --		uarttestbench: process
 --		begin
---		-- init  simulation
+		-- init  simulation
+--			sigrx <= '1';
+--			wait for 1010 ns;
 --			sigrx <= '0';
 --			wait for 1010 ns;
---			sigrx <= '1';
---			wait for 2010 ns;
 --			sigrx <= '0';
 --			wait;
 --		end process;
