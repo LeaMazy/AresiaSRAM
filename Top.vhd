@@ -196,6 +196,8 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGbootReg1, SIGbootReg2 : std_logic;
 	SIGNAL SIGbootChg			 : std_logic;
 	SIGNAL SIGboot			 	 : std_logic; --state machine boot
+	SIGNAL SIGbootReg		 	 : std_logic := '0'; 
+	SIGNAL SIGbootMux		 	 : std_logic;  
 	SIGNAL SIGinstBoot	 	 : std_logic_vector(31 downto 0);
 	SIGNAL SIGinstMux 	 	 : std_logic_vector(31 downto 0);
 	--UART
@@ -383,13 +385,17 @@ BEGIN
 		tx			=> tx
 	);
 
+	SIGbootMux <= switchBoot when currentState=R1 else 
+					  SIGbootReg;
+	SIGbootReg <= SIGbootMux when rising_edge(SIGclock);
+	
 	-- State machine process
-	iBootMemMachine : PROCESS(SIGclock, reset, switchBoot, SIGbootChg, currentState)
+	iBootMemMachine : PROCESS(SIGclock, reset, switchBoot, SIGbootChg, currentState, SIGbootReg)
 	BEGIN
 		--init 
 		nextState <= currentState;
 		SIGreset <= '0';
-		SIGboot  <= switchBoot;
+		SIGboot  <= SIGbootReg;
 		
 		--cases
 		case currentState is 
@@ -399,9 +405,9 @@ BEGIN
 				end if;
 			when R1 => 
 				SIGreset <= '1';
+				SIGboot <= SIGbootReg;
 				nextState <= R2;
 			when R2 => 
-				SIGboot <= switchBoot;
 				nextState <= R3;
 			when R3 => 
 				SIGreset <= '0';

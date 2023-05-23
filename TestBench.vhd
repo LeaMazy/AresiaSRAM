@@ -144,18 +144,18 @@ architecture VHDL of TestBench is
 		--init  simulation
 --   		sigBoot <= '1';
 --   		wait for 2100 ns;
---			sigBoot <= '1';
---			wait for 4100 ns;
---   		sigBoot <= '0';
---			wait for 2100 ns;
---			sigBoot <= '1';
---			wait for 12100 ns;
---   		sigBoot <= '0';
---			wait for 50000 ns;
---			sigBoot <= '1';
---			wait for 7100 ns;
+			sigBoot <= '1';
+			wait for 10100 ns;
    		sigBoot <= '0';
-			wait;
+			wait for 12100 ns;
+--			sigBoot <= '1';
+--			wait for 10100 ns;
+--   		sigBoot <= '0';
+--			wait for 12100 ns;
+--			sigBoot <= '1';
+--			wait for 10100 ns;
+--   		sigBoot <= '0';
+--			wait;
 		end process;
 		
 		uarttestbench: process
