@@ -50,8 +50,7 @@ ARCHITECTURE archi OF Top IS
 			PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 			PROCaddrDM      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCinputDM     : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-			PROCtx			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
 		);
 	END COMPONENT;
 
@@ -204,7 +203,6 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGSelectDataOut  : std_logic_vector(4 downto 0);
 	SIGNAL SIGUARTOut			 : std_logic_vector(31 downto 0);
 	SIGNAL SIGMuxDataOut		 : std_logic_vector(31 downto 0);
-	SIGNAL SIGPROCtx 			 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 	--Displayer
 	SIGNAL SIGdispCS	 	 	 : std_logic;
 	
@@ -308,8 +306,7 @@ BEGIN
 		PROCfunct3      => SIGPROCfunct3,
 		PROCaddrDM      => SIGPROCaddrDM,
 		PROCinputDM     => SIGPROCinputDM,
-		PROCdq 			 => SIGPROCdq,
-		PROCtx			 => SIGPROCtx
+		PROCdq 			 => SIGPROCdq
 	);
 
 	instCPT : Counter
@@ -375,8 +372,7 @@ BEGIN
 	port map(
 		clk		=> SIGclock,
 		reset	=> TOPreset,
-		data_in  => SIGPROCtx,
---		data_in  => SIGPROCinputDM,
+		data_in  => SIGPROCinputDM,
 		
 		uartload	=> SIGPROCload,
 		uartstore => SIGPROCstore,
