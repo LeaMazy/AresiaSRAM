@@ -6,7 +6,7 @@ ENTITY RAM8x4 IS
 	(
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -24,7 +24,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -39,7 +39,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -54,7 +54,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -69,7 +69,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';

@@ -189,7 +189,8 @@ ARCHITECTURE archi OF Top IS
 	
 	--Store/Load SRAM
 	SIGNAL SIGMEMcs	 	 	 : std_logic;
-	SIGNAL MuxPROCstore  : STD_LOGIC;
+	SIGNAL MuxPROCstore_a  : STD_LOGIC;
+	SIGNAL MuxPROCstore_b  : STD_LOGIC;
 	SIGNAL SIGPROCdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL SIGMEMdq		: STD_LOGIC_VECTOR(3 DOWNTO 0);
 	--BootLoader
@@ -245,8 +246,10 @@ BEGIN
 	
 	-- Sram specific signal
 	-- avoid writing in memory when the proc wants to write on its outputs
-	MuxPROCstore <= '0' WHEN SIGPROCaddrDM(31)='1' ELSE
-						 SIGPROCstore;
+	MuxPROCstore_a <= SIGPROCstore WHEN SIGPROCaddrDM(31)='0' and SIGboot='1' ELSE
+							'0';
+	MuxPROCstore_b <= '0' WHEN SIGPROCaddrDM(31)='1' ELSE
+							SIGPROCstore;
 	SIGMEMdq <= (others => '0') WHEN SIGMEMcs='0' else SIGPROCdq;
 	--
 
@@ -350,11 +353,11 @@ BEGIN
 		address_a => SIGPROCprogcounter(13 downto 2),  --  Addr instruction (divided by 4 because we use 32 bits memory)
 		address_b => SIGPROCaddrDM(13 downto 2),       --  Addr memory (divided by 4 because we use 32 bits memory)
 		clock     => SIGclock,
-		data_a    => (OTHERS => '0'), 	-- Instruction in
+		data_a    => SIGPROCinputDM, 		-- Instruction in
 		data_b    => SIGPROCinputDM,  	-- Data in
 		enable    => '1',						-- ChipSelect for SRAM
-		wren_a    => '0',                -- Write Instruction Select
-		wren_b    => MuxPROCstore,       -- Write Data Select
+		wren_a    => MuxPROCstore_a,       -- Write Instruction Select
+		wren_b    => MuxPROCstore_b,       -- Write Data Select
 		dq			 => SIGMEMdq,
 		q_a       => SIGPROCinstruction, -- DataOut Instruction
 		q_b       => SIGPROCoutputDM		-- DataOut Data

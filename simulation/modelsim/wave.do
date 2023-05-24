@@ -2,6 +2,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate -radix hexadecimal /testbench/reset
 add wave -noupdate /testbench/iTop/switchBoot
+add wave -noupdate /testbench/iTop/SIGboot
 add wave -noupdate -radix decimal /testbench/counter
 add wave -noupdate -radix hexadecimal /testbench/progcounter
 add wave -noupdate -radix hexadecimal /testbench/instr
@@ -33,14 +34,14 @@ add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartload
 add wave -noupdate -group UARTComm /testbench/iTop/instUARTComm/uartstore
 add wave -noupdate /testbench/sigrx
 add wave -noupdate /testbench/iTop/rx
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_buffer
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_data
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_error
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_full
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_parity
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_read
-add wave -noupdate -expand -group rx /testbench/iTop/instUARTComm/instUART/rx_state
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_buffer
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_data
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_error
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_full
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_parity
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_read
+add wave -noupdate -group rx /testbench/iTop/instUARTComm/instUART/rx_state
 add wave -noupdate -radix hexadecimal /testbench/sigtx
 add wave -noupdate -radix hexadecimal /testbench/iTop/tx
 add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx
@@ -50,12 +51,12 @@ add wave -noupdate -group tx -radix binary /testbench/iTop/instUARTComm/instUART
 add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_ena
 add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_parity
 add wave -noupdate -group tx -radix hexadecimal /testbench/iTop/instUARTComm/instUART/tx_state
+add wave -noupdate -radix hexadecimal /testbench/iTop/nextState
+add wave -noupdate -radix hexadecimal /testbench/iTop/currentState
+add wave -noupdate -radix hexadecimal /testbench/iTop/SIGbootChg
+add wave -noupdate -radix hexadecimal /testbench/iTop/SIGbootMux
 add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/CS
 add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/rom_block
-add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr00
-add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr08
-add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr16
-add wave -noupdate -group Boot -radix hexadecimal /testbench/iTop/instBoot/SigBootAddr24
 add wave -noupdate -group Boot -radix decimal /testbench/iTop/instBoot/sigad
 add wave -noupdate -group TopBoot -radix hexadecimal /testbench/iTop/SIGinstMux
 add wave -noupdate -group TopBoot -radix hexadecimal /testbench/iTop/SIGinstBoot
@@ -196,7 +197,7 @@ add wave -noupdate -group CS /testbench/iTop/SIGuartCS
 add wave -noupdate -group CS /testbench/iTop/SIGdispCS
 add wave -noupdate -group CS /testbench/iTop/SIGMEMcs
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {15000000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1044850 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 201
 configure wave -valuecolwidth 126
@@ -212,4 +213,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {40775436 ps}
+WaveRestoreZoom {0 ps} {2548468 ps}
