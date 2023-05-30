@@ -275,7 +275,7 @@ BEGIN
 	
 	SIGbootReg1 <= switchBoot when rising_edge(SIGclock);
 	SIGbootReg2 <= SIGbootReg1 when rising_edge(SIGclock);
-	SIGbootChg 	  <= SIGbootReg1 xor SIGbootReg2;
+	SIGbootChg 	<= SIGbootReg1 xor SIGbootReg2;
 	
 	
 

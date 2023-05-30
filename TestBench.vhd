@@ -147,7 +147,7 @@ architecture VHDL of TestBench is
 			sigBoot <= '1';
 			wait for 10100 ns;
    		sigBoot <= '0';
-			wait for 12100 ns;
+--			wait for 12100 ns;
 --			sigBoot <= '1';
 --			wait for 10100 ns;
 --   		sigBoot <= '0';
@@ -155,7 +155,7 @@ architecture VHDL of TestBench is
 --			sigBoot <= '1';
 --			wait for 10100 ns;
 --   		sigBoot <= '0';
---			wait;
+			wait;
 		end process;
 		
 		uarttestbench: process
@@ -165,21 +165,21 @@ architecture VHDL of TestBench is
 			sigrx <= '1';
 			wait for 100 ns;
 			sigrx <= '0';
-			wait for 100 ns;
-			sigrx <= '0';
-			wait for 100 ns;
-			sigrx <= '0';
-			wait for 100 ns;
-			sigrx <= '0';
-			wait for 100 ns;
-			sigrx <= '0';
-			wait for 100 ns;
-			sigrx <= '1';
-			wait for 100 ns;
-			sigrx <= '0';
-			wait for 100 ns;
+--			wait for 100 ns;
 --			sigrx <= '0';
---			wait;
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '1';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+			wait;
 		end process;
 		
 END vhdl;
