@@ -246,7 +246,7 @@ BEGIN
 	
 	-- Sram specific signal
 	-- avoid writing in memory when the proc wants to write on its outputs
-	MuxPROCstore_a <= SIGPROCstore WHEN SIGPROCaddrDM(31)='0' and SIGboot='1' ELSE
+	MuxPROCstore_a <= --SIGPROCstore WHEN SIGPROCaddrDM(31)='0' and SIGboot='1' ELSE
 							'0';
 	MuxPROCstore_b <= '0' WHEN SIGPROCaddrDM(31)='1' ELSE
 							SIGPROCstore;

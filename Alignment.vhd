@@ -70,7 +70,8 @@ begin
 	-- Load		
 				-- LHU
 				
-	shiftL <= (to_integer(unsigned(IDimm12I(1 downto 0)))) when PROCaddrDM(1 downto 0)="00" else
+	shiftL <= 0 when (IDimm12I="111111111111" and (PROCaddrDM(1 downto 0)="00"))  else
+				(to_integer(unsigned(IDimm12I(1 downto 0)))) when PROCaddrDM(1 downto 0)="00" else
 				(to_integer(unsigned(PROCaddrDM(1 downto 0)))); --ICI CONTINUE ICICIIIIIIIIIIIIII
 	RF_Align <= std_logic_vector(shift_right(unsigned(q_b),16) ) 						
 					when (IDfunct3 = "101" and ((IDimm12I(1)='1') 

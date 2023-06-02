@@ -21,18 +21,20 @@ end entity;
 
 -- ARCHITECTURE
 architecture archi of Bootloader is
-	TYPE ROM IS ARRAY(0 TO 50) OF std_logic_vector(0 to 31);
+	TYPE ROM IS ARRAY(0 TO 71) OF std_logic_vector(0 to 31);
 	SIGNAL rom_block : ROM :=(
 --		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000087b7" , x"80000737" , x"3c078793" , x"00f72423",
 --		x"c08807b7" , x"fff78793" , x"00f72223" , x"0000006f"
 
-		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"000107b7" , x"80000737" , x"fff78793" , x"00f72423",
-		x"83c0c7b7" , x"08778793" , x"00f72223" , x"00000613" , x"01800793" , x"c00006b7" , x"ff800513" , x"0006a703",
-		x"00477713" , x"fe070ce3" , x"0046a703" , x"0006a583" , x"0015f593" , x"fe059ce3" , x"00e6a223" , x"00f71733",
-		x"ff878793" , x"00e66633" , x"fca79ae3" , x"00000793" , x"800008b7" , x"c0000737" , x"ff800313" , x"00c78463",
-		x"01179463" , x"0000006f" , x"00000593" , x"01800693" , x"00072503" , x"00457513" , x"fe050ce3" , x"00472803",
-		x"00d81533" , x"00a5e5b3" , x"00072503" , x"00157513" , x"fe051ce3" , x"01072223" , x"ff868693" , x"fc669ae3",
-		x"00b7a023" , x"00478793" , x"fb5ff06f"
+		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"80000737" , x"000107b7" , x"fff78793" , x"00f72423",
+		x"83c0c7b7" , x"08778793" , x"00f72223" , x"01800693" , x"00000313" , x"c0000737" , x"ff800613" , x"00072783",
+		x"0047f793" , x"fe078ce3" , x"00472783" , x"00072503" , x"00157513" , x"fe051ce3" , x"00f72223" , x"00d797b3",
+		x"00f36333" , x"ff868693" , x"fcc69ae3" , x"08030263" , x"fffffe37" , x"004e0e13" , x"01c30e33" , x"00030893",
+		x"c0000737" , x"ff800813" , x"00c0006f" , x"06088263" , x"071e0063" , x"41130633" , x"00050593" , x"01800693",
+		x"00072783" , x"0047f793" , x"fe078ce3" , x"00472783" , x"00d797b3" , x"00f5e5b3" , x"ff868693" , x"ff0692e3",
+		x"ffc88893" , x"00b62023" , x"01800693" , x"00d5d633" , x"0ff67613" , x"00072783" , x"0017f793" , x"fe079ce3",
+		x"00c72223" , x"ff868693" , x"ff0692e3" , x"fa1ff06f" , x"00000693" , x"c0000737" , x"00001637" , x"ffc60613",
+		x"00072783" , x"0017f793" , x"fe079ce3" , x"0006c783" , x"00f72223" , x"00168693" , x"fec694e3" , x"0000006f"
 
 --		x"00001137" , x"00c000ef" , x"00100073" , x"0000006f" , x"00400713" , x"c00007b7" , x"0007a683" , x"0046f693",
 --		x"fe068ce3" , x"0047a603" , x"0007a683" , x"0016f693" , x"fe069ce3" , x"00c7a223" , x"fff70713" , x"fc071ee3",
@@ -45,7 +47,7 @@ architecture archi of Bootloader is
 	begin
 		sigpc <= addrInstBoot(11 downto 0);
 		instBoot <= rom_block(sigad) when rising_edge(clk);
-		sigad <= 50 when ((unsigned(sigpc) > 50)) else to_integer(unsigned(sigpc));
+		sigad <= 71 when ((unsigned(sigpc) > 71)) else to_integer(unsigned(sigpc));
 	
 end archi;
 -- END FILE
