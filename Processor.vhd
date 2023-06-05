@@ -400,15 +400,15 @@ BEGIN
 	
 	instALIGNMENT : Alignment
 	PORT MAP(
-		IDfunct3 => SIGfunct3,
-		q_b => PROCoutputDM,
-		IDimm12I => SIGimm12I,
-		IDimm12S => SIGimm12S,
+		IDfunct3 	 => SIGfunct3,
+		q_b 			 => PROCoutputDM,
+		IDimm12I 	 => SIGimm12I,
+		IDimm12S 	 => SIGimm12S,
 		RF_Align_out => SIGoutput2RF,
-		PROCaddrDM => SIGoutputALU,
-		DQ => SIGPROCdq,
-		RF_Align_in => SIG_RF_Align_in,
-		PROCinputDM => PROCinputDM
+		PROCaddrDM 	 => SIGoutputALU,
+		DQ 			 => SIGPROCdq,
+		RF_Align_in  => SIG_RF_Align_in,
+		PROCinputDM  => PROCinputDM
 	);
 
 	-- END

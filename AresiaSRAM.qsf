@@ -191,7 +191,6 @@ set_global_assignment -name VHDL_FILE TestBench.vhd
 set_global_assignment -name VHDL_FILE simul_var_pkg.vhd
 set_global_assignment -name VHDL_FILE SegmentDecoder.vhd
 set_global_assignment -name VHDL_FILE RegisterFile.vhd
-set_global_assignment -name VHDL_FILE RAMtest.vhd
 set_global_assignment -name VHDL_FILE RAM8x4.vhd
 set_global_assignment -name VHDL_FILE RAM8_3.vhd
 set_global_assignment -name VHDL_FILE RAM8_2.vhd
