@@ -103,8 +103,7 @@ begin
                (others => '0');
 	-- registers update on clock event and with rd
 	
-	RFreg(0)	<= RFin when to_integer(unsigned(RFrd))=0 AND hold='0' else
-					(others => '0');
+	RFreg(0)	<= (others => '0');
 
 	gen:
 	for i in 1 to 31 generate

@@ -6,7 +6,7 @@ ENTITY RAM8x4 IS
 	(
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -24,7 +24,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -39,7 +39,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -54,7 +54,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -69,7 +69,7 @@ ARCHITECTURE SYN OF RAM8x4 IS
     port (
 		address_a		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 		address_b		: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
+		clock			: IN STD_LOGIC  := '1';
 		data_a		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		data_b		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		enable		: IN STD_LOGIC  := '1';
@@ -91,7 +91,6 @@ BEGIN
 		enable => enable,
 		wren_a => wren_a,
 		wren_b => dq(0),
---		wren_b => wren_b,
 		q_a => q_a(7 downto 0),
 		q_b => q_b(7 downto 0)
 	);
@@ -105,7 +104,6 @@ BEGIN
 		enable => enable,
 		wren_a => wren_a,
 		wren_b => dq(1),
---		wren_b => wren_b,
 		q_a => q_a(15 downto 8),
 		q_b => q_b(15 downto 8)
 	);
@@ -119,7 +117,6 @@ BEGIN
 		enable => enable,
 		wren_a => wren_a,
 		wren_b => dq(2),
---		wren_b => wren_b,
 		q_a => q_a(23 downto 16),
 		q_b => q_b(23 downto 16)
 	);
@@ -133,7 +130,6 @@ BEGIN
 		enable => enable,
 		wren_a => wren_a,
 		wren_b => dq(3),
---		wren_b => wren_b,
 		q_a => q_a(31 downto 24),
 		q_b => q_b(31 downto 24)
 	);

@@ -16,8 +16,6 @@ ENTITY Processor IS
 		PROCreset       		: IN  STD_LOGIC;
 		PROCinstruction 		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
 		PROCoutputDM    		: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
-		PROCswitchBoot	 		: IN  STD_LOGIC;
-		--PROCswitchBootnext	: IN  STD_LOGIC;
 		-- OUTPUTS
 		PROCprogcounter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- next PC for fetch
 		PROCPC			 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0); -- current PC
@@ -55,8 +53,6 @@ ARCHITECTURE archi OF Processor IS
 			PCalusupU     : IN    STD_LOGIC;
 			PClock        : IN    STD_LOGIC;
 			PCLoad        : IN    STD_LOGIC;
-			switchBoot 	  : IN 	 STD_LOGIC;
-			-- switchBootnext 	  	 : IN 	 STD_LOGIC;
 
 			-- OUTPUTS
 			PCnext : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -283,8 +279,7 @@ BEGIN
 	SIGinput2ALU(31 DOWNTO 12) <= (OTHERS => '0') WHEN (SIGimmSel = '1' OR SIGloadP2 = '1' OR SIGstore = '1' OR SIGjalr = '1') AND SIGimm12I(11) = '0' ELSE
 											(OTHERS => '1') WHEN (SIGimmSel = '1' OR SIGloadP2 = '1' OR SIGstore = '1' OR SIGjalr = '1') AND SIGimm12I(11) = '1' ELSE
 											SIGoutput2RF(31 DOWNTO 12);
-
-											
+	
 	-- data memory
 	PROCaddrDM  <= SIGoutputALU;
 --	PROCinputDM <= SIGoutput2RF;
@@ -343,10 +338,8 @@ BEGIN
 		PCalusupU     => SIGsupUALU,
 		PCLoad        => Sigload,
 		PClock        => SigLock,
-		switchBoot	  => PROCswitchBoot,
 		PCnext		  => SIGprogcounterfetch,
 		PC 			  => SIGprogcounter
-		-- switchBootnext => PROCswitchBootnext
 	);
 
 	instID : InstructionDecoder
@@ -407,15 +400,15 @@ BEGIN
 	
 	instALIGNMENT : Alignment
 	PORT MAP(
-		IDfunct3 => SIGfunct3,
-		q_b => PROCoutputDM,
-		IDimm12I => SIGimm12I,
-		IDimm12S => SIGimm12S,
+		IDfunct3 	 => SIGfunct3,
+		q_b 			 => PROCoutputDM,
+		IDimm12I 	 => SIGimm12I,
+		IDimm12S 	 => SIGimm12S,
 		RF_Align_out => SIGoutput2RF,
-		PROCaddrDM => SIGoutputALU,
-		DQ => SIGPROCdq,
-		RF_Align_in => SIG_RF_Align_in,
-		PROCinputDM => PROCinputDM
+		PROCaddrDM 	 => SIGoutputALU,
+		DQ 			 => SIGPROCdq,
+		RF_Align_in  => SIG_RF_Align_in,
+		PROCinputDM  => PROCinputDM
 	);
 
 	-- END

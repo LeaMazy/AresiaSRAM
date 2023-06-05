@@ -19,12 +19,15 @@ architecture VHDL of TestBench is
 		switchBoot									 : IN 	STD_LOGIC; -- input for bootloader
 		TOPclock                             : IN    STD_LOGIC; --must go through pll
 		buttonClock                          : IN    STD_LOGIC;
-		reset                                : IN    STD_LOGIC;                                    --SW0
+		reset                                : IN    STD_LOGIC;
+		rx												 : IN 	STD_LOGIC;
+		--SW0
 
 		-- OUTPUTS
 		TOPdisplay1                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000004
 		TOPdisplay2                          : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);                --0x80000008
-		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0)                 --0x8000000c
+		TOPleds                              : OUT   STD_LOGIC_VECTOR(31 DOWNTO 0);			  		 --0x8000000c
+		tx												 : OUT 	STD_LOGIC
 	);
 	end component;
 
@@ -43,6 +46,8 @@ architecture VHDL of TestBench is
 	type mem is array(0 to 2047) of std_logic_vector(15 downto 0);
 	signal TabMemory : mem :=(others => (others => '0'));
 	
+	signal sigtx : std_logic;
+	signal sigrx : std_logic;
 															 
 
 	BEGIN
@@ -54,12 +59,15 @@ architecture VHDL of TestBench is
 		reset        	 => reset,
 		TOPdisplay1     => SigTOPdisplay1,
 		TOPdisplay2     => SigTOPdisplay2,
+		rx					 => sigrx,
 		
 		enableDebug 	 => '0',
 		switchSEL		 => '0',
 		switchSEL2      => '0',
 		switchBoot 		 => sigBoot,
-		buttonClock		 => '0'
+		buttonClock		 => '0',
+		tx					 => sigtx
+		
 		
 	);
     
@@ -122,23 +130,56 @@ architecture VHDL of TestBench is
 		begin
 		-- init  simulation
 			reset <= '1';
-			wait for 2 ns;
+			wait for 1000 ns;
 			reset <= '0';
+--			wait for 10100 ns;
+--			reset <= '1';
+--			wait for 410 ns;
+--			reset <= '0';
 			wait;
 		end process;
 		
 		bootTestbench: process
 		begin
-		-- init  simulation
-   		sigBoot <= '0';
-			wait for 2100 ns;
+		--init  simulation
+--   		sigBoot <= '1';
+--   		wait for 2100 ns;
 			sigBoot <= '1';
-			wait for 12100 ns;
+			wait for 10100 ns;
    		sigBoot <= '0';
-			--wait for 5100 ns;
-			--sigBoot <= '1';
-			--wait for 12100 ns;
-   		--sigBoot <= '0';
+--			wait for 12100 ns;
+--			sigBoot <= '1';
+--			wait for 10100 ns;
+--   		sigBoot <= '0';
+--			wait for 12100 ns;
+--			sigBoot <= '1';
+--			wait for 10100 ns;
+--   		sigBoot <= '0';
 			wait;
 		end process;
+		
+		uarttestbench: process
+		begin
+		-- init  simulation
+			wait for 1000 ns;
+			sigrx <= '1';
+			wait for 100 ns;
+			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '1';
+--			wait for 100 ns;
+--			sigrx <= '0';
+--			wait for 100 ns;
+--			sigrx <= '0';
+			wait;
+		end process;
+		
 END vhdl;
