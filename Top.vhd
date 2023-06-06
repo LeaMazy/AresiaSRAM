@@ -12,9 +12,10 @@ USE work.simulPkg.ALL;
 ENTITY Top IS
 	PORT (
 		-- INPUTS
-		enableDebug, switchSEL, switchSEL2   : IN    STD_LOGIC; -- input for debuger
+		enableDebug									 : IN    STD_LOGIC; -- debugger mode
+		SW8, SW7, SW6, SW5, SW4, SW3 			 : IN    STD_LOGIC; -- inputs for debuger
 		switchBoot									 : IN 	STD_LOGIC; -- input for bootloader
-		TOPclock                             : IN    STD_LOGIC; --must go through pll
+		TOPclock                             : IN    STD_LOGIC; -- must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;
 		rx												 : IN 	STD_LOGIC;
@@ -50,7 +51,10 @@ ARCHITECTURE archi OF Top IS
 			PROCfunct3      : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 			PROCaddrDM      : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 			PROCinputDM     : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+			PROCdq 			 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+			PROCRFin			 : OUT STD_LOGIC_VECTOR(31 downto 0);
+			PROCRFout1		 : OUT STD_LOGIC_VECTOR(31 downto 0);
+			PROCRFout2		 : OUT STD_LOGIC_VECTOR(31 downto 0)
 		);
 	END COMPONENT;
 
@@ -111,15 +115,18 @@ ARCHITECTURE archi OF Top IS
 	COMPONENT DEBUGER IS
 		PORT (
 			-- INPUTS
-			enable                : IN  STD_LOGIC;
-			SwitchSel, SwitchSel2 : IN  STD_LOGIC;
+			enable                		  : IN  STD_LOGIC;
+			SW8, SW7, SW6, SW5, SW4, SW3 : IN  STD_LOGIC;
 			--reset    	: IN STD_LOGIC; --SW0
-			PCregister            : IN  STD_LOGIC_VECTOR(15 DOWNTO 0);
-			Instruction           : IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+			PCregister            	: IN  STD_LOGIC_VECTOR(15 DOWNTO 0);
+			Instruction           	: IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+			RFin			: IN STD_LOGIC_VECTOR(31 downto 0);
+			RFout1		: IN STD_LOGIC_VECTOR(31 downto 0);
+			RFout2		: IN STD_LOGIC_VECTOR(31 downto 0);
 
 			--OUTPUTS
-			TOPdisplay2           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '1'); --0x80000008
-			TOPdisplay1           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '1')  --0x80000004
+			TOPdisplay2           	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '1'); --0x80000008
+			TOPdisplay1           	: OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '1')  --0x80000004
 		);
 	END COMPONENT;
 	
@@ -181,6 +188,10 @@ ARCHITECTURE archi OF Top IS
 	SIGNAL SIGPROCfunct3 				: STD_LOGIC_VECTOR(2 DOWNTO 0);
 	SIGNAL SIGPROCaddrDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
 	SIGNAL SIGPROCinputDM 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL SIGPROCRFin 					: STD_LOGIC_VECTOR(31 DOWNTO 0);			 
+	SIGNAL SIGPROCRFout1	 				: STD_LOGIC_VECTOR(31 DOWNTO 0);	 
+	SIGNAL SIGPROCRFout2	 				: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	
 	SIGNAL SIGfunct3 						: STD_LOGIC_VECTOR(2 DOWNTO 0);
 	SIGNAL SIGcsDM, SIGwriteSelect   : STD_LOGIC;
 	SIGNAL SIGinputDM, SIGAddressDM  : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -282,10 +293,17 @@ BEGIN
 	PORT MAP(
 		--TOPclock =>
 		enable      => enableDebug,
-		SwitchSel   => switchSEL,
-		SwitchSel2  => switchSEL2,
+		SW8			=> SW8, 
+		SW7			=> SW7, 
+		SW6			=> SW6, 
+		SW5			=> SW5, 
+		SW4			=> SW4,
+		SW3			=> SW3,
 		PCregister  => SIGPROCPC(15 DOWNTO 0),
 		Instruction => SIGinstMux,
+		RFin			=> SIGPROCRFin,
+		RFout1		=> SIGPROCRFout1,
+	   RFout2		=> SIGPROCRFout2,
 		--OUTPUTS
 		TOPdisplay2 => debugDisplay2,
 		TOPdisplay1 => debugDisplay1
@@ -307,7 +325,10 @@ BEGIN
 		PROCfunct3      => SIGPROCfunct3,
 		PROCaddrDM      => SIGPROCaddrDM,
 		PROCinputDM     => SIGPROCinputDM,
-		PROCdq 			 => SIGPROCdq
+		PROCdq 			 => SIGPROCdq,
+		PROCRFin			 => SIGPROCRFin,
+		PROCRFout1		 => SIGPROCRFout1,
+	   PROCRFout2		 => SIGPROCRFout2
 	);
 
 	instCPT : Counter

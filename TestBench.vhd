@@ -15,9 +15,10 @@ architecture VHDL of TestBench is
 	component Top is
     port (
 		-- INPUTS
-		enableDebug, switchSEL, switchSEL2   : IN    STD_LOGIC; -- input for debuger
+		enableDebug									 : IN    STD_LOGIC; -- debugger mode
+		SW8, SW7, SW6, SW5, SW4, SW3 			 : IN    STD_LOGIC; -- inputs for debuger
 		switchBoot									 : IN 	STD_LOGIC; -- input for bootloader
-		TOPclock                             : IN    STD_LOGIC; --must go through pll
+		TOPclock                             : IN    STD_LOGIC; -- must go through pll
 		buttonClock                          : IN    STD_LOGIC;
 		reset                                : IN    STD_LOGIC;
 		rx												 : IN 	STD_LOGIC;
@@ -62,8 +63,12 @@ architecture VHDL of TestBench is
 		rx					 => sigrx,
 		
 		enableDebug 	 => '0',
-		switchSEL		 => '0',
-		switchSEL2      => '0',
+		SW8		 		 => '0',
+		SW7		 		 => '0',
+		SW6		 		 => '0',
+		SW5		 		 => '0',
+		SW4		 		 => '0',
+		SW3		 		 => '0',
 		switchBoot 		 => sigBoot,
 		buttonClock		 => '0',
 		tx					 => sigtx
